@@ -1,0 +1,725 @@
+[
+  {
+    "raw_id": "001EEE4F",
+    "id": "001EEE4F",
+    "name": "Ambassador - Pistol",
+    "modifiers": [
+      {
+        "name": "Shattering",
+        "description": "Breaks through even the strongest armor"
+      }
+    ],
+    "attachments": [
+      "Extended Barrel",
+      "Laser Sight",
+      "Reflex Sight",
+      "Muzzle Brake",
+      "Penetrator Rounds",
+      "High Powered",
+      "Binary Trigger"
+    ]
+  },
+  {
+    "raw_id": "000FF442",
+    "id": "000FF442",
+    "name": "Anti-Personnel\t10% damage against humans.",
+    "modifiers": [],
+    "attachments": []
+  },
+  {
+    "raw_id": "0031FCBF",
+    "id": "0031FCBF",
+    "name": "Ashta Tamer - Heavy",
+    "modifiers": [
+      {
+        "name": "Incendiary",
+        "description": "Randomly deals incendiary damage"
+      }
+    ],
+    "attachments": [
+      "Laser Sight",
+      "Reflex Sight",
+      "Tactical Stock"
+    ]
+  },
+  {
+    "raw_id": "000FEA07",
+    "id": "000FEA07",
+    "name": "Bashing\tDeals double damage when gun bashing.",
+    "modifiers": [],
+    "attachments": []
+  },
+  {
+    "raw_id": "000F437E",
+    "id": "000F437E",
+    "name": "Berserker\tDoes more damage the less armor one has.",
+    "modifiers": [],
+    "attachments": []
+  },
+  {
+    "raw_id": "000FBD3C",
+    "id": "000FBD3C",
+    "name": "Concussive\tSmall chance to knock down targets.",
+    "modifiers": [],
+    "attachments": []
+  },
+  {
+    "raw_id": "000F428E",
+    "id": "000F428E",
+    "name": "Cornered\tDamage increases as health decreases.",
+    "modifiers": [],
+    "attachments": []
+  },
+  {
+    "raw_id": "0008AB47",
+    "id": "0008AB47",
+    "name": "Corrosive\tRandomly deals corrosive damage and reduces the targets' armor over 6 seconds.",
+    "modifiers": [],
+    "attachments": []
+  },
+  {
+    "raw_id": "000F2E39",
+    "id": "000F2E39",
+    "name": "Crippling\tDeals +30% damage on the next attack after hitting a target's limbs.",
+    "modifiers": [],
+    "attachments": []
+  },
+  {
+    "raw_id": "000367C5",
+    "id": "000367C5",
+    "name": "Davis Wilson's Rifle",
+    "modifiers": [
+      {
+        "name": "Berserker",
+        "description": "Does more damage the less armor one has"
+      },
+      {
+        "name": "Staggering",
+        "description": "Small chance to stagger enemies"
+      }
+    ],
+    "attachments": [
+      "Long Barrel",
+      "Laser Sight",
+      "Recon Scope",
+      "Compensator",
+      "Large Magazine"
+    ]
+  },
+  {
+    "raw_id": "001BBF2A",
+    "id": "001BBF2A",
+    "name": "Deadeye\tNone",
+    "modifiers": [],
+    "attachments": [
+      "Laser Sight",
+      "Short Scope",
+      "Muzzle Brake",
+      "Depleted Uranium Rounds",
+      "Hair Trigger"
+    ]
+  },
+  {
+    "raw_id": "000FC884",
+    "id": "000FC884",
+    "name": "Demoralizing\tSmall chance to demoralize a target.",
+    "modifiers": [],
+    "attachments": []
+  },
+  {
+    "raw_id": "0014920B",
+    "id": "0014920B",
+    "name": "Despondent Assassin - Rifle",
+    "modifiers": [
+      {
+        "name": "Demoralizing",
+        "description": "Small chance to demoralize a target"
+      },
+      {
+        "name": "Hitman",
+        "description": "+15% damage while aiming"
+      },
+      {
+        "name": "Anti-Personnel",
+        "description": "+10% damage against humans"
+      }
+    ],
+    "attachments": [
+      "Small Magazine",
+      "High Powered"
+    ]
+  },
+  {
+    "raw_id": "001625EB",
+    "id": "001625EB",
+    "name": "Disassembler\t+20% damage against robots.",
+    "modifiers": [],
+    "attachments": []
+  },
+  {
+    "raw_id": "002F99FF",
+    "id": "002F99FF",
+    "name": "Ember - Pistol\tNone",
+    "modifiers": [],
+    "attachments": [
+      "Long Barrel with Laser Sight",
+      "Holographic Sight",
+      "Focal Lens",
+      "Tactical Grip",
+      "Ignition Beams",
+      "Amplifier"
+    ]
+  },
+  {
+    "raw_id": "00329ABB",
+    "id": "00329ABB",
+    "name": "Eternity's Gate - Particle Beam Rifle",
+    "modifiers": [
+      {
+        "name": "Skip Shot",
+        "description": "Every fourth shot fires two projectiles at once"
+      },
+      {
+        "name": "Handloading",
+        "description": "Volatile rounds that are designed to pack a bigger punch, but aren't as stable and can fail on occasion"
+      },
+      {
+        "name": "Anti-Personnel",
+        "description": "+10% damage against humans"
+      }
+    ],
+    "attachments": [
+      "Long Barrel",
+      "Recon Laser Sight",
+      "Short Scope",
+      "Focus Nozzle",
+      "Tactical Magazine"
+    ]
+  },
+  {
+    "raw_id": "0031F257",
+    "id": "0031F257",
+    "name": "Experiment A-7 - Shotgun",
+    "modifiers": [
+      {
+        "name": "Exterminator",
+        "description": "+30% damage against aliens"
+      }
+    ],
+    "attachments": [
+      "Long Barrel",
+      "Laser Sight",
+      "Reflex Sight",
+      "Choke",
+      "Tactical Stock",
+      "Flechette Rounds",
+      "Hair Trigger",
+      "Fully Automatic"
+    ]
+  },
+  {
+    "raw_id": "000FA8D6",
+    "id": "000FA8D6",
+    "name": "Explosive\tRandomly switches to explosive rounds.",
+    "modifiers": [],
+    "attachments": []
+  },
+  {
+    "raw_id": "000FFA3B",
+    "id": "000FFA3B",
+    "name": "Extended Magazine\tDoubles the base magazine capacity.",
+    "modifiers": [],
+    "attachments": []
+  },
+  {
+    "raw_id": "0015DD18",
+    "id": "0015DD18",
+    "name": "Exterminator\t+30% damage against ailens.",
+    "modifiers": [],
+    "attachments": []
+  },
+  {
+    "raw_id": "000019F5",
+    "id": "000019F5",
+    "name": "Fiscal Quarter - Rifle",
+    "modifiers": [
+      {
+        "name": "Shattering",
+        "description": "Break through even the strongest armor"
+      }
+    ],
+    "attachments": [
+      "Short Scope",
+      "Compensator",
+      "Tactical Grip",
+      "Armor-Piercing Rounds",
+      "Hair Trigger"
+    ]
+  },
+  {
+    "raw_id": "0032046E",
+    "id": "0032046E",
+    "name": "Fortune's Glory - Melee",
+    "modifiers": [
+      {
+        "name": "Staggering",
+        "description": "Small chance to stagger enemies"
+      }
+    ],
+    "attachments": [
+      "None"
+    ]
+  },
+  {
+    "raw_id": "000FC8A4",
+    "id": "000FC8A4",
+    "name": "Frenzy\tSmall chance to frenzy a target.",
+    "modifiers": [],
+    "attachments": []
+  },
+  {
+    "raw_id": "000EA117",
+    "id": "000EA117",
+    "name": "Furious\tEach consecutive hit deals more damage.",
+    "modifiers": [],
+    "attachments": []
+  },
+  {
+    "raw_id": "0032046C",
+    "id": "0032046C",
+    "name": "Gallow's Reach - Rifle",
+    "modifiers": [
+      {
+        "name": "Poison",
+        "description": "Randomly deals poison damage and slows the target"
+      }
+    ],
+    "attachments": [
+      "Laser Sight",
+      "Reflex Sight",
+      "Muzzle Brake",
+      "Ergonomic Grip",
+      "Armor-Piercing Rounds"
+    ]
+  },
+  {
+    "raw_id": "000EA0BA",
+    "id": "000EA0BA",
+    "name": "Handloading\tVolatile rounds that are designed to pack a bigger punch, but aren't as stable and can fail on occasion.",
+    "modifiers": [],
+    "attachments": []
+  },
+  {
+    "raw_id": "0032046A",
+    "id": "0032046A",
+    "name": "Heller's Cutter - Heavy",
+    "modifiers": [
+      {
+        "name": "Disassembler",
+        "description": "+20% damage against robots"
+      }
+    ],
+    "attachments": [
+      "None"
+    ]
+  },
+  {
+    "raw_id": "00122F1C",
+    "id": "00122F1C",
+    "name": "Hitman\t+15% damage while aiming.",
+    "modifiers": [],
+    "attachments": []
+  },
+  {
+    "raw_id": "0007D728",
+    "id": "0007D728",
+    "name": "Incendiary\tRandomly deals incendiary damage.",
+    "modifiers": [],
+    "attachments": []
+  },
+  {
+    "raw_id": "000F2013",
+    "id": "000F2013",
+    "name": "Instigating\tDeals double damage to targets with full health.",
+    "modifiers": [],
+    "attachments": []
+  },
+  {
+    "raw_id": "002BD871",
+    "id": "002BD871",
+    "name": "Jake's Hangover Cure - Particle Beam Shotgun\tNone\tNone",
+    "modifiers": [],
+    "attachments": []
+  },
+  {
+    "raw_id": "001BAA3C",
+    "id": "001BAA3C",
+    "name": "Justifier\tNone",
+    "modifiers": [],
+    "attachments": [
+      "Long Barrel",
+      "Laser Sight",
+      "Recon Scope",
+      "Muzzle Brake",
+      "Depleted Uranium Rounds",
+      "Hair Trigger"
+    ]
+  },
+  {
+    "raw_id": "0008D850",
+    "id": "0008D850",
+    "name": "Keelhauler - Pistol",
+    "modifiers": [
+      {
+        "name": "Staggering",
+        "description": "Small chance to stagger enemies"
+      },
+      {
+        "name": "Berserker",
+        "description": "Does more damage the less armor one has"
+      },
+      {
+        "name": "Frenzy",
+        "description": "Small chance to frenzy a target"
+      }
+    ],
+    "attachments": [
+      "Magnetic Rails",
+      "Recon Laser Sight",
+      "Compensator",
+      "Tactical Magazine",
+      "Hair Trigger",
+      "Fully Automatic"
+    ]
+  },
+  {
+    "raw_id": "000FEA49",
+    "id": "000FEA49",
+    "name": "Lacerate\tRandomly applies a bleed effect to the target.",
+    "modifiers": [],
+    "attachments": []
+  },
+  {
+    "raw_id": "000FFA3C",
+    "id": "000FFA3C",
+    "name": "Med Theft\tChance that humans drop extra Med Packs on death.",
+    "modifiers": [],
+    "attachments": []
+  },
+  {
+    "raw_id": "00316416",
+    "id": "00316416",
+    "name": "Memento Mori - Pistol",
+    "modifiers": [
+      {
+        "name": "Crippling",
+        "description": "Deals +30% damage on the next attack after hitting a target's limbs"
+      },
+      {
+        "name": "Cornered",
+        "description": "Damage increases as health decreases"
+      },
+      {
+        "name": "Demoralizing",
+        "description": "Small chance to demoralize a target"
+      }
+    ],
+    "attachments": [
+      "Laser Sight",
+      "Tactical Grip",
+      "Explosive Rounds",
+      "High Powered"
+    ]
+  },
+  {
+    "raw_id": "000F4CF0",
+    "id": "000F4CF0",
+    "name": "One Inch Punch\tRounds fire in a shotgun-like spread.",
+    "modifiers": [],
+    "attachments": []
+  },
+  {
+    "raw_id": "001A52E5",
+    "id": "001A52E5",
+    "name": "Peacekeeper - Rifle",
+    "modifiers": [
+      {
+        "name": "Extended Magazine",
+        "description": "Doubles the base magazine capacity"
+      }
+    ],
+    "attachments": [
+      "Long Barrel",
+      "Laser Sight",
+      "Reflex Sight",
+      "Ergonomic Stock"
+    ]
+  },
+  {
+    "raw_id": "000E7ED1",
+    "id": "000E7ED1",
+    "name": "Peacemaker - Rifle",
+    "modifiers": [
+      {
+        "name": "Rapid",
+        "description": "+25 increase in attack speed"
+      },
+      {
+        "name": "Demoralizing",
+        "description": "Small chance to demoralize a target"
+      }
+    ],
+    "attachments": [
+      "Long Barrel",
+      "Laser Sight",
+      "Recon Scope",
+      "Muzzle Brake",
+      "Penetrator Rounds",
+      "High Velocity"
+    ]
+  },
+  {
+    "raw_id": "00319AEC",
+    "id": "00319AEC",
+    "name": "Poison\tRandomly deals poison damage and slows the target.",
+    "modifiers": [],
+    "attachments": []
+  },
+  {
+    "raw_id": "000FEA04",
+    "id": "000FEA04",
+    "name": "Rapid\t+25% increase in attack speed.",
+    "modifiers": [],
+    "attachments": []
+  },
+  {
+    "raw_id": "0008AF62",
+    "id": "0008AF62",
+    "name": "Revenant - Rifle",
+    "modifiers": [
+      {
+        "name": "Extended Magazine",
+        "description": "Doubles the base magazine capacity"
+      },
+      {
+        "name": "Lacerate",
+        "description": "Randomly applies a bleed effect to the target"
+      },
+      {
+        "name": "Titanium Build",
+        "description": "Premium build materials make this weapon light as a feather"
+      }
+    ],
+    "attachments": [
+      "Long Barrel",
+      "Compensator",
+      "Armor-Piercing Rounds",
+      "Hair Trigger"
+    ]
+  },
+  {
+    "raw_id": "000F4557",
+    "id": "000F4557",
+    "name": "Shattering\tBreak through even the strongest armor.",
+    "modifiers": [],
+    "attachments": []
+  },
+  {
+    "raw_id": "001F27F5",
+    "id": "001F27F5",
+    "name": "Sir Livingstone's Pistol\tNone",
+    "modifiers": [],
+    "attachments": [
+      "Tactical Grip",
+      "Armor-Piercing Rounds",
+      "High Powered"
+    ]
+  },
+  {
+    "raw_id": "0031C0C4",
+    "id": "0031C0C4",
+    "name": "Skip Shot\tEvery fourth shot fires two projectiles at once.",
+    "modifiers": [],
+    "attachments": []
+  },
+  {
+    "raw_id": "0008AF68",
+    "id": "0008AF68",
+    "name": "Solace - Pistol\tNone",
+    "modifiers": [],
+    "attachments": [
+      "Long Barrel",
+      "Laser Sight",
+      "Reflex Sight",
+      "Compensator",
+      "Tactical Grip",
+      "Hair Trigger",
+      "advertisement",
+      "Jump to Table of Contents",
+      "To attach weapon modifiers in Starfield, you'll want to use the following cheat code:",
+      "(Ref ID Code).amod (OMOD ID)",
+      "To find your weapon's reference ID, drop the weapon on the ground, open the console command, and click on the weapon. Your \"WEAP (ID Code)\" will now be displayed.",
+      "OMOD Code\tMod Name\tDescription",
+      "Slot 1 Modifiers"
+    ]
+  },
+  {
+    "raw_id": "000F7321",
+    "id": "000F7321",
+    "name": "Space-Adept\t+30% damage while in space, and -15% damage while on a planet.",
+    "modifiers": [],
+    "attachments": [
+      "Slot 2 Modifiers"
+    ]
+  },
+  {
+    "raw_id": "000E8D64",
+    "id": "000E8D64",
+    "name": "Staggering\tSmall chance to stagger enemies.",
+    "modifiers": [],
+    "attachments": [
+      "Slot 3 Modifiers"
+    ]
+  },
+  {
+    "raw_id": "0031C0C6",
+    "id": "0031C0C6",
+    "name": "Telsa\tRounds will sometimes emit electricity where they land that damages and slows nearby targets.",
+    "modifiers": [],
+    "attachments": []
+  },
+  {
+    "raw_id": "003CE4B0",
+    "id": "003CE4B0",
+    "name": "Tempest - Rifle",
+    "modifiers": [
+      {
+        "name": "Handloading",
+        "description": "Volatile rounds that are designed to pack a bigger punch, but aren't as stable and can fail on occasion"
+      }
+    ],
+    "attachments": [
+      "Laser Sight",
+      "Compensator",
+      "Large Magazine"
+    ]
+  },
+  {
+    "raw_id": "0031F25A",
+    "id": "0031F25A",
+    "name": "The Last Priest - Melee",
+    "modifiers": [
+      {
+        "name": "Elemental",
+        "description": "Randomly deals Corrosive, Radiation, Poison, and Incendiary damage"
+      }
+    ],
+    "attachments": [
+      "None"
+    ]
+  },
+  {
+    "raw_id": "0000CAB0",
+    "id": "0000CAB0",
+    "name": "The Mutineer - Pistol",
+    "modifiers": [
+      {
+        "name": "Space-Adept",
+        "description": "+30% damage while in space, and -15% damage while on a planet"
+      }
+    ],
+    "attachments": [
+      "Magnetic Rails",
+      "Compensator",
+      "Depleted Uranium Rounds",
+      "Fully Automatic"
+    ]
+  },
+  {
+    "raw_id": "003CE4B1",
+    "id": "003CE4B1",
+    "name": "Unfair Advantage - Pistol",
+    "modifiers": [
+      {
+        "name": "Skip Shot",
+        "description": "Every fourth shot fires two projectiles at once"
+      },
+      {
+        "name": "Radioactive",
+        "description": "Randomly deals radioactive damage and demoralizes the target"
+      }
+    ],
+    "attachments": [
+      "Short Barrel",
+      "Laser Sight",
+      "Reflex Sight",
+      "Compensator",
+      "Tactical Grip",
+      "Depleted Uranium Rounds",
+      "High Velocity",
+      "Binary Trigger"
+    ]
+  },
+  {
+    "raw_id": "001F02EF",
+    "id": "001F02EF",
+    "name": "Unmitigated Violence - Rifle",
+    "modifiers": [
+      {
+        "name": "Frenzy",
+        "description": "Small chance to frenzy a target"
+      },
+      {
+        "name": "Radioactive",
+        "description": "Randomly deals radioactive damage and demoralizes the target"
+      },
+      {
+        "name": "Instigating",
+        "description": "Deals double damage to targets with full health"
+      }
+    ],
+    "attachments": [
+      "Long Barrel",
+      "Recon Laser Sight",
+      "Reflex Sight",
+      "Stealth Lasers",
+      "Stabilizing Stock",
+      "Large Battery",
+      "Amplifier"
+    ]
+  },
+  {
+    "raw_id": "000019F7",
+    "id": "000019F7",
+    "name": "Unrestrained Vegenence - Rifle",
+    "modifiers": [
+      {
+        "name": "Hitman",
+        "description": "+15% damage while aiming"
+      }
+    ],
+    "attachments": [
+      "Long Barrel",
+      "Recon Laser Sight",
+      "Stealth Lasers",
+      "Precision Tuning"
+    ]
+  },
+  {
+    "raw_id": "0008AF5D",
+    "id": "0008AF5D",
+    "name": "X-989 Microgun - Heavy",
+    "modifiers": [
+      {
+        "name": "Exterminator",
+        "description": "+30% damage against aliens"
+      }
+    ],
+    "attachments": [
+      "Long Barrel",
+      "Laser Sight",
+      "Tactical Grip",
+      "Tactical Magazine"
+    ]
+  }
+]

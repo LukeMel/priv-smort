@@ -1,0 +1,649 @@
+[
+  {
+    "name": "Outpost NPC Prefab \u2013 Fortified Encampment",
+    "categories": [
+      "Outposts"
+    ]
+  },
+  {
+    "name": "Outpost NPC Prefab \u2013 Deserted Relay Station",
+    "categories": [
+      "Outposts"
+    ]
+  },
+  {
+    "name": "Note: users report placement quirks on uneven terrain",
+    "categories": [
+      "Misc"
+    ]
+  },
+  {
+    "name": "Outpost Resource Collector",
+    "categories": [
+      "Outposts"
+    ]
+  },
+  {
+    "name": "High/ Increased Cargo Link Capacity: boosts the amount each cargo ship moves per trip; reduces bottlenecks.",
+    "categories": [
+      "Storage/Logistics"
+    ]
+  },
+  {
+    "name": "TN\u2019s Outpost Storage",
+    "categories": [
+      "Outposts",
+      "Storage/Logistics"
+    ]
+  },
+  {
+    "name": "Supply Mission Fix: repairs stuck delivery missions if you use the in-game supply jobs to move goods.",
+    "categories": [
+      "Misc"
+    ]
+  },
+  {
+    "name": "Modular Outposts: Argos Extractors",
+    "categories": [
+      "Outposts"
+    ]
+  },
+  {
+    "name": "OUT \u2013 Outpost Ultimate Tweaks: huge outpost expansion",
+    "categories": [
+      "Outposts"
+    ]
+  },
+  {
+    "name": "Outpost Anywhere: relaxes placement limits, useful when a prefab refuses to snap on slopes.",
+    "categories": [
+      "Outposts"
+    ]
+  },
+  {
+    "name": "+6",
+    "categories": [
+      "Misc"
+    ]
+  },
+  {
+    "name": "creations.bethesda.net",
+    "categories": [
+      "Misc"
+    ]
+  },
+  {
+    "name": "Tower Hab 2",
+    "categories": [
+      "Outposts"
+    ]
+  },
+  {
+    "name": "Betamax\u2019s Outpost Framework",
+    "categories": [
+      "Outposts"
+    ]
+  },
+  {
+    "name": "\u201cBuild Outposts in Restricted Zones",
+    "categories": [
+      "Outposts",
+      "Build/Placement"
+    ]
+  },
+  {
+    "name": "High-Capacity Cargo Links",
+    "categories": [
+      "Storage/Logistics"
+    ]
+  },
+  {
+    "name": "Nexus Mods",
+    "categories": [
+      "Misc"
+    ]
+  },
+  {
+    "name": "Wicked Workshop \u2013 Outpost Projeckt 2",
+    "categories": [
+      "Outposts",
+      "Wicked Workshop Suite"
+    ]
+  },
+  {
+    "name": "Wicked Workshop \u2013 Fortified",
+    "categories": [
+      "Wicked Workshop Suite"
+    ]
+  },
+  {
+    "name": "Wicked Workshop \u2013 Fielded",
+    "categories": [
+      "Wicked Workshop Suite"
+    ]
+  },
+  {
+    "name": "Platforms: All three are on Nexus",
+    "categories": [
+      "Misc"
+    ]
+  },
+  {
+    "name": "Outpost Projeckt 2 includes \u201cSpecial Structures\u201d",
+    "categories": [
+      "Outposts"
+    ]
+  },
+  {
+    "name": "Fortified adds Science/Industrial/Military Camps and Walled Forts you place as single objects\u2014effectively prefab compounds.",
+    "categories": [
+      "Misc"
+    ]
+  },
+  {
+    "name": "Place a Large Landing Pad HQ",
+    "categories": [
+      "Misc"
+    ]
+  },
+  {
+    "name": "Add a Cargo-Link pad/desk and a Field Generator",
+    "categories": [
+      "Storage/Logistics"
+    ]
+  },
+  {
+    "name": "Drop a Crewstation and a Vendor",
+    "categories": [
+      "Outposts",
+      "Companions/Followers"
+    ]
+  },
+  {
+    "name": "High-Capacity Cargo Links \u2013 doubles freighter throughput to prevent bottlenecks.",
+    "categories": [
+      "Storage/Logistics"
+    ]
+  },
+  {
+    "name": "Dependencies: All expansions require Outpost Projeckt 2; Shattered",
+    "categories": [
+      "Outposts"
+    ]
+  },
+  {
+    "name": "Stability: The author advises a quicksave + immediate reload after building large structures so everything \u201cbakes in.\u201d",
+    "categories": [
+      "Misc"
+    ]
+  },
+  {
+    "name": "#1 TN\u2019s Outpost Storage",
+    "categories": [
+      "Outposts",
+      "Storage/Logistics"
+    ]
+  },
+  {
+    "name": "Expanded Outpost Containers",
+    "categories": [
+      "Outposts",
+      "Storage/Logistics"
+    ]
+  },
+  {
+    "name": "PC",
+    "categories": [
+      "Misc"
+    ]
+  },
+  {
+    "name": "PC/Xbox",
+    "categories": [
+      "Misc"
+    ]
+  },
+  {
+    "name": "Go to The Lodge \u2192 use the AID item to Enable Universal Stash",
+    "categories": [
+      "Weapons/Turrets"
+    ]
+  },
+  {
+    "name": "Build one \u201cUniversal Stash Outpost Transfer\u201d container per outpost",
+    "categories": [
+      "Outposts",
+      "Storage/Logistics"
+    ]
+  },
+  {
+    "name": "Do not connect the blue Outpost ship transfer container to a Stash Transfer Container; it can cause item loss.",
+    "categories": [
+      "Outposts",
+      "Storage/Logistics",
+      "Weapons/Turrets"
+    ]
+  },
+  {
+    "name": "Before removing a transfer container or scrapping an outpost, Switch with Stash",
+    "categories": [
+      "Outposts",
+      "Storage/Logistics"
+    ]
+  },
+  {
+    "name": "SKK confirms compatibility through Shattered Space / 1.14.70.",
+    "categories": [
+      "Misc"
+    ]
+  },
+  {
+    "name": "Mods disable achievements",
+    "categories": [
+      "Misc"
+    ]
+  },
+  {
+    "name": "High-Capacity Cargo Links \u2014 doubles freighter throughput so production chains don\u2019t jam. Load late.",
+    "categories": [
+      "Storage/Logistics"
+    ]
+  },
+  {
+    "name": "Companion Dialogue Framework",
+    "categories": [
+      "Companions/Followers"
+    ]
+  },
+  {
+    "name": "Recruit Anyone as Ship Crew",
+    "categories": [
+      "Outposts",
+      "Companions/Followers"
+    ]
+  },
+  {
+    "name": "The Gang\u2019s All Here \u2013 Multiple Companions and Crew",
+    "categories": [
+      "Outposts",
+      "Companions/Followers"
+    ]
+  },
+  {
+    "name": "Command NPCs",
+    "categories": [
+      "Misc"
+    ]
+  },
+  {
+    "name": "Enhance! Companions",
+    "categories": [
+      "Companions/Followers"
+    ]
+  },
+  {
+    "name": "SKK Stalkers & Followers",
+    "categories": [
+      "Misc"
+    ]
+  },
+  {
+    "name": "SHAME",
+    "categories": [
+      "Misc"
+    ]
+  },
+  {
+    "name": "Lyria \u2013 A Starfield Companion",
+    "categories": [
+      "Companions/Followers"
+    ]
+  },
+  {
+    "name": "Estelle Vincent Companion",
+    "categories": [
+      "Companions/Followers"
+    ]
+  },
+  {
+    "name": "This gives you a practical \u201cmake your own companion\u201d setup without authoring new dialogue systems.",
+    "categories": [
+      "Companions/Followers"
+    ]
+  },
+  {
+    "name": "Ripper \u201cClassic\u201d",
+    "categories": [
+      "Misc"
+    ]
+  },
+  {
+    "name": "Tac-16",
+    "categories": [
+      "Misc"
+    ]
+  },
+  {
+    "name": "Peacekeeper",
+    "categories": [
+      "Misc"
+    ]
+  },
+  {
+    "name": "Fang-45 and Peacekeeper MK2 are in Project Warfare \u2013 Addon Pack 1. Use the help queries above, then player.additem.",
+    "categories": [
+      "Misc"
+    ]
+  },
+  {
+    "name": "Both Hardened Edition and Addon Pack 1 distribute the guns via vendors & dispensers",
+    "categories": [
+      "Weapons/Turrets"
+    ]
+  },
+  {
+    "name": "Nexus: \u201cCompanion Dialogue Framework\u201d",
+    "categories": [
+      "Companions/Followers"
+    ]
+  },
+  {
+    "name": "Creations: same framework published for in-game manager.",
+    "categories": [
+      "Misc"
+    ]
+  },
+  {
+    "name": "Still in Data\u2026, mark CDF\u2019s ESM as a master",
+    "categories": [
+      "Misc"
+    ]
+  },
+  {
+    "name": "With CDF as a master, duplicate CDF\u2019s example quest/records into your plugin",
+    "categories": [
+      "Misc"
+    ]
+  },
+  {
+    "name": "Register your actor with CDF",
+    "categories": [
+      "Misc"
+    ]
+  },
+  {
+    "name": "Add your companion\u2019s reaction lines under the provided Dialogue Subtypes and condition them on the right vanilla quest stages",
+    "categories": [
+      "Weapons/Turrets",
+      "Companions/Followers"
+    ]
+  },
+  {
+    "name": "Test: run the MQ beats",
+    "categories": [
+      "Misc"
+    ]
+  },
+  {
+    "name": "Generate lipsync with CK\u2019s FaceFX compiler; the community guide walks the exact steps + pitfalls",
+    "categories": [
+      "Misc"
+    ]
+  },
+  {
+    "name": "Validate CDF reactions by jumping to a covered quest beat and confirming your subtype lines fire.",
+    "categories": [
+      "Misc"
+    ]
+  },
+  {
+    "name": "CDF",
+    "categories": [
+      "Misc"
+    ]
+  },
+  {
+    "name": "In game \u2192 Menu \u2192 Ship \u2192 Crew",
+    "categories": [
+      "Outposts",
+      "Companions/Followers"
+    ]
+  },
+  {
+    "name": "Console use can disable achievements unless you use an enabler; the NPC Enhancer Gun",
+    "categories": [
+      "Weapons/Turrets"
+    ]
+  },
+  {
+    "name": "NPC Enhancer Gun",
+    "categories": [
+      "Weapons/Turrets"
+    ]
+  },
+  {
+    "name": "Let\u2019s go to Enhance!",
+    "categories": [
+      "Misc"
+    ]
+  },
+  {
+    "name": "Want a quick, achievement-friendly setup? Use NPC Enhancer Gun",
+    "categories": [
+      "Weapons/Turrets"
+    ]
+  },
+  {
+    "name": "SFSE",
+    "categories": [
+      "SFSE/Vortex"
+    ]
+  },
+  {
+    "name": "Address Library for SFSE Plugins \u2014 keeps SFSE DLL mods version-resilient.",
+    "categories": [
+      "SFSE/Vortex"
+    ]
+  },
+  {
+    "name": "Baka Achievement Enabler",
+    "categories": [
+      "Misc"
+    ]
+  },
+  {
+    "name": "StarUI Inventory",
+    "categories": [
+      "Misc"
+    ]
+  },
+  {
+    "name": "StarUI Workbench",
+    "categories": [
+      "Misc"
+    ]
+  },
+  {
+    "name": "StarUI HUD \u2014 configurable HUD and improved loot list.",
+    "categories": [
+      "Misc"
+    ]
+  },
+  {
+    "name": "StarUI Ship Builder",
+    "categories": [
+      "Misc"
+    ]
+  },
+  {
+    "name": "Undelayed Menus / Skip Intro \u2014 snappy menus, no logos.",
+    "categories": [
+      "Misc"
+    ]
+  },
+  {
+    "name": "The Gang\u2019s All Here \u2014 multiple followers + control terminal",
+    "categories": [
+      "Misc"
+    ]
+  },
+  {
+    "name": "Command NPCs \u2014 adds the classic \u201cCommand\u201d prompt to order followers.",
+    "categories": [
+      "Misc"
+    ]
+  },
+  {
+    "name": "NPC Enhancer Gun \u2014 in-game UI to change appearance and crew skills",
+    "categories": [
+      "Outposts",
+      "Weapons/Turrets",
+      "Companions/Followers"
+    ]
+  },
+  {
+    "name": "High-Capacity Cargo Links \u2014 doubles cargo link freighter throughput.",
+    "categories": [
+      "Storage/Logistics"
+    ]
+  },
+  {
+    "name": "Caution on \u201ccommunity patch\u201d mods: maintenance has been uneven in 2025; check their update dates/notes before adopting.",
+    "categories": [
+      "Misc"
+    ]
+  },
+  {
+    "name": "Install SFSE and Address Library.",
+    "categories": [
+      "SFSE/Vortex"
+    ]
+  },
+  {
+    "name": "Install Baka Achievement Enabler",
+    "categories": [
+      "Misc"
+    ]
+  },
+  {
+    "name": "In Vortex Dashboard, set the tool/executable to sfse_loader.exe",
+    "categories": [
+      "SFSE/Vortex"
+    ]
+  },
+  {
+    "name": "Verify: load your save once, make a fresh save, then pop an easy achievement",
+    "categories": [
+      "Misc"
+    ]
+  },
+  {
+    "name": "Increased Outpost Size",
+    "categories": [
+      "Outposts"
+    ]
+  },
+  {
+    "name": "Infinite Outpost Build Budget / expandbuildbudget",
+    "categories": [
+      "Outposts"
+    ]
+  },
+  {
+    "name": "Inquisitor Defense Systems",
+    "categories": [
+      "Misc"
+    ]
+  },
+  {
+    "name": "OUT \u2013 Outpost Ultimate Tweaks",
+    "categories": [
+      "Outposts"
+    ]
+  },
+  {
+    "name": "Best way",
+    "categories": [
+      "Misc"
+    ]
+  },
+  {
+    "name": "SmartDoc or Smart Heal: auto-uses the best kit when you drop below a threshold\u2014no PerkIDs/console needed.",
+    "categories": [
+      "Misc"
+    ]
+  },
+  {
+    "name": "Ship Extension",
+    "categories": [
+      "Misc"
+    ]
+  },
+  {
+    "name": "Ship Extension \u2014 adds multiple internal stair modules for ships",
+    "categories": [
+      "Misc"
+    ]
+  },
+  {
+    "name": "VORTEX",
+    "categories": [
+      "SFSE/Vortex"
+    ]
+  },
+  {
+    "name": "Learn more",
+    "categories": [
+      "Misc"
+    ]
+  },
+  {
+    "name": "\u2022 If you prefer one-click: drop all the CompleteResearch lines into Starfield\\allresearch.txt and run bat allresearch.",
+    "categories": [
+      "Misc"
+    ]
+  },
+  {
+    "name": "EM Turrets \u2014 full line of EM",
+    "categories": [
+      "Weapons/Turrets"
+    ]
+  },
+  {
+    "name": "Missile Turret 19-A-61",
+    "categories": [
+      "Weapons/Turrets"
+    ]
+  },
+  {
+    "name": "Plasma Turret",
+    "categories": [
+      "Weapons/Turrets"
+    ]
+  },
+  {
+    "name": "Starkiller Machine Gun & Turret",
+    "categories": [
+      "Weapons/Turrets"
+    ]
+  },
+  {
+    "name": "Phaser Beams & Cannon \u2014 3 new energy weapons including a 360\u00b0 turret option",
+    "categories": [
+      "Weapons/Turrets"
+    ]
+  },
+  {
+    "name": "Better Full Auto Turret \u2014 buffs fire rate/mags/reload on existing turrets",
+    "categories": [
+      "Weapons/Turrets"
+    ]
+  },
+  {
+    "name": "If you also want outpost auto-turrets",
+    "categories": [
+      "Outposts",
+      "Weapons/Turrets"
+    ]
+  }
+]

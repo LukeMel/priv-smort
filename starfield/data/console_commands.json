@@ -1,0 +1,2010 @@
+[
+  {
+    "command": "(2) Using activator items that open menu screens direct from aid inventory can sometimes (0.01%) freeze the player when ",
+    "count": 1
+  },
+  {
+    "command": "(Ref ID Code).amod (OMOD ID)",
+    "count": 2
+  },
+  {
+    "command": "0000000A Digipicks player.additem 0000000A 100",
+    "count": 1
+  },
+  {
+    "command": "0000000F Credits player.additem 0000000F 100",
+    "count": 1
+  },
+  {
+    "command": "00003A26 Potatoes player.additem 00003A26 1",
+    "count": 1
+  },
+  {
+    "command": "000055A6 Polymer player.additem 000055A6 1",
+    "count": 1
+  },
+  {
+    "command": "000055A7 Ornamental Material player.additem 000055A7 1",
+    "count": 1
+  },
+  {
+    "command": "000055A8 Cosmetic player.additem 000055A8 1",
+    "count": 1
+  },
+  {
+    "command": "000055AF Fiber player.additem 000055AF 1",
+    "count": 1
+  },
+  {
+    "command": "000055B1 Adhesive player.additem 000055B1 1",
+    "count": 1
+  },
+  {
+    "command": "000055B9 Structural Material player.additem 000055B9 1",
+    "count": 1
+  },
+  {
+    "command": "000055BA Lubricant player.additem 000055BA 1",
+    "count": 1
+  },
+  {
+    "command": "000055CC Sealant player.additem 000055CC 1",
+    "count": 1
+  },
+  {
+    "command": "000055CE Solvent player.additem 000055CE 1",
+    "count": 1
+  },
+  {
+    "command": "0000ABF9 Med Pack player.additem 0000ABF9 1",
+    "count": 1
+  },
+  {
+    "command": "0001754E Mark 1 Pack player.placeatme 0001754E 1",
+    "count": 1
+  },
+  {
+    "command": "0001754F Mark I Space Helmet player.placeatme 0001754F 1",
+    "count": 1
+  },
+  {
+    "command": "00023606 Magpulse player.placeatme 00023606 1",
+    "count": 1
+  },
+  {
+    "command": "0002EB42 Magshot player.placeatme 0002EB42 1",
+    "count": 1
+  },
+  {
+    "command": "0003D3A9 Antibiotic Cocktail player.additem 0003D3A9 1",
+    "count": 1
+  },
+  {
+    "command": "0003D3AE Antibiotic Paste player.additem 0003D3AE 1",
+    "count": 1
+  },
+  {
+    "command": "0003D3AF Antibiotic Injector player.additem 0003D3AF 1",
+    "count": 1
+  },
+  {
+    "command": "000547A3 Breach player.placeatme 000547A3 1",
+    "count": 1
+  },
+  {
+    "command": "00065925 Incendiary Experimental Nishina Spacesuit (Legendary) player.placeatme 00065925 1",
+    "count": 1
+  },
+  {
+    "command": "00065926 Reactive Experimental Nishina Helmet (Legendary) player.placeatme 00065926 1",
+    "count": 1
+  },
+  {
+    "command": "000777FD Nutrient player.additem 000777FD 1",
+    "count": 1
+  },
+  {
+    "command": "0007B2B9 Sentinel's UC Antixeno Spacesuit (Legendary) player.placeatme 0007B2B9 1",
+    "count": 1
+  },
+  {
+    "command": "0008AF62 Revenant - Legendary Rifle player.placeatme 0008AF62 1",
+    "count": 1
+  },
+  {
+    "command": "0010A25D Armor-Plated UC AntiXeno Pack (Legendary) player.placeatme 0010A25D 1",
+    "count": 1
+  },
+  {
+    "command": "0010A25E Incendiary UC AntiXeno Space Helmet (Legendary) player.placeatme 0010A25E 1",
+    "count": 1
+  },
+  {
+    "command": "0013F97B Peacemaker Space Helmet player.placeatme 0013F97B 1",
+    "count": 1
+  },
+  {
+    "command": "0013F97D Peacemaker Spacesuit player.placeatme 0013F97D 1",
+    "count": 1
+  },
+  {
+    "command": "0014920B Despondent Assassin - Legendary Rifle player.placeatme 0014920B 1",
+    "count": 1
+  },
+  {
+    "command": "001F22BB Gran-Gran's Spacesuit player.placeatme 001F22BB 1",
+    "count": 1
+  },
+  {
+    "command": "001F22BC Gran-Gran's Space Helmet player.placeatme 001F22BC 1",
+    "count": 1
+  },
+  {
+    "command": "0021A86C UC Shock Power Pack player.placeatme 0021A86C 1",
+    "count": 1
+  },
+  {
+    "command": "00225FC9 Monster Costume player.placeatme 00225FC9 1",
+    "count": 1
+  },
+  {
+    "command": "0022B8F6 Repulsing Explorer Spacesuit (Epic) player.placeatme 0022B8F6 1",
+    "count": 1
+  },
+  {
+    "command": "00246B6A Adaptive Frame player.additem 00246B6A 1",
+    "count": 1
+  },
+  {
+    "command": "0026D963 Big Bang player.placeatme 0026D963 1",
+    "count": 1
+  },
+  {
+    "command": "0026D96D Urban Eagle player.placeatme 0026D96D 1",
+    "count": 1
+  },
+  {
+    "command": "00299592 AMP player.additem 00299592 1",
+    "count": 1
+  },
+  {
+    "command": "002A9DE8 Emergency Kit player.additem 002A9DE8 1",
+    "count": 1
+  },
+  {
+    "command": "00329ABB Eternity's Gate - Legendary Particle Beam Rifle player.placeatme 00329ABB 1",
+    "count": 1
+  },
+  {
+    "command": "Alternatively, you can use \"showlooksmenu player 1\" which will allow you to adjust your character using the initial char",
+    "count": 2
+  },
+  {
+    "command": "Console: player.additem <ID_of_Starshogun_Armor> 1 \u2192 equipitem <sameID>",
+    "count": 1
+  },
+  {
+    "command": "Create a text file at Starfield\\Data\\starter_mats.bat with the player.additem lines above, but with the real IDs filled ",
+    "count": 1
+  },
+  {
+    "command": "Example: player.additem f 50000 \u2192 +50,000 Credits.",
+    "count": 1
+  },
+  {
+    "command": "FF0ABCDE.amod 0028F442 ; Calibrated",
+    "count": 1
+  },
+  {
+    "command": "FF0ABCDE.amod 0028F443 ; Refined",
+    "count": 1
+  },
+  {
+    "command": "FF0ABCDE.amod 0028F444 ; Advanced",
+    "count": 1
+  },
+  {
+    "command": "FF0ABCDE.amod 0028F445 ; Superior (top)",
+    "count": 1
+  },
+  {
+    "command": "FF0ABCDE.amod <OMOD_ID> ; attach to the selected weapon",
+    "count": 1
+  },
+  {
+    "command": "Fang-45 and Peacekeeper MK2 are in Project Warfare \u2013 Addon Pack 1. Use the help queries above, then player.additem.",
+    "count": 1
+  },
+  {
+    "command": "Got it \u2014 here are clean player.additem blocks for all the materials in your list that map to known IDs (with a little ex",
+    "count": 1
+  },
+  {
+    "command": "If a specific model won\u2019t appear, use the console help \"<name>\" 4 weap \u2192 player.additem <ID> 1 (you\u2019ve done this already",
+    "count": 1
+  },
+  {
+    "command": "If you accidentally overfill: player.removeitem <ID> <amount>.",
+    "count": 1
+  },
+  {
+    "command": "If you get lost: tcl off, or fast-travel, or player.movetoqt (to the current quest target).",
+    "count": 1
+  },
+  {
+    "command": "If you need to undo anything: player.removeperk <SkillID>",
+    "count": 1
+  },
+  {
+    "command": "If you want to upgrade a suit instantly via console mods, you can drop it on the ground, click it in the console (get th",
+    "count": 1
+  },
+  {
+    "command": "If you want, I can bundle your favorites into a tiny bat file (e.g., bat heal \u2192 runs player.resethealth; bat lvl60 \u2192 set",
+    "count": 1
+  },
+  {
+    "command": "Move the NPC to you: click them in CK and place in a safe cell, or player.placeatme <ActorBaseID> (testing only).",
+    "count": 1
+  },
+  {
+    "command": "Ripper \u201cClassic\u201d (Addon Pack 1) \u2014 appears in leveled lists at Lv 24; you can still add it directly via player.additem.",
+    "count": 1
+  },
+  {
+    "command": "That adds gentle out-of-combat regen and allows some in-combat regen. Increase/decrease the numbers to taste; you can la",
+    "count": 1
+  },
+  {
+    "command": "To spawn Legendary and Unique Weapon IDs, use the following console command code: player.placeatme (ID Code)",
+    "count": 1
+  },
+  {
+    "command": "Use the command \"player.placeatme [Ship ID Code]\" to spawn your desired ship.",
+    "count": 1
+  },
+  {
+    "command": "Very rarely an AID-item open can freeze in ship interiors; just trigger it again and exit, or player.moveto player if ne",
+    "count": 1
+  },
+  {
+    "command": "Want me to add Regeneration to your current pack via console (amod) instead of crafting? I can give you the 2-line metho",
+    "count": 1
+  },
+  {
+    "command": "Yep\u2014you can add/spawn those Project Warfare guns via console. Because they\u2019re from a mod, you first need the actual Form",
+    "count": 1
+  },
+  {
+    "command": "ah, just these a bunch of times worked player.addperk 002CFCAC",
+    "count": 1
+  },
+  {
+    "command": "back to player.addperk, without the ; please and",
+    "count": 1
+  },
+  {
+    "command": "help \"Operator\" 4 armo \u2192 player.additem <ID> 1 \u2192 equip.",
+    "count": 1
+  },
+  {
+    "command": "player.additem (Ammo ID) (Amount)",
+    "count": 2
+  },
+  {
+    "command": "player.additem (ID Code) (Amount)",
+    "count": 5
+  },
+  {
+    "command": "player.additem 00005568 200",
+    "count": 1
+  },
+  {
+    "command": "player.additem 00005568 200 ; Lead",
+    "count": 1
+  },
+  {
+    "command": "player.additem 00005568 300",
+    "count": 1
+  },
+  {
+    "command": "player.additem 00005568 300 ; Lead",
+    "count": 1
+  },
+  {
+    "command": "player.additem 00005569 60",
+    "count": 1
+  },
+  {
+    "command": "player.additem 00005569 60 ; Dysprosium",
+    "count": 1
+  },
+  {
+    "command": "player.additem 0000556A 120",
+    "count": 2
+  },
+  {
+    "command": "player.additem 0000556A 120 ; Silver",
+    "count": 2
+  },
+  {
+    "command": "player.additem 0000556A 200 ; Silver",
+    "count": 1
+  },
+  {
+    "command": "player.additem 0000556D 200",
+    "count": 1
+  },
+  {
+    "command": "player.additem 0000556D 200 ; Titanium",
+    "count": 1
+  },
+  {
+    "command": "player.additem 0000556D 250",
+    "count": 1
+  },
+  {
+    "command": "player.additem 0000556D 250 ; Titanium",
+    "count": 1
+  },
+  {
+    "command": "player.additem 0000556E 300",
+    "count": 1
+  },
+  {
+    "command": "player.additem 0000556E 300 ; Iron",
+    "count": 1
+  },
+  {
+    "command": "player.additem 0000556E 600",
+    "count": 2
+  },
+  {
+    "command": "player.additem 0000556E 600 ; Iron",
+    "count": 1
+  },
+  {
+    "command": "player.additem 0000556F 120",
+    "count": 1
+  },
+  {
+    "command": "player.additem 0000556F 120 ; Tantalum",
+    "count": 1
+  },
+  {
+    "command": "player.additem 00005570 200 ; Alkanes",
+    "count": 1
+  },
+  {
+    "command": "player.additem 00005571 80",
+    "count": 1
+  },
+  {
+    "command": "player.additem 00005571 80 ; Ytterbium",
+    "count": 1
+  },
+  {
+    "command": "player.additem 00005572 400",
+    "count": 2
+  },
+  {
+    "command": "player.additem 00005572 400 ; Nickel",
+    "count": 1
+  },
+  {
+    "command": "player.additem 00005573 120",
+    "count": 1
+  },
+  {
+    "command": "player.additem 00005573 120 ; Platinum",
+    "count": 1
+  },
+  {
+    "command": "player.additem 00005574 200",
+    "count": 1
+  },
+  {
+    "command": "player.additem 00005575 120",
+    "count": 1
+  },
+  {
+    "command": "player.additem 00005575 120 ; Cobalt",
+    "count": 1
+  },
+  {
+    "command": "player.additem 00005575 200 ; Cobalt",
+    "count": 1
+  },
+  {
+    "command": "player.additem 00005575 300",
+    "count": 1
+  },
+  {
+    "command": "player.additem 00005575 300 ; Cobalt",
+    "count": 1
+  },
+  {
+    "command": "player.additem 00005576 200",
+    "count": 1
+  },
+  {
+    "command": "player.additem 00005576 200 ; Copper",
+    "count": 1
+  },
+  {
+    "command": "player.additem 00005576 400",
+    "count": 1
+  },
+  {
+    "command": "player.additem 00005576 400 ; Copper",
+    "count": 1
+  },
+  {
+    "command": "player.additem 00005577 200 ; Fluorine",
+    "count": 1
+  },
+  {
+    "command": "player.additem 00005577 80",
+    "count": 1
+  },
+  {
+    "command": "player.additem 00005577 80 ; Fluorine",
+    "count": 1
+  },
+  {
+    "command": "player.additem 00005578 60",
+    "count": 1
+  },
+  {
+    "command": "player.additem 00005578 60 ; Tetrafluorides",
+    "count": 1
+  },
+  {
+    "command": "player.additem 00005579 120",
+    "count": 1
+  },
+  {
+    "command": "player.additem 00005579 120 ; Gold",
+    "count": 1
+  },
+  {
+    "command": "player.additem 0000557A 120",
+    "count": 1
+  },
+  {
+    "command": "player.additem 0000557A 120 ; Ionic Liquids",
+    "count": 1
+  },
+  {
+    "command": "player.additem 0000557C 200",
+    "count": 1
+  },
+  {
+    "command": "player.additem 0000557D 300",
+    "count": 1
+  },
+  {
+    "command": "player.additem 0000557D 300 ; Aluminum",
+    "count": 1
+  },
+  {
+    "command": "player.additem 0000557D 600",
+    "count": 2
+  },
+  {
+    "command": "player.additem 0000557D 600 ; Aluminum",
+    "count": 1
+  },
+  {
+    "command": "player.additem 0000557E 120",
+    "count": 1
+  },
+  {
+    "command": "player.additem 0000557E 120 ; Chlorosilanes",
+    "count": 1
+  },
+  {
+    "command": "player.additem 0000557E 200",
+    "count": 1
+  },
+  {
+    "command": "player.additem 0000557E 200 ; Chlorosilanes",
+    "count": 2
+  },
+  {
+    "command": "player.additem 0000557F 80",
+    "count": 1
+  },
+  {
+    "command": "player.additem 0000557F 80 ; Lithium",
+    "count": 1
+  },
+  {
+    "command": "player.additem 00005580 80",
+    "count": 1
+  },
+  {
+    "command": "player.additem 00005580 80 ; Neodymium",
+    "count": 1
+  },
+  {
+    "command": "player.additem 00005585 220",
+    "count": 1
+  },
+  {
+    "command": "player.additem 00005585 220 ; Benzene",
+    "count": 1
+  },
+  {
+    "command": "player.additem 00005585 300 ; Benzene",
+    "count": 1
+  },
+  {
+    "command": "player.additem 00005586 120",
+    "count": 1
+  },
+  {
+    "command": "player.additem 00005586 120 ; Carboxylic Acids",
+    "count": 1
+  },
+  {
+    "command": "player.additem 00005587 80",
+    "count": 1
+  },
+  {
+    "command": "player.additem 00005587 80 ; Neon",
+    "count": 1
+  },
+  {
+    "command": "player.additem 00005588 200",
+    "count": 1
+  },
+  {
+    "command": "player.additem 00005588 200 ; Argon",
+    "count": 1
+  },
+  {
+    "command": "player.additem 00005588 60",
+    "count": 1
+  },
+  {
+    "command": "player.additem 00005588 60 ; Argon",
+    "count": 1
+  },
+  {
+    "command": "player.additem 00005589 100",
+    "count": 1
+  },
+  {
+    "command": "player.additem 00005589 100 ; Uranium",
+    "count": 1
+  },
+  {
+    "command": "player.additem 00005589 120",
+    "count": 1
+  },
+  {
+    "command": "player.additem 00005589 120 ; Uranium",
+    "count": 1
+  },
+  {
+    "command": "player.additem 0000558A 120",
+    "count": 2
+  },
+  {
+    "command": "player.additem 0000558A 120 ; Iridium",
+    "count": 2
+  },
+  {
+    "command": "player.additem 0000558A 200 ; Iridium",
+    "count": 1
+  },
+  {
+    "command": "player.additem 0000558B 120",
+    "count": 1
+  },
+  {
+    "command": "player.additem 0000558B 120 ; Vanadium",
+    "count": 1
+  },
+  {
+    "command": "player.additem 0000558E 500",
+    "count": 1
+  },
+  {
+    "command": "player.additem 0000558E 500 ; Helium-3",
+    "count": 1
+  },
+  {
+    "command": "player.additem 00005591 120",
+    "count": 1
+  },
+  {
+    "command": "player.additem 00005591 120 ; Water",
+    "count": 1
+  },
+  {
+    "command": "player.additem 00005591 250",
+    "count": 1
+  },
+  {
+    "command": "player.additem 00005591 250 ; Water",
+    "count": 1
+  },
+  {
+    "command": "player.additem 000055A6 120",
+    "count": 1
+  },
+  {
+    "command": "player.additem 000055A6 120 ; Polymer",
+    "count": 1
+  },
+  {
+    "command": "player.additem 000055A6 250",
+    "count": 1
+  },
+  {
+    "command": "player.additem 000055A6 250 ; Polymer",
+    "count": 1
+  },
+  {
+    "command": "player.additem 000055A7 80",
+    "count": 1
+  },
+  {
+    "command": "player.additem 000055A7 80 ; Ornamental Material",
+    "count": 1
+  },
+  {
+    "command": "player.additem 000055A8 200",
+    "count": 1
+  },
+  {
+    "command": "player.additem 000055A9 120",
+    "count": 1
+  },
+  {
+    "command": "player.additem 000055A9 120 ; Analgesic",
+    "count": 1
+  },
+  {
+    "command": "player.additem 000055AB 120",
+    "count": 1
+  },
+  {
+    "command": "player.additem 000055AB 120 ; Antimicrobial",
+    "count": 1
+  },
+  {
+    "command": "player.additem 000055AC 300 ; Spice",
+    "count": 1
+  },
+  {
+    "command": "player.additem 000055AC 80",
+    "count": 1
+  },
+  {
+    "command": "player.additem 000055AC 80 ; Spice",
+    "count": 1
+  },
+  {
+    "command": "player.additem 000055AD 120",
+    "count": 1
+  },
+  {
+    "command": "player.additem 000055AD 120 ; Sedative",
+    "count": 1
+  },
+  {
+    "command": "player.additem 000055AE 120",
+    "count": 1
+  },
+  {
+    "command": "player.additem 000055AE 120 ; Stimulant",
+    "count": 1
+  },
+  {
+    "command": "player.additem 000055AF 120",
+    "count": 1
+  },
+  {
+    "command": "player.additem 000055AF 120 ; Fiber",
+    "count": 1
+  },
+  {
+    "command": "player.additem 000055AF 350",
+    "count": 1
+  },
+  {
+    "command": "player.additem 000055AF 350 ; Fiber",
+    "count": 1
+  },
+  {
+    "command": "player.additem 000055B0 80",
+    "count": 1
+  },
+  {
+    "command": "player.additem 000055B0 80 ; Membrane",
+    "count": 1
+  },
+  {
+    "command": "player.additem 000055B1 250",
+    "count": 1
+  },
+  {
+    "command": "player.additem 000055B1 250 ; Adhesive",
+    "count": 1
+  },
+  {
+    "command": "player.additem 000055B1 300",
+    "count": 1
+  },
+  {
+    "command": "player.additem 000055B2 200",
+    "count": 1
+  },
+  {
+    "command": "player.additem 000055B3 60",
+    "count": 1
+  },
+  {
+    "command": "player.additem 000055B3 60 ; Immunostimulant",
+    "count": 1
+  },
+  {
+    "command": "player.additem 000055B8 200 ; Aromatic",
+    "count": 1
+  },
+  {
+    "command": "player.additem 000055B9 120",
+    "count": 1
+  },
+  {
+    "command": "player.additem 000055B9 120 ; Structural Material",
+    "count": 1
+  },
+  {
+    "command": "player.additem 000055BA 120",
+    "count": 1
+  },
+  {
+    "command": "player.additem 000055BA 120 ; Lubricant",
+    "count": 1
+  },
+  {
+    "command": "player.additem 000055BA 180",
+    "count": 1
+  },
+  {
+    "command": "player.additem 000055BA 180 ; Lubricant",
+    "count": 1
+  },
+  {
+    "command": "player.additem 000055CB 120",
+    "count": 1
+  },
+  {
+    "command": "player.additem 000055CB 120 ; Toxin",
+    "count": 1
+  },
+  {
+    "command": "player.additem 000055CC 250",
+    "count": 1
+  },
+  {
+    "command": "player.additem 000055CC 250 ; Sealant",
+    "count": 1
+  },
+  {
+    "command": "player.additem 000055CC 500",
+    "count": 1
+  },
+  {
+    "command": "player.additem 000055CD 120",
+    "count": 1
+  },
+  {
+    "command": "player.additem 000055CD 120 ; Amino Acids",
+    "count": 1
+  },
+  {
+    "command": "player.additem 000055CD 3",
+    "count": 1
+  },
+  {
+    "command": "player.additem 000055CE 120",
+    "count": 1
+  },
+  {
+    "command": "player.additem 000055CE 120 ; Solvent",
+    "count": 1
+  },
+  {
+    "command": "player.additem 000055CE 180",
+    "count": 1
+  },
+  {
+    "command": "player.additem 000055CE 180 ; Solvent",
+    "count": 1
+  },
+  {
+    "command": "player.additem 000057D9 120",
+    "count": 2
+  },
+  {
+    "command": "player.additem 000057D9 120 ; Beryllium",
+    "count": 2
+  },
+  {
+    "command": "player.additem 000057D9 200",
+    "count": 1
+  },
+  {
+    "command": "player.additem 000057D9 200 ; Beryllium",
+    "count": 1
+  },
+  {
+    "command": "player.additem 000057DF 100",
+    "count": 1
+  },
+  {
+    "command": "player.additem 000057DF 100 ; Caesium",
+    "count": 1
+  },
+  {
+    "command": "player.additem 000057E1 60",
+    "count": 1
+  },
+  {
+    "command": "player.additem 000057E1 60 ; Europium",
+    "count": 1
+  },
+  {
+    "command": "player.additem 000057E1 80",
+    "count": 1
+  },
+  {
+    "command": "player.additem 000057E1 80 ; Europium",
+    "count": 1
+  },
+  {
+    "command": "player.additem 0001754D 1",
+    "count": 1
+  },
+  {
+    "command": "player.additem 0001754E 1",
+    "count": 1
+  },
+  {
+    "command": "player.additem 0001754F 1",
+    "count": 1
+  },
+  {
+    "command": "player.additem 0001A2B3 200 ; gives 200 Aluminum",
+    "count": 1
+  },
+  {
+    "command": "player.additem 0002EB36 1",
+    "count": 2
+  },
+  {
+    "command": "player.additem 0002EB45 1",
+    "count": 3
+  },
+  {
+    "command": "player.additem 0004AD3E 1200",
+    "count": 2
+  },
+  {
+    "command": "player.additem 0004AD3E 3000",
+    "count": 1
+  },
+  {
+    "command": "player.additem 000546CC 1",
+    "count": 1
+  },
+  {
+    "command": "player.additem 000556B 200",
+    "count": 1
+  },
+  {
+    "command": "player.additem 000556B 200 ; Tungsten",
+    "count": 1
+  },
+  {
+    "command": "player.additem 000556B 300",
+    "count": 1
+  },
+  {
+    "command": "player.additem 000556B 300 ; Tungsten",
+    "count": 2
+  },
+  {
+    "command": "player.additem 000777FD 120",
+    "count": 1
+  },
+  {
+    "command": "player.additem 000777FD 120 ; Nutrient",
+    "count": 1
+  },
+  {
+    "command": "player.additem 000788D6 40",
+    "count": 1
+  },
+  {
+    "command": "player.additem 000788D6 40 ; Caelumite",
+    "count": 1
+  },
+  {
+    "command": "player.additem 0016640A 1",
+    "count": 1
+  },
+  {
+    "command": "player.additem 0016640B 1",
+    "count": 1
+  },
+  {
+    "command": "player.additem 001E2B17 1",
+    "count": 1
+  },
+  {
+    "command": "player.additem 001E2B18 1",
+    "count": 1
+  },
+  {
+    "command": "player.additem 001E2B19 1",
+    "count": 1
+  },
+  {
+    "command": "player.additem 00202782 30",
+    "count": 1
+  },
+  {
+    "command": "player.additem 00202782 30 ; Substrate Molecule Sieve",
+    "count": 1
+  },
+  {
+    "command": "player.additem 00202F5A 20",
+    "count": 1
+  },
+  {
+    "command": "player.additem 00202F5A 20 ; Aldumite Drilling Rig",
+    "count": 1
+  },
+  {
+    "command": "player.additem 00203EAF 30",
+    "count": 1
+  },
+  {
+    "command": "player.additem 00203EAF 30 ; Tasine Superconductor",
+    "count": 1
+  },
+  {
+    "command": "player.additem 00203EB0 20",
+    "count": 1
+  },
+  {
+    "command": "player.additem 00203EB0 20 ; Veryl-Treated Manifold",
+    "count": 1
+  },
+  {
+    "command": "player.additem 00203EB2 20",
+    "count": 1
+  },
+  {
+    "command": "player.additem 00203EB2 20 ; Rothicite Magnet",
+    "count": 1
+  },
+  {
+    "command": "player.additem 00203EB3 20",
+    "count": 1
+  },
+  {
+    "command": "player.additem 00203EB3 20 ; Vytinium Fuel Rod",
+    "count": 1
+  },
+  {
+    "command": "player.additem 00203EB4 30",
+    "count": 1
+  },
+  {
+    "command": "player.additem 00203EB4 30 ; Indicite Wafer",
+    "count": 1
+  },
+  {
+    "command": "player.additem 0020A02F 30",
+    "count": 1
+  },
+  {
+    "command": "player.additem 0020A02F 30 ; Drilling Rig",
+    "count": 1
+  },
+  {
+    "command": "player.additem 00226299 1",
+    "count": 1
+  },
+  {
+    "command": "player.additem 00246B5C 40",
+    "count": 1
+  },
+  {
+    "command": "player.additem 00246B5C 40 ; Power Circuit",
+    "count": 1
+  },
+  {
+    "command": "player.additem 00246B5F 40",
+    "count": 1
+  },
+  {
+    "command": "player.additem 00246B5F 40 ; Microsecond Regulator",
+    "count": 1
+  },
+  {
+    "command": "player.additem 00246B5F 50",
+    "count": 1
+  },
+  {
+    "command": "player.additem 00246B65 120",
+    "count": 1
+  },
+  {
+    "command": "player.additem 00246B65 120 ; Zero Wire",
+    "count": 1
+  },
+  {
+    "command": "player.additem 00246B65 50",
+    "count": 1
+  },
+  {
+    "command": "player.additem 00246B66 30",
+    "count": 1
+  },
+  {
+    "command": "player.additem 00246B66 30 ; Zero-G Gimbal",
+    "count": 1
+  },
+  {
+    "command": "player.additem 00246B68 50",
+    "count": 1
+  },
+  {
+    "command": "player.additem 00246B68 60",
+    "count": 1
+  },
+  {
+    "command": "player.additem 00246B68 60 ; Tau Grade Rheostat",
+    "count": 1
+  },
+  {
+    "command": "player.additem 00246B69 30",
+    "count": 1
+  },
+  {
+    "command": "player.additem 00246B69 30 ; Supercooled Magnet",
+    "count": 1
+  },
+  {
+    "command": "player.additem 00246B6A 120",
+    "count": 1
+  },
+  {
+    "command": "player.additem 00246B6A 120 ; Adaptive Frame",
+    "count": 1
+  },
+  {
+    "command": "player.additem 00246B6D 40",
+    "count": 1
+  },
+  {
+    "command": "player.additem 00246B6D 40 ; Semimetal Wafer",
+    "count": 1
+  },
+  {
+    "command": "player.additem 00246B6F 60",
+    "count": 1
+  },
+  {
+    "command": "player.additem 00246B6F 60 ; Reactive Gauge",
+    "count": 1
+  },
+  {
+    "command": "player.additem 00246B70 40",
+    "count": 1
+  },
+  {
+    "command": "player.additem 00246B70 40 ; Mag Pressure Tank",
+    "count": 1
+  },
+  {
+    "command": "player.additem 00246B71 1",
+    "count": 1
+  },
+  {
+    "command": "player.additem 00246B71 80",
+    "count": 1
+  },
+  {
+    "command": "player.additem 00246B71 80 ; Positron Battery",
+    "count": 1
+  },
+  {
+    "command": "player.additem 00246B72 200",
+    "count": 1
+  },
+  {
+    "command": "player.additem 00246B72 80",
+    "count": 1
+  },
+  {
+    "command": "player.additem 00246B72 80 ; Polytextile",
+    "count": 1
+  },
+  {
+    "command": "player.additem 00246B73 40",
+    "count": 1
+  },
+  {
+    "command": "player.additem 00246B73 40 ; Paramagnon Conductor",
+    "count": 1
+  },
+  {
+    "command": "player.additem 00246B74 60",
+    "count": 1
+  },
+  {
+    "command": "player.additem 00246B74 60 ; Monopropellant",
+    "count": 1
+  },
+  {
+    "command": "player.additem 00246B75 40",
+    "count": 1
+  },
+  {
+    "command": "player.additem 00246B75 40 ; Molecular Sieve",
+    "count": 1
+  },
+  {
+    "command": "player.additem 00246B76 60",
+    "count": 1
+  },
+  {
+    "command": "player.additem 00246B76 60 ; Isotopic Coolant",
+    "count": 1
+  },
+  {
+    "command": "player.additem 00246B77 40",
+    "count": 1
+  },
+  {
+    "command": "player.additem 00246B77 40 ; Isocentered Magnet",
+    "count": 1
+  },
+  {
+    "command": "player.additem 00246B77 50",
+    "count": 2
+  },
+  {
+    "command": "player.additem 00246B79 40",
+    "count": 1
+  },
+  {
+    "command": "player.additem 00246B79 40 ; Nuclear Fuel Rod",
+    "count": 1
+  },
+  {
+    "command": "player.additem 00246B7B 40",
+    "count": 1
+  },
+  {
+    "command": "player.additem 00246B7B 40 ; Control Rod",
+    "count": 1
+  },
+  {
+    "command": "player.additem 00246B7C 30",
+    "count": 1
+  },
+  {
+    "command": "player.additem 00246B7C 30 ; Austenitic Manifold",
+    "count": 1
+  },
+  {
+    "command": "player.additem 002773C8 1",
+    "count": 2
+  },
+  {
+    "command": "player.additem 0027C4A1 40",
+    "count": 1
+  },
+  {
+    "command": "player.additem 0027C4A1 40 ; Mercury",
+    "count": 1
+  },
+  {
+    "command": "player.additem 0029F3FC 120",
+    "count": 1
+  },
+  {
+    "command": "player.additem 0029F3FC 120 ; Metabolic Agent",
+    "count": 1
+  },
+  {
+    "command": "player.additem 0029F3FC 300 ; Metabolic Agent",
+    "count": 1
+  },
+  {
+    "command": "player.additem 0029F400 80",
+    "count": 1
+  },
+  {
+    "command": "player.additem 0029F400 80 ; Pigment",
+    "count": 1
+  },
+  {
+    "command": "player.additem 0029F40D 3",
+    "count": 1
+  },
+  {
+    "command": "player.additem 0029F40D 60",
+    "count": 1
+  },
+  {
+    "command": "player.additem 0029F40D 60 ; Hypercatalyst",
+    "count": 1
+  },
+  {
+    "command": "player.additem 002A9DE8 2",
+    "count": 1
+  },
+  {
+    "command": "player.additem 002B558B 3000",
+    "count": 1
+  },
+  {
+    "command": "player.additem 002B558B 600",
+    "count": 2
+  },
+  {
+    "command": "player.additem 002B5590 3000",
+    "count": 1
+  },
+  {
+    "command": "player.additem 002B5597 3000",
+    "count": 1
+  },
+  {
+    "command": "player.additem 002B5598 3000",
+    "count": 1
+  },
+  {
+    "command": "player.additem 002B5599 3000",
+    "count": 1
+  },
+  {
+    "command": "player.additem 002B5599 800",
+    "count": 2
+  },
+  {
+    "command": "player.additem 002C0D6C 200",
+    "count": 1
+  },
+  {
+    "command": "player.additem 002C0D6D 200",
+    "count": 1
+  },
+  {
+    "command": "player.additem 002C0D6F 200",
+    "count": 1
+  },
+  {
+    "command": "player.additem 002C0D71 200",
+    "count": 1
+  },
+  {
+    "command": "player.additem 00329ABB 1",
+    "count": 1
+  },
+  {
+    "command": "player.additem 18000801 1 ; Example: Starshogun Armor (use your ARMO ID)",
+    "count": 1
+  },
+  {
+    "command": "player.additem <AdhesiveID> 200",
+    "count": 2
+  },
+  {
+    "command": "player.additem <AluminumID> 500",
+    "count": 1
+  },
+  {
+    "command": "player.additem <AluminumID> 600",
+    "count": 1
+  },
+  {
+    "command": "player.additem <ArgonID> 200",
+    "count": 1
+  },
+  {
+    "command": "player.additem <BenzeneID> 200",
+    "count": 1
+  },
+  {
+    "command": "player.additem <ChlorineID> 200",
+    "count": 1
+  },
+  {
+    "command": "player.additem <CobaltID> 300",
+    "count": 1
+  },
+  {
+    "command": "player.additem <CopperID> 400",
+    "count": 1
+  },
+  {
+    "command": "player.additem <FiberID> 300",
+    "count": 1
+  },
+  {
+    "command": "player.additem <FormID> 1",
+    "count": 2
+  },
+  {
+    "command": "player.additem <FormID> 1 \u2192 equip \u2192 invisible or red \u201c!\u201d = meshes/textures BA2 not loading (step 3).",
+    "count": 1
+  },
+  {
+    "command": "player.additem <FormID> <count>",
+    "count": 1
+  },
+  {
+    "command": "player.additem <FormID> <count> \u2014 puts the base item straight into your inventory. Cleanest for weapons/armor/aid/mats.",
+    "count": 1
+  },
+  {
+    "command": "player.additem <GoldID> 100",
+    "count": 1
+  },
+  {
+    "command": "player.additem <Helium3ID> 500",
+    "count": 1
+  },
+  {
+    "command": "player.additem <ID> 200",
+    "count": 1
+  },
+  {
+    "command": "player.additem <ID> 50",
+    "count": 1
+  },
+  {
+    "command": "player.additem <ID> <amount>",
+    "count": 1
+  },
+  {
+    "command": "player.additem <IronID> 600",
+    "count": 1
+  },
+  {
+    "command": "player.additem <LeadID> 300",
+    "count": 1
+  },
+  {
+    "command": "player.additem <LubricantID> 150",
+    "count": 1
+  },
+  {
+    "command": "player.additem <NickelID> 400",
+    "count": 1
+  },
+  {
+    "command": "player.additem <PolymerID> 200",
+    "count": 1
+  },
+  {
+    "command": "player.additem <SealantID> 200",
+    "count": 2
+  },
+  {
+    "command": "player.additem <SilverID> 100",
+    "count": 1
+  },
+  {
+    "command": "player.additem <SolventID> 150",
+    "count": 1
+  },
+  {
+    "command": "player.additem <TitaniumID> 200",
+    "count": 1
+  },
+  {
+    "command": "player.additem <TungstenID> 300",
+    "count": 1
+  },
+  {
+    "command": "player.additem <WaterID> 200",
+    "count": 1
+  },
+  {
+    "command": "player.additem FE0A1234 1",
+    "count": 1
+  },
+  {
+    "command": "player.additem f <amount>",
+    "count": 1
+  },
+  {
+    "command": "player.additem please",
+    "count": 1
+  },
+  {
+    "command": "player.addperk (Perk ID)",
+    "count": 3
+  },
+  {
+    "command": "player.addperk 0004CE2D",
+    "count": 3
+  },
+  {
+    "command": "player.addperk 0004CE2D 1",
+    "count": 1
+  },
+  {
+    "command": "player.addperk 0004CE2D 1 ; Special Projects (single-rank)",
+    "count": 1
+  },
+  {
+    "command": "player.addperk 0004CE2D ; Special Projects",
+    "count": 1
+  },
+  {
+    "command": "player.addperk 00143B6B 4 ; Payloads",
+    "count": 1
+  },
+  {
+    "command": "player.addperk 0023826F",
+    "count": 3
+  },
+  {
+    "command": "player.addperk 0023826F 4",
+    "count": 1
+  },
+  {
+    "command": "player.addperk 0023826F 4 ; Outpost Management",
+    "count": 1
+  },
+  {
+    "command": "player.addperk 0023826F ; Outpost Management",
+    "count": 1
+  },
+  {
+    "command": "player.addperk 0027B9ED 4 ; Automated Weapon Systems",
+    "count": 1
+  },
+  {
+    "command": "player.addperk 0027CBC1",
+    "count": 3
+  },
+  {
+    "command": "player.addperk 0027CBC1 4",
+    "count": 1
+  },
+  {
+    "command": "player.addperk 0027CBC1 4 ; Surveying",
+    "count": 1
+  },
+  {
+    "command": "player.addperk 0027CBC1 ; Surveying",
+    "count": 1
+  },
+  {
+    "command": "player.addperk 0027CBC2",
+    "count": 3
+  },
+  {
+    "command": "player.addperk 0027CBC2 4",
+    "count": 1
+  },
+  {
+    "command": "player.addperk 0027CBC2 4 ; Planetary Habitation",
+    "count": 1
+  },
+  {
+    "command": "player.addperk 0027CBC2 ; Planetary Habitation",
+    "count": 1
+  },
+  {
+    "command": "player.addperk 0027CBC3",
+    "count": 6
+  },
+  {
+    "command": "player.addperk 0027CBC3 4",
+    "count": 1
+  },
+  {
+    "command": "player.addperk 0027CBC3 4 ; Spacesuit Design",
+    "count": 1
+  },
+  {
+    "command": "player.addperk 0027CBC3 ; Spacesuit Design",
+    "count": 1
+  },
+  {
+    "command": "player.addperk 002AC953 4 ; Starship Engineering",
+    "count": 1
+  },
+  {
+    "command": "player.addperk 002C2C59 4 ; Shield Systems",
+    "count": 1
+  },
+  {
+    "command": "player.addperk 002C2C5A 4 ; Aneutronic Fusion",
+    "count": 1
+  },
+  {
+    "command": "player.addperk 002C2C5B 4 ; Particle Beam Weapon Systems",
+    "count": 1
+  },
+  {
+    "command": "player.addperk 002C53B2 4 ; EM Weapon Systems",
+    "count": 1
+  },
+  {
+    "command": "player.addperk 002C53B3",
+    "count": 3
+  },
+  {
+    "command": "player.addperk 002C5553",
+    "count": 3
+  },
+  {
+    "command": "player.addperk 002C5553 4",
+    "count": 1
+  },
+  {
+    "command": "player.addperk 002C5553 ; Robotics",
+    "count": 1
+  },
+  {
+    "command": "player.addperk 002C5557",
+    "count": 3
+  },
+  {
+    "command": "player.addperk 002C5557 4",
+    "count": 1
+  },
+  {
+    "command": "player.addperk 002C5557 4 ; Botany",
+    "count": 1
+  },
+  {
+    "command": "player.addperk 002C5557 ; Botany",
+    "count": 1
+  },
+  {
+    "command": "player.addperk 002C5558 4 ; Missile Weapon Systems",
+    "count": 1
+  },
+  {
+    "command": "player.addperk 002C5559 4 ; Targeting Control Systems",
+    "count": 1
+  },
+  {
+    "command": "player.addperk 002C555C",
+    "count": 6
+  },
+  {
+    "command": "player.addperk 002C555C 4",
+    "count": 1
+  },
+  {
+    "command": "player.addperk 002C555C 4 ; Research Methods",
+    "count": 1
+  },
+  {
+    "command": "player.addperk 002C555C ; Research Methods",
+    "count": 1
+  },
+  {
+    "command": "player.addperk 002C5560 4 ; Astrodynamics",
+    "count": 1
+  },
+  {
+    "command": "player.addperk 002C59DB 4 ; Energy Weapon Systems",
+    "count": 1
+  },
+  {
+    "command": "player.addperk 002C59DC",
+    "count": 3
+  },
+  {
+    "command": "player.addperk 002C59DC 4",
+    "count": 1
+  },
+  {
+    "command": "player.addperk 002C59DC 4 ; Starship Design",
+    "count": 1
+  },
+  {
+    "command": "player.addperk 002C59DC ; Starship Design",
+    "count": 1
+  },
+  {
+    "command": "player.addperk 002C59E0",
+    "count": 3
+  },
+  {
+    "command": "player.addperk 002C59E0 4",
+    "count": 1
+  },
+  {
+    "command": "player.addperk 002C59E0 4 ; Outpost Engineering",
+    "count": 1
+  },
+  {
+    "command": "player.addperk 002C59E0 ; Outpost Engineering",
+    "count": 1
+  },
+  {
+    "command": "player.addperk 002C890C",
+    "count": 6
+  },
+  {
+    "command": "player.addperk 002C890C 4",
+    "count": 1
+  },
+  {
+    "command": "player.addperk 002C890C 4 ; Weapon Engineering",
+    "count": 1
+  },
+  {
+    "command": "player.addperk 002C890C ; Weapon Engineering",
+    "count": 1
+  },
+  {
+    "command": "player.addperk 002C890D",
+    "count": 3
+  },
+  {
+    "command": "player.addperk 002C890D 4 ; Leadership (crew cap/bonuses)",
+    "count": 1
+  },
+  {
+    "command": "player.addperk 002CE29F",
+    "count": 3
+  },
+  {
+    "command": "player.addperk 002CE29F 4",
+    "count": 1
+  },
+  {
+    "command": "player.addperk 002CE29F 4 ; Geology",
+    "count": 1
+  },
+  {
+    "command": "player.addperk 002CE29F ; Geology",
+    "count": 1
+  },
+  {
+    "command": "player.addperk 002CE2C0",
+    "count": 3
+  },
+  {
+    "command": "player.addperk 002CE2C0 4",
+    "count": 1
+  },
+  {
+    "command": "player.addperk 002CE2C0 4 ; Chemistry",
+    "count": 1
+  },
+  {
+    "command": "player.addperk 002CE2C0 ; Chemistry",
+    "count": 1
+  },
+  {
+    "command": "player.addperk 002CE2C2 4 ; Ballistic Weapon Systems",
+    "count": 1
+  },
+  {
+    "command": "player.addperk 002CE2DE 4 ; Engine Systems",
+    "count": 1
+  },
+  {
+    "command": "player.addperk 002CFCAC",
+    "count": 2
+  },
+  {
+    "command": "player.addperk 002CFCAC 4",
+    "count": 1
+  },
+  {
+    "command": "player.addperk 002CFCAC 4 ; Piloting",
+    "count": 1
+  },
+  {
+    "command": "player.addperk 002CFCAC ; Piloting",
+    "count": 1
+  },
+  {
+    "command": "player.addperk 002CFCB1",
+    "count": 3
+  },
+  {
+    "command": "player.addperk 002CFCB1 4",
+    "count": 1
+  },
+  {
+    "command": "player.addperk 002CFCB1 4 ; Scanning",
+    "count": 1
+  },
+  {
+    "command": "player.addperk 002CFCB1 ; Scanning",
+    "count": 1
+  },
+  {
+    "command": "player.getitemcount f",
+    "count": 1
+  },
+  {
+    "command": "player.incpcs \"Skill_Botany\"",
+    "count": 3
+  },
+  {
+    "command": "player.incpcs \"Skill_Chemistry\"",
+    "count": 3
+  },
+  {
+    "command": "player.incpcs \"Skill_Geology\"",
+    "count": 3
+  },
+  {
+    "command": "player.incpcs \"Skill_OutpostEngineering\"",
+    "count": 3
+  },
+  {
+    "command": "player.incpcs \"Skill_OutpostManagement\"",
+    "count": 3
+  },
+  {
+    "command": "player.incpcs \"Skill_Piloting\"",
+    "count": 3
+  },
+  {
+    "command": "player.incpcs \"Skill_PlanetaryHabitation\"",
+    "count": 3
+  },
+  {
+    "command": "player.incpcs \"Skill_ResearchMethods\"",
+    "count": 3
+  },
+  {
+    "command": "player.incpcs \"Skill_Robotics\"",
+    "count": 3
+  },
+  {
+    "command": "player.incpcs \"Skill_Scanning\"",
+    "count": 3
+  },
+  {
+    "command": "player.incpcs \"Skill_ShipCommand\"",
+    "count": 3
+  },
+  {
+    "command": "player.incpcs \"Skill_SpacesuitDesign\"",
+    "count": 3
+  },
+  {
+    "command": "player.incpcs \"Skill_StarshipDesign\"",
+    "count": 3
+  },
+  {
+    "command": "player.incpcs \"Skill_Surveying\"",
+    "count": 3
+  },
+  {
+    "command": "player.incpcs \"Skill_WeaponEngineering\"",
+    "count": 3
+  },
+  {
+    "command": "player.incpcs botany",
+    "count": 4
+  },
+  {
+    "command": "player.incpcs chemistry",
+    "count": 4
+  },
+  {
+    "command": "player.incpcs geology",
+    "count": 4
+  },
+  {
+    "command": "player.incpcs outpostengineering",
+    "count": 4
+  },
+  {
+    "command": "player.incpcs outpostmanagement",
+    "count": 4
+  },
+  {
+    "command": "player.incpcs piloting",
+    "count": 4
+  },
+  {
+    "command": "player.incpcs planetaryhabitation",
+    "count": 4
+  },
+  {
+    "command": "player.incpcs researchmethods",
+    "count": 4
+  },
+  {
+    "command": "player.incpcs robotics",
+    "count": 4
+  },
+  {
+    "command": "player.incpcs scanning",
+    "count": 4
+  },
+  {
+    "command": "player.incpcs spacesuitdesign",
+    "count": 4
+  },
+  {
+    "command": "player.incpcs starshipdesign",
+    "count": 4
+  },
+  {
+    "command": "player.incpcs surveying",
+    "count": 4
+  },
+  {
+    "command": "player.incpcs weaponengineering",
+    "count": 4
+  },
+  {
+    "command": "player.modav HealRate 0.5",
+    "count": 1
+  },
+  {
+    "command": "player.modav experience 50000",
+    "count": 1
+  },
+  {
+    "command": "player.modav experience 50000 \u2014 adds XP and triggers normal level-up(s) with skill points. (Adjust the amount.)",
+    "count": 1
+  },
+  {
+    "command": "player.modav experience <amount>",
+    "count": 1
+  },
+  {
+    "command": "player.paycrimegold 0 0 (Faction ID)",
+    "count": 1
+  },
+  {
+    "command": "player.placeatme (Boost Pack ID) 1",
+    "count": 1
+  },
+  {
+    "command": "player.placeatme (Helmet ID) 1",
+    "count": 1
+  },
+  {
+    "command": "player.placeatme (ID Code)",
+    "count": 2
+  },
+  {
+    "command": "player.placeatme (Spacesuit ID) (Amount)",
+    "count": 1
+  },
+  {
+    "command": "player.placeatme (Spacesuit ID) 1",
+    "count": 1
+  },
+  {
+    "command": "player.placeatme (Weapon ID) (Amount)",
+    "count": 1
+  },
+  {
+    "command": "player.placeatme (Weapon ID) 1",
+    "count": 1
+  },
+  {
+    "command": "player.placeatme 0001754D 1",
+    "count": 1
+  },
+  {
+    "command": "player.placeatme 0001754E 1",
+    "count": 1
+  },
+  {
+    "command": "player.placeatme 0001754F 1",
+    "count": 1
+  },
+  {
+    "command": "player.placeatme 00054327 6 ; LvlCrimsonFleet_Assault",
+    "count": 1
+  },
+  {
+    "command": "player.placeatme 0016640A 1",
+    "count": 1
+  },
+  {
+    "command": "player.placeatme 0016640B 1",
+    "count": 1
+  },
+  {
+    "command": "player.placeatme 001E2B17 1",
+    "count": 1
+  },
+  {
+    "command": "player.placeatme 001E2B18 1",
+    "count": 1
+  },
+  {
+    "command": "player.placeatme 001E2B19 1",
+    "count": 1
+  },
+  {
+    "command": "player.placeatme 00226299 1",
+    "count": 1
+  },
+  {
+    "command": "player.placeatme 0026FF67 6 ; LvlEcliptic_Assault",
+    "count": 1
+  },
+  {
+    "command": "player.placeatme 0027BB8F 6 ; LvlSpacer_Assault",
+    "count": 1
+  },
+  {
+    "command": "player.placeatme <FormID> <count> \u2014 spawns a new object in the world at your feet (then you pick it up). Useful for thin",
+    "count": 1
+  },
+  {
+    "command": "player.removeitem f <amount>",
+    "count": 1
+  },
+  {
+    "command": "player.removeperk (Trait ID)",
+    "count": 2
+  },
+  {
+    "command": "player.removeperk 002C53B3",
+    "count": 1
+  },
+  {
+    "command": "player.removeperk 002C890D",
+    "count": 1
+  },
+  {
+    "command": "player.resethealth \u2014 instantly restores your HP to 100%.",
+    "count": 1
+  },
+  {
+    "command": "player.restoreav health 1000 \u2014 adds 1000 HP (won\u2019t exceed your current max). Repeat or change the number as needed.",
+    "count": 1
+  },
+  {
+    "command": "player.setav CombatHealthRegenMult 0.5",
+    "count": 1
+  },
+  {
+    "command": "player.setav health 500 \u2014 sets your maximum health to 500 (useful if you want a higher cap, then player.resethealth).",
+    "count": 1
+  },
+  {
+    "command": "player.setlevel 50",
+    "count": 1
+  },
+  {
+    "command": "player.setlevel 50 \u2014 sets your character level to 50 immediately.",
+    "count": 1
+  },
+  {
+    "command": "player.setlevel <number>",
+    "count": 1
+  },
+  {
+    "command": "player.tcl",
+    "count": 2
+  }
+]

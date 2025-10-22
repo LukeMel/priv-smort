@@ -1,0 +1,257 @@
+[
+  {
+    "raw_id": "002BF65B",
+    "id": "002BF65B",
+    "name": "AA-99"
+  },
+  {
+    "raw_id": "0026D965",
+    "id": "0026D965",
+    "name": "Arc Welder"
+  },
+  {
+    "raw_id": "0026D964",
+    "id": "0026D964",
+    "name": "AutoRivet"
+  },
+  {
+    "raw_id": "0026F181",
+    "id": "0026F181",
+    "name": "Barrow Knife"
+  },
+  {
+    "raw_id": "0004716C",
+    "id": "0004716C",
+    "name": "Beowulf"
+  },
+  {
+    "raw_id": "0026D963",
+    "id": "0026D963",
+    "name": "Big Bang"
+  },
+  {
+    "raw_id": "000547A3",
+    "id": "000547A3",
+    "name": "Breach"
+  },
+  {
+    "raw_id": "0026D96A",
+    "id": "0026D96A",
+    "name": "Bridger"
+  },
+  {
+    "raw_id": "0026D96B",
+    "id": "0026D96B",
+    "name": "Coachman"
+  },
+  {
+    "raw_id": "00035A48",
+    "id": "00035A48",
+    "name": "Combat Knife"
+  },
+  {
+    "raw_id": "00016758",
+    "id": "00016758",
+    "name": "Cutter"
+  },
+  {
+    "raw_id": "002F413A",
+    "id": "002F413A",
+    "name": "Discarded Sidestar"
+  },
+  {
+    "raw_id": "0018DE2C",
+    "id": "0018DE2C",
+    "name": "Drum Beat"
+  },
+  {
+    "raw_id": "0026D96E",
+    "id": "0026D96E",
+    "name": "Ecliptic Pistol"
+  },
+  {
+    "raw_id": "000476C4",
+    "id": "000476C4",
+    "name": "Eon"
+  },
+  {
+    "raw_id": "0001BC4F",
+    "id": "0001BC4F",
+    "name": "Equinox"
+  },
+  {
+    "raw_id": "00028A02",
+    "id": "00028A02",
+    "name": "Grendel"
+  },
+  {
+    "raw_id": "00546CC",
+    "id": "000546CC",
+    "name": "Hard Target"
+  },
+  {
+    "raw_id": "00253A16",
+    "id": "00253A16",
+    "name": "Kodama"
+  },
+  {
+    "raw_id": "0021FEB4",
+    "id": "0021FEB4",
+    "name": "Kraken"
+  },
+  {
+    "raw_id": "0002D7F4",
+    "id": "0002D7F4",
+    "name": "Lawgiver"
+  },
+  {
+    "raw_id": "002984DF",
+    "id": "002984DF",
+    "name": "Maelstrom"
+  },
+  {
+    "raw_id": "0002EB3C",
+    "id": "0002EB3C",
+    "name": "Mag Shear"
+  },
+  {
+    "raw_id": "00023606",
+    "id": "00023606",
+    "name": "MagPulse"
+  },
+  {
+    "raw_id": "0002EB42",
+    "id": "0002EB42",
+    "name": "MagShot"
+  },
+  {
+    "raw_id": "0002EB45",
+    "id": "0002EB45",
+    "name": "MagSniper"
+  },
+  {
+    "raw_id": "0026035E",
+    "id": "0026035E",
+    "name": "MagStorm"
+  },
+  {
+    "raw_id": "000546CD",
+    "id": "000546CD",
+    "name": "Microgun"
+  },
+  {
+    "raw_id": "0026D968",
+    "id": "0026D968",
+    "name": "Novablast Disputor"
+  },
+  {
+    "raw_id": "0026D967",
+    "id": "0026D967",
+    "name": "Novalight"
+  },
+  {
+    "raw_id": "0026ED2A",
+    "id": "0026ED2A",
+    "name": "Old Earth Assult Rifle"
+  },
+  {
+    "raw_id": "0021BBCD",
+    "id": "0021BBCD",
+    "name": "Old Earth Hunting Rifle"
+  },
+  {
+    "raw_id": "00278F74",
+    "id": "00278F74",
+    "name": "Old Earth Shotgun"
+  },
+  {
+    "raw_id": "002773C8",
+    "id": "002773C8",
+    "name": "Orion"
+  },
+  {
+    "raw_id": "0026D966",
+    "id": "0026D966",
+    "name": "Osmium Dagger"
+  },
+  {
+    "raw_id": "002953F8",
+    "id": "002953F8",
+    "name": "Pacifier"
+  },
+  {
+    "raw_id": "00/040826",
+    "id": "00040826",
+    "name": "Rattler"
+  },
+  {
+    "raw_id": "00000FD6",
+    "id": "00000FD6",
+    "name": "Razorback"
+  },
+  {
+    "raw_id": "0002CB5F",
+    "id": "0002CB5F",
+    "name": "Regulator"
+  },
+  {
+    "raw_id": "0004F760",
+    "id": "0004F760",
+    "name": "Rescue Axe"
+  },
+  {
+    "raw_id": "0026D960",
+    "id": "0026D960",
+    "name": "Shotty"
+  },
+  {
+    "raw_id": "0026D95D",
+    "id": "0026D95D",
+    "name": "Sidestar"
+  },
+  {
+    "raw_id": "0026D961",
+    "id": "0026D961",
+    "name": "Solstice"
+  },
+  {
+    "raw_id": "0026D8A3",
+    "id": "0026D8A3",
+    "name": "Tanto"
+  },
+  {
+    "raw_id": "0002EB36",
+    "id": "0002EB36",
+    "name": "Tombstone"
+  },
+  {
+    "raw_id": "0026D8A5",
+    "id": "0026D8A5",
+    "name": "UC Naval Cutlass"
+  },
+  {
+    "raw_id": "0026D96D",
+    "id": "0026D96D",
+    "name": "Urban Eagle"
+  },
+  {
+    "raw_id": "0026D8A0",
+    "id": "0026D8A0",
+    "name": "VaRuun Inflictor"
+  },
+  {
+    "raw_id": "0026D8A2",
+    "id": "0026D8A2",
+    "name": "VaRuun Painblade"
+  },
+  {
+    "raw_id": "0026D8A4",
+    "id": "0026D8A4",
+    "name": "VaRuun Starshard"
+  },
+  {
+    "raw_id": "0026D8A1",
+    "id": "0026D8A1",
+    "name": "Wakiazashi"
+  }
+]

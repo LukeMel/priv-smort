@@ -1,0 +1,205 @@
+[
+  {
+    "raw_id": "000FF442",
+    "id": "000FF442",
+    "name": "Anti-Personnel",
+    "description": "10% damage against humans.",
+    "slot": "1"
+  },
+  {
+    "raw_id": "000FEA07",
+    "id": "000FEA07",
+    "name": "Bashing",
+    "description": "Deals double damage when gun bashing.",
+    "slot": "1"
+  },
+  {
+    "raw_id": "000F437E",
+    "id": "000F437E",
+    "name": "Berserker",
+    "description": "Does more damage the less armor one has.",
+    "slot": "1"
+  },
+  {
+    "raw_id": "000F428E",
+    "id": "000F428E",
+    "name": "Cornered",
+    "description": "Damage increases as health decreases.",
+    "slot": "1"
+  },
+  {
+    "raw_id": "001625EB",
+    "id": "001625EB",
+    "name": "Disassembler",
+    "description": "+20% damage against robots.",
+    "slot": "1"
+  },
+  {
+    "raw_id": "000FFA3B",
+    "id": "000FFA3B",
+    "name": "Extended Magazine",
+    "description": "Doubles the base magazine capacity.",
+    "slot": "1"
+  },
+  {
+    "raw_id": "0015DD18",
+    "id": "0015DD18",
+    "name": "Exterminator",
+    "description": "+30% damage against ailens.",
+    "slot": "1"
+  },
+  {
+    "raw_id": "000EA117",
+    "id": "000EA117",
+    "name": "Furious",
+    "description": "Each consecutive hit deals more damage.",
+    "slot": "1"
+  },
+  {
+    "raw_id": "000F2013",
+    "id": "000F2013",
+    "name": "Instigating",
+    "description": "Deals double damage to targets with full health.",
+    "slot": "1"
+  },
+  {
+    "raw_id": "000F7321",
+    "id": "000F7321",
+    "name": "Space-Adept",
+    "description": "+30% damage while in space, and -15% damage while on a planet.",
+    "slot": "1"
+  },
+  {
+    "raw_id": "0008AB47",
+    "id": "0008AB47",
+    "name": "Corrosive",
+    "description": "Randomly deals corrosive damage and reduces the targets' armor over 6 seconds.",
+    "slot": "2"
+  },
+  {
+    "raw_id": "000F2E39",
+    "id": "000F2E39",
+    "name": "Crippling",
+    "description": "Deals +30% damage on the next attack after hitting a target's limbs.",
+    "slot": "2"
+  },
+  {
+    "raw_id": "000EA0BA",
+    "id": "000EA0BA",
+    "name": "Handloading",
+    "description": "Volatile rounds that are designed to pack a bigger punch, but aren't as stable and can fail on occasion.",
+    "slot": "2"
+  },
+  {
+    "raw_id": "00122F1C",
+    "id": "00122F1C",
+    "name": "Hitman",
+    "description": "+15% damage while aiming.",
+    "slot": "2"
+  },
+  {
+    "raw_id": "0007D728",
+    "id": "0007D728",
+    "name": "Incendiary",
+    "description": "Randomly deals incendiary damage.",
+    "slot": "2"
+  },
+  {
+    "raw_id": "000FEA49",
+    "id": "000FEA49",
+    "name": "Lacerate",
+    "description": "Randomly applies a bleed effect to the target.",
+    "slot": "2"
+  },
+  {
+    "raw_id": "000FFA3C",
+    "id": "000FFA3C",
+    "name": "Med Theft",
+    "description": "Chance that humans drop extra Med Packs on death.",
+    "slot": "2"
+  },
+  {
+    "raw_id": "00319AEC",
+    "id": "00319AEC",
+    "name": "Poison",
+    "description": "Randomly deals poison damage and slows the target.",
+    "slot": "2"
+  },
+  {
+    "raw_id": "000FEA04",
+    "id": "000FEA04",
+    "name": "Rapid",
+    "description": "+25% increase in attack speed.",
+    "slot": "2"
+  },
+  {
+    "raw_id": "000E8D64",
+    "id": "000E8D64",
+    "name": "Staggering",
+    "description": "Small chance to stagger enemies.",
+    "slot": "2"
+  },
+  {
+    "raw_id": "000FBD3C",
+    "id": "000FBD3C",
+    "name": "Concussive",
+    "description": "Small chance to knock down targets.",
+    "slot": "3"
+  },
+  {
+    "raw_id": "000FC884",
+    "id": "000FC884",
+    "name": "Demoralizing",
+    "description": "Small chance to demoralize a target.",
+    "slot": "3"
+  },
+  {
+    "raw_id": "000FA8D6",
+    "id": "000FA8D6",
+    "name": "Explosive",
+    "description": "Randomly switches to explosive rounds.",
+    "slot": "3"
+  },
+  {
+    "raw_id": "000FC8A4",
+    "id": "000FC8A4",
+    "name": "Frenzy",
+    "description": "Small chance to frenzy a target.",
+    "slot": "3"
+  },
+  {
+    "raw_id": "000F4CF0",
+    "id": "000F4CF0",
+    "name": "One Inch Punch",
+    "description": "Rounds fire in a shotgun-like spread.",
+    "slot": "3"
+  },
+  {
+    "raw_id": "000F4557",
+    "id": "000F4557",
+    "name": "Shattering",
+    "description": "Break through even the strongest armor.",
+    "slot": "3"
+  },
+  {
+    "raw_id": "0031C0C4",
+    "id": "0031C0C4",
+    "name": "Skip Shot",
+    "description": "Every fourth shot fires two projectiles at once.",
+    "slot": "3"
+  },
+  {
+    "raw_id": "0031C0C6",
+    "id": "0031C0C6",
+    "name": "Telsa",
+    "description": "Rounds will sometimes emit electricity where they land that damages and slows nearby targets.",
+    "slot": "3"
+  },
+  {
+    "raw_id": "000FFA3D",
+    "id": "000FFA3D",
+    "name": "Titanium Build",
+    "description": "Premium build materials make this weapon light as a feather",
+    "slot": "3"
+  }
+]

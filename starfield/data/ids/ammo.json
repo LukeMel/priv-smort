@@ -1,0 +1,112 @@
+[
+  {
+    "raw_id": "002B559C",
+    "id": "002B559C",
+    "name": ".27 Caliber"
+  },
+  {
+    "raw_id": "002B559A",
+    "id": "002B559A",
+    "name": ".43 MI Array"
+  },
+  {
+    "raw_id": "02B5599",
+    "id": "002B5599",
+    "name": ".43 Ultramag"
+  },
+  {
+    "raw_id": "002B5598",
+    "id": "002B5598",
+    "name": ".45 Caliber ACP"
+  },
+  {
+    "raw_id": "002B5597",
+    "id": "002B5597",
+    "name": ".50 Caliber Caseless"
+  },
+  {
+    "raw_id": "002B5596",
+    "id": "002B5596",
+    "name": ".50 MI Array"
+  },
+  {
+    "raw_id": "002BAE3F",
+    "id": "002BAE3F",
+    "name": "1.5KV LZR Cartridges"
+  },
+  {
+    "raw_id": "002B5595",
+    "id": "002B5595",
+    "name": "11MM Caseless"
+  },
+  {
+    "raw_id": "002B5594",
+    "id": "002B5594",
+    "name": "12.5MM ST Rivet"
+  },
+  {
+    "raw_id": "000547A1",
+    "id": "000547A1",
+    "name": "12G Shotgun Shell"
+  },
+  {
+    "raw_id": "002B4AFC",
+    "id": "002B4AFC",
+    "name": "15X25 CLL Shotgun Shell"
+  },
+  {
+    "raw_id": "0000E8EC",
+    "id": "0000E8EC",
+    "name": "3KV LZR Cartridge"
+  },
+  {
+    "raw_id": "002B5592",
+    "id": "002B5592",
+    "name": "40MM XPL"
+  },
+  {
+    "raw_id": "002B5590",
+    "id": "002B5590",
+    "name": "6.5MM CT"
+  },
+  {
+    "raw_id": "002B558F",
+    "id": "002B558F",
+    "name": "6.5MM MI Array"
+  },
+  {
+    "raw_id": "002B558E",
+    "id": "002B558E",
+    "name": "7.5MM Whitehot"
+  },
+  {
+    "raw_id": "002B558D",
+    "id": "002B558D",
+    "name": "7.62x39MM"
+  },
+  {
+    "raw_id": "0004AD3E",
+    "id": "0004AD3E",
+    "name": "7.77MM Caseless"
+  },
+  {
+    "raw_id": "002B559B",
+    "id": "002B559B",
+    "name": "9x39MM"
+  },
+  {
+    "raw_id": "002B4AFB",
+    "id": "002B4AFB",
+    "name": "Caseless Shotgun Shell"
+  },
+  {
+    "raw_id": "002B558B",
+    "id": "002B558B",
+    "name": "Heavy Particle Fuse"
+  },
+  {
+    "raw_id": "002B558A",
+    "id": "002B558A",
+    "name": "Light Particle Fuse"
+  }
+]

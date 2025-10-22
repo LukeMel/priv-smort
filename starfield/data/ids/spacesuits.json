@@ -1,0 +1,292 @@
+[
+  {
+    "raw_id": "00228570",
+    "id": "00228570",
+    "name": "Bounty Hunter Spacesuit"
+  },
+  {
+    "raw_id": "001E2B18",
+    "id": "001E2B18",
+    "name": "Constellation Spacesuit"
+  },
+  {
+    "raw_id": "000/5278E",
+    "id": "0005278E",
+    "name": "Deep Mining Spacesuit"
+  },
+  {
+    "raw_id": "002265AE",
+    "id": "002265AE",
+    "name": "Deep Recon Spacesuit"
+  },
+  {
+    "raw_id": "0006AC00",
+    "id": "0006AC00",
+    "name": "Deepcore Spacesuit"
+  },
+  {
+    "raw_id": "0016D2C4",
+    "id": "0016D2C4",
+    "name": "Deepseeker Spacesuit"
+  },
+  {
+    "raw_id": "00026BF1",
+    "id": "00026BF1",
+    "name": "Deimos Spacesuit"
+  },
+  {
+    "raw_id": "0022856F",
+    "id": "0022856F",
+    "name": "Ecliptic Spacesuit"
+  },
+  {
+    "raw_id": "002265AF",
+    "id": "002265AF",
+    "name": "Explorer Spacesuit"
+  },
+  {
+    "raw_id": "001F22BB",
+    "id": "001F22BB",
+    "name": "Gran-Gran's Spacesuit"
+  },
+  {
+    "raw_id": "002392B5",
+    "id": "002392B5",
+    "name": "Ground Crew Spacesuit"
+  },
+  {
+    "raw_id": "00065925",
+    "id": "00065925",
+    "name": "Incendiary Experimental Nishina Spacesuit"
+  },
+  {
+    "raw_id": "00226299",
+    "id": "00226299",
+    "name": "Mantis Spacesuit"
+  },
+  {
+    "raw_id": "0001754D",
+    "id": "0001754D",
+    "name": "Mark I Spacesuit"
+  },
+  {
+    "raw_id": "001D0F96",
+    "id": "001D0F96",
+    "name": "Mercury Spacesuit"
+  },
+  {
+    "raw_id": "00225FC9",
+    "id": "00225FC9",
+    "name": "Monster Costume"
+  },
+  {
+    "raw_id": "00067C94",
+    "id": "00067C94",
+    "name": "Navigator Spacesuit"
+  },
+  {
+    "raw_id": "0003084E",
+    "id": "0003084E",
+    "name": "Old Earth Spacesuit"
+  },
+  {
+    "raw_id": "0013F97D",
+    "id": "0013F97D",
+    "name": "Peacemaker Spacesuit"
+  },
+  {
+    "raw_id": "00066821",
+    "id": "00066821",
+    "name": "Pirate Assault Spacesuit"
+  },
+  {
+    "raw_id": "00066826",
+    "id": "00066826",
+    "name": "Pirate Charger Spacesuit"
+  },
+  {
+    "raw_id": "00066828",
+    "id": "00066828",
+    "name": "Pirate Corsair Spacesuit"
+  },
+  {
+    "raw_id": "0006682A",
+    "id": "0006682A",
+    "name": "Pirate Sniper Spacesuit"
+  },
+  {
+    "raw_id": "00227CA0",
+    "id": "00227CA0",
+    "name": "Ranger Spacesuit"
+  },
+  {
+    "raw_id": "0022B8F6",
+    "id": "0022B8F6",
+    "name": "Repulsing Explorer Spacesuit"
+  },
+  {
+    "raw_id": "0007B2B9",
+    "id": "0007B2B9",
+    "name": "Sentinel's UC Antixeno Spacesuit"
+  },
+  {
+    "raw_id": "002265AD",
+    "id": "002265AD",
+    "name": "Shocktroop Spacesuit"
+  },
+  {
+    "raw_id": "0021C780",
+    "id": "0021C780",
+    "name": "Space Trucker Spacesuit"
+  },
+  {
+    "raw_id": "00004E78",
+    "id": "00004E78",
+    "name": "Star Roamer Spacesuit"
+  },
+  {
+    "raw_id": "0012E187",
+    "id": "0012E187",
+    "name": "Starborn Spacesuit Astra"
+  },
+  {
+    "raw_id": "001CBA52",
+    "id": "001CBA52",
+    "name": "Starborn Spacesuit Avitus"
+  },
+  {
+    "raw_id": "001CBA4E",
+    "id": "001CBA4E",
+    "name": "Starborn Spacesuit Bellum"
+  },
+  {
+    "raw_id": "0021C77E",
+    "id": "0021C77E",
+    "name": "Starborn Spacesuit Gravitas"
+  },
+  {
+    "raw_id": "001CBA4A",
+    "id": "001CBA4A",
+    "name": "Starborn Spacesuit Locus"
+  },
+  {
+    "raw_id": "001CBA49",
+    "id": "001CBA49",
+    "name": "Starborn Spacesuit Materia"
+  },
+  {
+    "raw_id": "002D7365",
+    "id": "002D7365",
+    "name": "Starborn Spacesuit Solis"
+  },
+  {
+    "raw_id": "002D7346",
+    "id": "002D7346",
+    "name": "Starborn Spacesuit Tempus"
+  },
+  {
+    "raw_id": "001CBA4D",
+    "id": "001CBA4D",
+    "name": "Starborn Spacesuit Tenebris"
+  },
+  {
+    "raw_id": "0021C77F",
+    "id": "0021C77F",
+    "name": "Starborn Spacesuit Venator"
+  },
+  {
+    "raw_id": "002AAF44",
+    "id": "002AAF44",
+    "name": "SysDef Ace Spacesuit"
+  },
+  {
+    "raw_id": "00398104",
+    "id": "00398104",
+    "name": "SysDef Assault Spacesuit"
+  },
+  {
+    "raw_id": "0039810A",
+    "id": "0039810A",
+    "name": "SysDef Combat Spacesuit"
+  },
+  {
+    "raw_id": "00398108",
+    "id": "00398108",
+    "name": "SysDef Sec Recon Spacesuit"
+  },
+  {
+    "raw_id": "00398103",
+    "id": "00398103",
+    "name": "SysDef Spacesuit"
+  },
+  {
+    "raw_id": "00166404",
+    "id": "00166404",
+    "name": "Trackers Alliance Spacesuit"
+  },
+  {
+    "raw_id": "00166410",
+    "id": "00166410",
+    "name": "UC Ace Spacesuit"
+  },
+  {
+    "raw_id": "00206130",
+    "id": "00206130",
+    "name": "UC AntiXeno Spacesuit"
+  },
+  {
+    "raw_id": "00257808",
+    "id": "00257808",
+    "name": "UC Combat Spacesuit"
+  },
+  {
+    "raw_id": "00257805",
+    "id": "00257805",
+    "name": "UC Marine Spacesuit"
+  },
+  {
+    "raw_id": "000EF9B0",
+    "id": "000EF9B0",
+    "name": "UC Sec Combat Spacesuit"
+  },
+  {
+    "raw_id": "000EF9AF",
+    "id": "000EF9AF",
+    "name": "UC Sec Recon Spacesuit"
+  },
+  {
+    "raw_id": "000EF9AE",
+    "id": "000EF9AE",
+    "name": "UC Sec Starlaw Spacesuit"
+  },
+  {
+    "raw_id": "000EF9AD",
+    "id": "000EF9AD",
+    "name": "UC Security Spacesuit"
+  },
+  {
+    "raw_id": "00257809",
+    "id": "00257809",
+    "name": "UC Startroop Spacesuit"
+  },
+  {
+    "raw_id": "0021A86A",
+    "id": "0021A86A",
+    "name": "UC Urbanwar Spacesuit"
+  },
+  {
+    "raw_id": "00248C0F",
+    "id": "00248C0F",
+    "name": "UC Vanguard Spacesuit"
+  },
+  {
+    "raw_id": "0025780A",
+    "id": "0025780A",
+    "name": "UC Wardog Spacesuit"
+  },
+  {
+    "raw_id": "00227CA3",
+    "id": "00227CA3",
+    "name": "Va'Ruun Spacesuit"
+  }
+]

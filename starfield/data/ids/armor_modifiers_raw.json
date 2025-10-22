@@ -1,0 +1,162 @@
+[
+  {
+    "raw_id": "0013369C",
+    "id": "0013369C",
+    "name": "Ablative\t-15% incoming Energy damage."
+  },
+  {
+    "raw_id": "000710FD",
+    "id": "000710FD",
+    "name": "Acrobat\t-50% fall damage."
+  },
+  {
+    "raw_id": "000690AF",
+    "id": "000690AF",
+    "name": "Analyzer\t+10% damage to scanned targets."
+  },
+  {
+    "raw_id": "0013369E",
+    "id": "0013369E",
+    "name": "Anti-Ballistic\t-15% incoming Physical damage from ranged weapons."
+  },
+  {
+    "raw_id": "000710FA",
+    "id": "000710FA",
+    "name": "Antiseptic\t+25 Airborne Resistance."
+  },
+  {
+    "raw_id": "002EDE59",
+    "id": "002EDE59",
+    "name": "Armor-Plated\t-10% incoming Physical, Energy, an EM damage."
+  },
+  {
+    "raw_id": "002EDE4F",
+    "id": "002EDE4F",
+    "name": "Assisted Carry\tDrain 75% less 02 when running while encumbered."
+  },
+  {
+    "raw_id": "000C9A43",
+    "id": "000C9A43",
+    "name": "Auto Medic\tAutomatically use a Med Pack when hit and health is below 25%, once every 60 seconds."
+  },
+  {
+    "raw_id": "001336BD",
+    "id": "001336BD",
+    "name": "Beast Hunter\t-15% damage from Alien enemies."
+  },
+  {
+    "raw_id": "001336C6",
+    "id": "001336C6",
+    "name": "Bolstering\tGrants up to +100 Energy resistance and Physical resistance, the lower your health."
+  },
+  {
+    "raw_id": "001336C1",
+    "id": "001336C1",
+    "name": "Chameleon\tBlend with the environment while sneaking and not moving."
+  },
+  {
+    "raw_id": "001336BE",
+    "id": "001336BE",
+    "name": "Combat Veteran\t-15% damage from Human enemies."
+  },
+  {
+    "raw_id": "002EDE4E",
+    "id": "002EDE4E",
+    "name": "Fastened\t+20 carry capacity."
+  },
+  {
+    "raw_id": "000710F7",
+    "id": "000710F7",
+    "name": "Galvanized\t+25 Corrosive Resistance."
+  },
+  {
+    "raw_id": "002C43DA",
+    "id": "002C43DA",
+    "name": "Hacker\t+2 max auto attempts that can be banked while hacking."
+  },
+  {
+    "raw_id": "002C43DC",
+    "id": "002C43DC",
+    "name": "Headhunter\tDeals +25% damage on the next attack after hitting a target's head."
+  },
+  {
+    "raw_id": "00002983",
+    "id": "00002983",
+    "name": "Incendiary\t10% chance to ignite nearby attackers."
+  },
+  {
+    "raw_id": "000710F5",
+    "id": "000710F5",
+    "name": "Leadlined\t+25 Radiation Resistance."
+  },
+  {
+    "raw_id": "000710F6",
+    "id": "000710F6",
+    "name": "Liquid Cooled\t+25 Thermal Resistance."
+  },
+  {
+    "raw_id": "000BE542",
+    "id": "000BE542",
+    "name": "Mechanized\t+40 carry capacity."
+  },
+  {
+    "raw_id": "00059AE8",
+    "id": "00059AE8",
+    "name": "Mirrored\t4% chance to reflect attacks."
+  },
+  {
+    "raw_id": "000690B0",
+    "id": "000690B0",
+    "name": "O2 Boosted\t+20% oxygen capacity."
+  },
+  {
+    "raw_id": "000690AE",
+    "id": "000690AE",
+    "name": "O2 Filter\t-25% oxygen consumption."
+  },
+  {
+    "raw_id": "002D01A2",
+    "id": "002D01A2",
+    "name": "Peacemaker\tRifles do 10% more damage."
+  },
+  {
+    "raw_id": "0006029F",
+    "id": "0006029F",
+    "name": "Reactive\t10% chance to stagger nearby attackers."
+  },
+  {
+    "raw_id": "0006029D",
+    "id": "0006029D",
+    "name": "Repulsing\t5% chance to disarm nearby attackers."
+  },
+  {
+    "raw_id": "00060293",
+    "id": "00060293",
+    "name": "Resource Hauler\tResources weigh 25% less."
+  },
+  {
+    "raw_id": "002C43DB",
+    "id": "002C43DB",
+    "name": "Sensor Chip\t+20% accuracy while firing on the move."
+  },
+  {
+    "raw_id": "000BE540",
+    "id": "000BE540",
+    "name": "Sentinel\t75% chance to reduce damage by 50% while standing still."
+  },
+  {
+    "raw_id": "00133699",
+    "id": "00133699",
+    "name": "Sturdy\t-15% incoming Melee damage."
+  },
+  {
+    "raw_id": "001336BC",
+    "id": "001336BC",
+    "name": "Technician\t-15% damage from Robot enemies."
+  },
+  {
+    "raw_id": "00060295",
+    "id": "00060295",
+    "name": "Weapon Holsters\tWeapons weigh 50% less."
+  }
+]

@@ -1,0 +1,1803 @@
+Best Starfield Item IDs
+From Credits, Digipicks, Weapons, Spacesuits, and more, our table below lists all the best Item IDs in Starfield.
+
+Item IDs	Item Name	Command Example
+Miscellaneous Items
+0000000F	Credits	player.additem 0000000F 100
+0000000A	Digipicks	player.additem 0000000A 100
+Weapons
+0014920B	Despondent Assassin - Legendary Rifle	player.placeatme 0014920B 1
+00329ABB	Eternity's Gate - Legendary Particle Beam Rifle	player.placeatme 00329ABB 1
+0008AF62	Revenant - Legendary Rifle	player.placeatme 0008AF62 1
+000547A3	Breach	player.placeatme 000547A3 1
+0026D963	Big Bang	player.placeatme 0026D963 1
+0002EB42	Magshot	player.placeatme 0002EB42 1
+00023606	Magpulse	player.placeatme 00023606 1
+0026D96D	Urban Eagle	player.placeatme 0026D96D 1
+Spacesuits
+00065925	Incendiary Experimental Nishina Spacesuit (Legendary)	player.placeatme 00065925 1
+0007B2B9	Sentinel's UC Antixeno Spacesuit (Legendary)	player.placeatme 0007B2B9 1
+0022B8F6	Repulsing Explorer Spacesuit (Epic)	player.placeatme 0022B8F6 1
+0013F97D	Peacemaker Spacesuit	player.placeatme 0013F97D 1
+00225FC9	Monster Costume	player.placeatme 00225FC9 1
+001F22BB	Gran-Gran's Spacesuit	player.placeatme 001F22BB 1
+Boost Packs
+0010A25D	Armor-Plated UC AntiXeno Pack (Legendary)	player.placeatme 0010A25D 1
+0001754E	Mark 1 Pack	player.placeatme 0001754E 1
+0021A86C	UC Shock Power Pack	player.placeatme 0021A86C 1
+Helmets
+00065926	Reactive Experimental Nishina Helmet (Legendary)	player.placeatme 00065926 1
+0010A25E	Incendiary UC AntiXeno Space Helmet (Legendary)	player.placeatme 0010A25E 1
+0013F97B	Peacemaker Space Helmet	player.placeatme 0013F97B 1
+0001754F	Mark I Space Helmet	player.placeatme 0001754F 1
+001F22BC	Gran-Gran's Space Helmet	player.placeatme 001F22BC 1
+Aid, Food, and Drinks
+00003A26	Potatoes	player.additem 00003A26 1
+0000ABF9	Med Pack	player.additem 0000ABF9 1
+002A9DE8	Emergency Kit	player.additem 002A9DE8 1
+0003D3A9	Antibiotic Cocktail	player.additem 0003D3A9 1
+0003D3AF	Antibiotic Injector	player.additem 0003D3AF 1
+0003D3AE	Antibiotic Paste	player.additem 0003D3AE 1
+00299592	AMP	player.additem 00299592 1
+Resources
+00246B6A	Adaptive Frame	player.additem 00246B6A 1
+000055B1	Adhesive	player.additem 000055B1 1
+000055A8	Cosmetic	player.additem 000055A8 1
+000055AF	Fiber	player.additem 000055AF 1
+000055BA	Lubricant	player.additem 000055BA 1
+000777FD	Nutrient	player.additem 000777FD 1
+000055A7	Ornamental Material	player.additem 000055A7 1
+000055A6	Polymer	player.additem 000055A6 1
+000055CC	Sealant	player.additem 000055CC 1
+000055CE	Solvent	player.additem 000055CE 1
+000055B9	Structural Material	player.additem 000055B9 1
+Need Ammo? See our Ammo IDs List!
+Want Weapon Mods? See our Weapon Modifier IDs List!
+Need Minerals? See our Mineral IDs List!
+advertisement
+Starfield Item IDs List
+Whether you're chasing Item IDs for Skills, Traits, Weapons, Ammo, or more, our tables below have you covered with a comprehensive list of all the major Item ID Codes available in Starfield.
+
+Looking for something in particular? Click the links below to jump to...
+
+All Starfield Item IDs
+Weapon Related IDs
+All Weapon IDs	All Legendary and Unique Weapon IDs	All Weapon Modifier IDs	All Ammo IDs
+All Armor and Clothing Related IDs
+All Spacesuit IDs	All Helmet IDs	All Boost Pack IDs	All Armor Modifier IDs
+All Clothing and Apparel IDs			
+All Aid and Resource Related IDs
+All Aid, Food, and Drink IDs	All Cooking Station Food and Drink IDs	All Resource IDs	All Mineral IDs
+All Ship Related IDs	All Faction Related IDs
+All Ship IDs	All Faction IDs
+All Skill, Background, and Trait Related IDs
+All Skill IDs	All Trait IDs	All Background IDs	
+All Weapon IDs in Starfield
+To spawn weapons in Starfield, you'll want to use the following cheat code:
+
+player.placeatme (Weapon ID) 1
+ID Code	Skill Name
+Guns
+002BF65B	AA-99
+0026D965	Arc Welder
+0026D964	AutoRivet
+0004716C	Beowulf
+0026D963	Big Bang
+000547A3	Breach
+0026D96A	Bridger
+0026D96B	Coachman
+00016758	Cutter
+0018DE2C	Drum Beat
+002F413A	Discarded Sidestar
+0026D96E	Ecliptic Pistol
+000476C4	Eon
+0001BC4F	Equinox
+00028A02	Grendel
+00546CC	Hard Target
+00253A16	Kodama
+0021FEB4	Kraken
+0002D7F4	Lawgiver
+002984DF	Maelstrom
+0002EB3C	Mag Shear
+00023606	MagPulse
+0002EB42	MagShot
+0002EB45	MagSniper
+0026035E	MagStorm
+000546CD	Microgun
+0026D968	Novablast Disputor
+0026D967	Novalight
+0026ED2A	Old Earth Assult Rifle
+0021BBCD	Old Earth Hunting Rifle
+00278F74	Old Earth Shotgun
+002773C8	Orion
+0026D966	Osmium Dagger
+002953F8	Pacifier
+00/040826	Rattler
+00000FD6	Razorback
+0002CB5F	Regulator
+0004F760	Rescue Axe
+0026D960	Shotty
+0026D95D	Sidestar
+0026D961	Solstice
+0002EB36	Tombstone
+0026D96D	Urban Eagle
+0026D8A0	VaRuun Inflictor
+0026D8A2	VaRuun Painblade
+0026D8A4	VaRuun Starshard
+Melee Weapons
+0026F181	Barrow Knife
+00035A48	Combat Knife
+0026D8A3	Tanto
+0026D8A5	UC Naval Cutlass
+0026D8A1	Wakiazashi
+
+Get Creative in Starfield!
+Jump to Table of Contents
+All Legendary and Unique Weapon IDs in Starfield
+To spawn Legendary and Unique Weapon IDs, use the following console command code:
+
+All Legendary and Unique Weapon IDs in Starfield
+To spawn Legendary and Unique Weapon IDs, use the following console command code: player.placeatme (ID Code)
+Despondent Assassin - ID Code: 0014920B
+View 29 Images
+Eternity's Gate - ID Code: 00329ABB
+Keelhauler - ID Code: 0008D850
+Memento Mori - ID Code: 00316416
+player.placeatme (ID Code)
+In addition to spawning Legendary and Unique weapons, each ID Code below will also spawn a free case of ammunition.
+ID Code	Weapon Name	Modifiers	Attachments
+Legendary
+0014920B	Despondent Assassin - Rifle	
+Demoralizing - Small chance to demoralize a target.
+Hitman - +15% damage while aiming.
+Anti-Personnel - +10% damage against humans.
+Small Magazine
+High Powered
+00329ABB	Eternity's Gate - Particle Beam Rifle	
+Skip Shot - Every fourth shot fires two projectiles at once.
+Handloading - Volatile rounds that are designed to pack a bigger punch, but aren't as stable and can fail on occasion.
+Anti-Personnel - +10% damage against humans.
+Long Barrel
+Recon Laser Sight
+Short Scope
+Focus Nozzle
+Tactical Magazine
+0008D850	Keelhauler - Pistol	
+Staggering - Small chance to stagger enemies.
+Berserker - Does more damage the less armor one has.
+Frenzy - Small chance to frenzy a target.
+Magnetic Rails
+Recon Laser Sight
+Compensator
+Tactical Magazine
+Hair Trigger
+Fully Automatic
+00316416	Memento Mori - Pistol	
+Crippling - Deals +30% damage on the next attack after hitting a target's limbs.
+Cornered - Damage increases as health decreases.
+Demoralizing - Small chance to demoralize a target.
+Laser Sight
+Tactical Grip
+Explosive Rounds
+High Powered
+0008AF62	Revenant - Rifle	
+Extended Magazine - Doubles the base magazine capacity.
+Lacerate - Randomly applies a bleed effect to the target.
+Titanium Build - Premium build materials make this weapon light as a feather.
+Long Barrel
+Compensator
+Armor-Piercing Rounds
+Hair Trigger
+001F02EF	Unmitigated Violence - Rifle	
+Frenzy - Small chance to frenzy a target.
+Radioactive - Randomly deals radioactive damage and demoralizes the target.
+Instigating - Deals double damage to targets with full health.
+Long Barrel
+Recon Laser Sight
+Reflex Sight
+Stealth Lasers
+Stabilizing Stock
+Large Battery
+Amplifier
+Epic
+000367C5	Davis Wilson's Rifle	
+Berserker - Does more damage the less armor one has.
+Staggering - Small chance to stagger enemies.
+Long Barrel
+Laser Sight
+Recon Scope
+Compensator
+Large Magazine
+000E7ED1	Peacemaker - Rifle	
+Rapid - +25 increase in attack speed.
+Demoralizing - Small chance to demoralize a target.
+Long Barrel
+Laser Sight
+Recon Scope
+Muzzle Brake
+Penetrator Rounds
+High Velocity
+003CE4B1	Unfair Advantage - Pistol	
+Skip Shot - Every fourth shot fires two projectiles at once.
+Radioactive - Randomly deals radioactive damage and demoralizes the target.
+Short Barrel
+Laser Sight
+Reflex Sight
+Compensator
+Tactical Grip
+Depleted Uranium Rounds
+High Velocity
+Binary Trigger
+Rare
+001EEE4F	Ambassador - Pistol	
+Shattering - Breaks through even the strongest armor.
+Extended Barrel
+Laser Sight
+Reflex Sight
+Muzzle Brake
+Penetrator Rounds
+High Powered
+Binary Trigger
+0031FCBF	Ashta Tamer - Heavy	
+Incendiary - Randomly deals incendiary damage.
+Laser Sight
+Reflex Sight
+Tactical Stock
+0031F257	Experiment A-7 - Shotgun	
+Exterminator - +30% damage against aliens.
+Long Barrel
+Laser Sight
+Reflex Sight
+Choke
+Tactical Stock
+Flechette Rounds
+Hair Trigger
+Fully Automatic
+000019F5	Fiscal Quarter - Rifle	
+Shattering - Break through even the strongest armor.
+Short Scope
+Compensator
+Tactical Grip
+Armor-Piercing Rounds
+Hair Trigger
+0032046E	Fortune's Glory - Melee	
+Staggering - Small chance to stagger enemies.
+None
+0032046C	Gallow's Reach - Rifle	
+Poison - Randomly deals poison damage and slows the target.
+Laser Sight
+Reflex Sight
+Muzzle Brake
+Ergonomic Grip
+Armor-Piercing Rounds
+0032046A	Heller's Cutter - Heavy	
+Disassembler - +20% damage against robots.
+None
+001A52E5	Peacekeeper - Rifle	
+Extended Magazine - Doubles the base magazine capacity.
+Long Barrel
+Laser Sight
+Reflex Sight
+Ergonomic Stock
+003CE4B0	Tempest - Rifle	
+Handloading - Volatile rounds that are designed to pack a bigger punch, but aren't as stable and can fail on occasion.
+Laser Sight
+Compensator
+Large Magazine
+0000CAB0	The Mutineer - Pistol	
+Space-Adept - +30% damage while in space, and -15% damage while on a planet.
+Magnetic Rails
+Compensator
+Depleted Uranium Rounds
+Fully Automatic
+0031F25A	The Last Priest - Melee	
+Elemental - Randomly deals Corrosive, Radiation, Poison, and Incendiary damage.
+None
+000019F7	Unrestrained Vegenence - Rifle	
+Hitman - +15% damage while aiming.
+Long Barrel
+Recon Laser Sight
+Stealth Lasers
+Precision Tuning
+0008AF5D	X-989 Microgun - Heavy	
+Exterminator - +30% damage against aliens.
+Long Barrel
+Laser Sight
+Tactical Grip
+Tactical Magazine
+Base
+001BBF2A	Deadeye	None	
+Laser Sight
+Short Scope
+Muzzle Brake
+Depleted Uranium Rounds
+Hair Trigger
+002F99FF	Ember - Pistol	None	
+Long Barrel with Laser Sight
+Holographic Sight
+Focal Lens
+Tactical Grip
+Ignition Beams
+Amplifier
+002BD871	Jake's Hangover Cure - Particle Beam Shotgun	None	None
+001BAA3C	Justifier	None	
+Long Barrel
+Laser Sight
+Recon Scope
+Muzzle Brake
+Depleted Uranium Rounds
+Hair Trigger
+001F27F5	Sir Livingstone's Pistol	None	
+Tactical Grip
+Armor-Piercing Rounds
+High Powered
+0008AF68	Solace - Pistol	None	
+Long Barrel
+Laser Sight
+Reflex Sight
+Compensator
+Tactical Grip
+Hair Trigger
+advertisement
+Jump to Table of Contents
+All Weapon Modifier IDs in Starfield
+To attach weapon modifiers in Starfield, you'll want to use the following cheat code:
+
+(Ref ID Code).amod (OMOD ID)
+To find your weapon's reference ID, drop the weapon on the ground, open the console command, and click on the weapon. Your "WEAP (ID Code)" will now be displayed.
+
+OMOD Code	Mod Name	Description
+Slot 1 Modifiers
+000FF442	Anti-Personnel	10% damage against humans.
+000FEA07	Bashing	Deals double damage when gun bashing.
+000F437E	Berserker	Does more damage the less armor one has.
+000F428E	Cornered	Damage increases as health decreases.
+001625EB	Disassembler	+20% damage against robots.
+000FFA3B	Extended Magazine	Doubles the base magazine capacity.
+0015DD18	Exterminator	+30% damage against ailens.
+000EA117	Furious	Each consecutive hit deals more damage.
+000F2013	Instigating	Deals double damage to targets with full health.
+000F7321	Space-Adept	+30% damage while in space, and -15% damage while on a planet.
+Slot 2 Modifiers
+0008AB47	Corrosive	Randomly deals corrosive damage and reduces the targets' armor over 6 seconds.
+000F2E39	Crippling	Deals +30% damage on the next attack after hitting a target's limbs.
+000EA0BA	Handloading	Volatile rounds that are designed to pack a bigger punch, but aren't as stable and can fail on occasion.
+00122F1C	Hitman	+15% damage while aiming.
+0007D728	Incendiary	Randomly deals incendiary damage.
+000FEA49	Lacerate	Randomly applies a bleed effect to the target.
+000FFA3C	Med Theft	Chance that humans drop extra Med Packs on death.
+00319AEC	Poison	Randomly deals poison damage and slows the target.
+000FEA04	Rapid	+25% increase in attack speed.
+000E8D64	Staggering	Small chance to stagger enemies.
+Slot 3 Modifiers
+000FBD3C	Concussive	Small chance to knock down targets.
+000FC884	Demoralizing	Small chance to demoralize a target.
+000FA8D6	Explosive	Randomly switches to explosive rounds.
+000FC8A4	Frenzy	Small chance to frenzy a target.
+000F4CF0	One Inch Punch	Rounds fire in a shotgun-like spread.
+000F4557	Shattering	Break through even the strongest armor.
+0031C0C4	Skip Shot	Every fourth shot fires two projectiles at once.
+0031C0C6	Telsa	Rounds will sometimes emit electricity where they land that damages and slows nearby targets.
+000FFA3D	Titanium Build	Premium build materials make this weapon light as a feather
+Jump to Table of Contents
+advertisement
+All Ammo IDs in Starfield
+To spawn Ammo in Starfield, you'll want to use the following cheat code:
+
+player.additem (Ammo ID) (Amount)
+ID Code	Ammo Name
+002B559C	.27 Caliber
+002B559A	.43 MI Array
+02B5599	.43 Ultramag
+002B5598	.45 Caliber ACP
+002B5597	.50 Caliber Caseless
+002B5596	.50 MI Array
+002BAE3F	1.5KV LZR Cartridges
+002B5595	11MM Caseless
+002B5594	12.5MM ST Rivet
+000547A1	12G Shotgun Shell
+002B4AFC	15X25 CLL Shotgun Shell
+0000E8EC	3KV LZR Cartridge
+002B5592	40MM XPL
+002B5590	6.5MM CT
+002B558F	6.5MM MI Array
+002B558E	7.5MM Whitehot
+002B558D	7.62x39MM
+0004AD3E	7.77MM Caseless
+002B559B	9x39MM
+002B4AFB	Caseless Shotgun Shell
+002B558B	Heavy Particle Fuse
+002B558A	Light Particle Fuse
+Jump to Table of Contents
+All Spacesuit IDs in Starfield
+To spawn Spacesuits in Starfield, you'll want to use the following cheat code:
+
+player.placeatme (Spacesuit ID) 1
+ID Code	Armor Name
+Legendary Spacesuits
+00065925	Incendiary Experimental Nishina Spacesuit
+0007B2B9	Sentinel's UC Antixeno Spacesuit
+Epic Spacesuits
+0022B8F6	Repulsing Explorer Spacesuit
+Rare Spacesuits
+0013F97D	Peacemaker Spacesuit
+Base Spacesuits
+00228570	Bounty Hunter Spacesuit
+001E2B18	Constellation Spacesuit
+000/5278E	Deep Mining Spacesuit
+002265AE	Deep Recon Spacesuit
+0006AC00	Deepcore Spacesuit
+0016D2C4	Deepseeker Spacesuit
+00026BF1	Deimos Spacesuit
+0022856F	Ecliptic Spacesuit
+002265AF	Explorer Spacesuit
+001F22BB	Gran-Gran's Spacesuit
+002392B5	Ground Crew Spacesuit
+00226299	Mantis Spacesuit
+0001754D	Mark I Spacesuit
+001D0F96	Mercury Spacesuit
+00225FC9	Monster Costume
+00067C94	Navigator Spacesuit
+0003084E	Old Earth Spacesuit
+00066821	Pirate Assault Spacesuit
+00066826	Pirate Charger Spacesuit
+00066828	Pirate Corsair Spacesuit
+0006682A	Pirate Sniper Spacesuit
+00227CA0	Ranger Spacesuit
+002265AD	Shocktroop Spacesuit
+0021C780	Space Trucker Spacesuit
+00004E78	Star Roamer Spacesuit
+0012E187	Starborn Spacesuit Astra
+001CBA52	Starborn Spacesuit Avitus
+001CBA4E	Starborn Spacesuit Bellum
+0021C77E	Starborn Spacesuit Gravitas
+001CBA4A	Starborn Spacesuit Locus
+001CBA49	Starborn Spacesuit Materia
+002D7365	Starborn Spacesuit Solis
+002D7346	Starborn Spacesuit Tempus
+001CBA4D	Starborn Spacesuit Tenebris
+0021C77F	Starborn Spacesuit Venator
+002AAF44	SysDef Ace Spacesuit
+00398104	SysDef Assault Spacesuit
+0039810A	SysDef Combat Spacesuit
+00398108	SysDef Sec Recon Spacesuit
+00398103	SysDef Spacesuit
+00166404	Trackers Alliance Spacesuit
+00166410	UC Ace Spacesuit
+00206130	UC AntiXeno Spacesuit
+00257808	UC Combat Spacesuit
+00257805	UC Marine Spacesuit
+000EF9B0	UC Sec Combat Spacesuit
+000EF9AF	UC Sec Recon Spacesuit
+000EF9AE	UC Sec Starlaw Spacesuit
+000EF9AD	UC Security Spacesuit
+00257809	UC Startroop Spacesuit
+0021A86A	UC Urbanwar Spacesuit
+00248C0F	UC Vanguard Spacesuit
+0025780A	UC Wardog Spacesuit
+00227CA3	Va'Ruun Spacesuit
+advertisement
+Jump to Table of Contents
+All Helmet IDs in Starfield
+To spawn Helmets in Starfield, you'll want to use the following cheat code:
+
+player.placeatme (Helmet ID) 1
+ID Code	Helmet Name
+Legendary Helmets
+00065926	Reactive Experimental Nishina Helmet (Legendary)
+0010A25E	Incendiary UC AntiXeno Space Helmet
+Base Helmets
+001466F6	Black Graviplas Helmet
+001466FA	Black Open Graviplas Helmet
+001C0F32	Bounty Hunter Space Helmet
+002EDE9C	Broken Constellation Space Helmet
+001466F7	Brown Graviplas Helmet
+001E2B17	Constellation Space Helmet
+0003B424	Cydonia Space Helmet
+00052792	Deep Mining Space Helmet
+00169F54	Deep Recon Space Helmet
+0006ABFF	Deepcore Space Helmet
+0016D15C	Deeseeker Space Helmet
+00026BF0	Deimos Space Helmet
+00228829	Ecliptic Space Helmet
+00169F50	Explorer Space Helmet
+0021F3F4	First Solider Helmet
+003CD812	Generdyne Guard Helmet
+001F22BC	Gran-Gran's Space Helmet
+000781F7	Graviplas Merc Helmet
+001466F8	Gray Graviplas Helmet
+001466FC	Gray Open Graviplas Helmet
+002392B4	Ground Crew Space Helmet
+0016640A	Mantis Space Helmet
+0001754F	Mark I Space Helmet
+0016E0B5	Mercenary Space Helmet
+001D0F94	Mercury Space Helmet
+00067C93	Navigator Space Helmet
+001F73EF	Neon Security Helmet
+0003084D	Old Earth Space Helmet
+000781F8	Open Graviplas Helmet
+0016E0C3	Operative Helmet
+0013F97B	Peacemaker Helmet
+00066822	Pirate Assault Space Helmet
+00066827	Pirate Charge Space Helmet
+00066829	Pirate Corsair Space Helmet
+0006682B	Pirate Sniper Space Helmet
+001E2AC1	Ranger Space Helmet
+0037A34F	Ryujin Guard Helmet
+00165718	Security Guard Helmet
+00169F58	Shocktrooper Space Helmet
+0016E0BD	Space Trucker Space Helmet
+00003E8F	Star Roamer Space Helmet
+002F4B39	SY-920 Space Helmet
+00398107	SysDef Armored Space Helmet
+00398106	SysDef Space Helmet
+002AAF45	System Def Ace Space Helmet
+001466F9	Teal Graviplas Helmet
+001466FD	Teal Open Graviplas Helmet
+00166403	Trackers Alliance Space Helmet
+0014E44E	Trident Guard Helmet
+0016640F	UC Ace Pilot Space Helmet
+0025780B	UC Armored Space Helmet
+00257806	UC Marine Space Helmet
+000EF9B2	UC Sec Spaceriot Helmet
+0025E8D5	UC Security Helmet
+000EF9B1	UC Security Space Helmet
+0021A86B	UC Urbanwar Space Helmet
+00248C0E	UC Vanguard Space Helmet
+0016D3D1	Va'ruun Space Helmet
+advertisement
+Jump to Table of Contents
+All Boost Pack IDs in Starfield
+To spawn Boost Packs in Starfield, you'll want to use the following cheat code:
+
+player.placeatme (Boost Pack ID) 1
+ID Code	Boost Pack Name
+Legendary Boost Pack IDs
+0010A25D	Armor-Plated UC AntiXeno Pack (Legendary)
+Base Boost Pack
+001C0F34	Bounty Hunter Seek Pack
+001C0F35	Bounty Hunter Stalk Pack
+001C0F33	Bounty Hunter Track Pack
+001E2B19	Constellation Pack
+0003B423	Cydonia Pack
+002EDF1F	Deep Mining Pack
+00169F55	Deep Recon Pack
+000FD333	Deepcore Pack
+0016D15B	Deepseeker Pack
+00026BEF	Deimos Pack
+00026BF2	Deimos Tunnel Pack
+00166407	Ecliptic Pack
+00169F51	Explorer Pack
+002392B3	Ground Crew Pack
+00003A77	High School Backpack
+0016640B	Mantis Pack
+0001754E	Mark I Pack
+0016E0B6	Mercenary Pack
+001D0F95	Mercury Pack
+00067C95	Navigator Pack
+0003084C	Old Earth Pack
+0013F97C	Peacemarker Pack
+00066824	Pirate Raiding Pack
+00066825	Pirate Survival Pack
+001E2AF7	Ranger Pack
+00169F59	Shocktrooper Pack
+0016E0BB	Space Trucker Pack
+00003E90	Star Roamer Pack
+001773BD	SY-920 Pilot Pack
+00398105	SysDef Pack
+00166402	Tracker Alliance Pack
+00029C7A	Tunnel Mining Pack
+0016640E	UC Ace Pilot Pack
+00/257807	UC Marine Pack
+000EF9AC	UC Security Pack
+0021A86C	UC Shock Armor Pack
+003E3D4F	UC Vanguard Pilot Pack
+0016D3D0	Va'ruun Pack
+advertisement
+Jump to Table of Contents
+All Armor Modifier IDs in Starfield
+To attach armor modifiers in Starfield, you'll want to use the following cheat code:
+
+(Ref ID Code).amod (OMOD ID)
+To find your armor's reference ID, drop the armor piece on the ground, open the console command, and click on the armor piece. Your "ARMO (ID Code)" will now be displayed.
+
+ID Code	Modifer Name	Description
+Slot 1 Modifiers
+0013369C	Ablative	-15% incoming Energy damage.
+0013369E	Anti-Ballistic	-15% incoming Physical damage from ranged weapons.
+001336BD	Beast Hunter	-15% damage from Alien enemies.
+001336C6	Bolstering	Grants up to +100 Energy resistance and Physical resistance, the lower your health.
+001336C1	Chameleon	Blend with the environment while sneaking and not moving.
+001336BE	Combat Veteran	-15% damage from Human enemies.
+000690B0	O2 Boosted	+20% oxygen capacity.
+000690AE	O2 Filter	-25% oxygen consumption.
+00133699	Sturdy	-15% incoming Melee damage.
+001336BC	Technician	-15% damage from Robot enemies.
+Slot 2 Modifiers
+000710FD	Acrobat	-50% fall damage.
+000690AF	Analyzer	+10% damage to scanned targets.
+000710FA	Antiseptic	+25 Airborne Resistance.
+000C9A43	Auto Medic	Automatically use a Med Pack when hit and health is below 25%, once every 60 seconds.
+002EDE4E	Fastened	+20 carry capacity.
+000710F7	Galvanized	+25 Corrosive Resistance.
+002C43DA	Hacker	+2 max auto attempts that can be banked while hacking.
+000710F5	Leadlined	+25 Radiation Resistance.
+000710F6	Liquid Cooled	+25 Thermal Resistance.
+00060293	Resource Hauler	Resources weigh 25% less.
+00060295	Weapon Holsters	Weapons weigh 50% less.
+Slot 3 Modifiers
+002EDE59	Armor-Plated	-10% incoming Physical, Energy, an EM damage.
+002EDE4F	Assisted Carry	Drain 75% less 02 when running while encumbered.
+002C43DC	Headhunter	Deals +25% damage on the next attack after hitting a target's head.
+00002983	Incendiary	10% chance to ignite nearby attackers.
+000BE542	Mechanized	+40 carry capacity.
+00059AE8	Mirrored	4% chance to reflect attacks.
+002D01A2	Peacemaker	Rifles do 10% more damage.
+0006029F	Reactive	10% chance to stagger nearby attackers.
+0006029D	Repulsing	5% chance to disarm nearby attackers.
+002C43DB	Sensor Chip	+20% accuracy while firing on the move.
+000BE540	Sentinel	75% chance to reduce damage by 50% while standing still.
+Jump to Table of Contents
+All Clothing and Apparel IDs in Starfield
+To spawn Clothing and Apparel items, use the following cheat code:
+
+advertisement
+player.additem (ID Code) (Amount)
+All Clothing and Apparel
+Item Code	Apparel Name
+0012B4B3	Akila Secruity Hat
+001E426E	Amanirenas Hat
+003E3D51	Ambassador Suit
+0021BBEC	Argos Extractor Jumpsuit
+001C84DB	Argos Jacketed Jumpsuit
+003FDBF7	B.Morgan's Suit
+0019219C	Batball Cap
+003E8E7F	Bayu's Corpwear
+001466EE	Black Elbow Grease Gear
+001466F2	Black Engineering Outfit
+001466EA	Black Leather Jumpsuit
+001466F6	Black Graviplas Helmet
+001466FA	Black Open Graviplas Helmet
+00246B32	!Blue Collar Offwork Duds
+00246B30	Blue Collar Offwork Hat
+00077814	Blue Elbow Grease Gear
+003A264E	Blue Lab Outfit
+0029E174	Blue Labor Jumpsuit
+001B52FF	Blue Neocity Formwear
+002619F1	Blue Neocity Poncho
+00077810	Blue UC Leather Jumpsuit
+001466EF	Brown Elbow Grease Gear
+001466F3	Brown Engineering Outfit
+00062EA3	Brown Leather Jumpsuit
+001466EB	Brown Leather Jumpsuit
+001B5300	Brown Neocity Formwear
+002619F6	Casual Street Suit
+00235B7D	Clean Suit
+00185A6F	Chunks Cap
+001A8DDD	Chunks Service Uniform
+001A4253	Corpo Boardroom Suit
+00190D0B	Corpo Executive Suit
+002265B0	Corpo Power Suit
+0019F9C1	Corpo Salary Suit
+002265B1	Corpo Sleek Suit
+001F1DCE	Cream and Blue Dress
+000788AB	Cyberware Streetwear
+00177494	Dalton Fiennes' Suit
+00185A6E	Deimos Cap
+002BA0E1	Deputy Hat
+002262D3	Disciples Tagwear
+001625DC	DJ Headphones
+001625DB	DJ Headphones Cap
+0017A439	ECS Captain Actionwear
+0017A437	ECS Officer Uniform
+0017A438	ECS Uniform
+001A8DE6	Enhance Service Uniform
+00077816	Engineering Outfit
+003FC344	Explorer Adventure Hat
+00204002	Farming Hat
+002262D5	Farming Outfit
+00250C86	Fashionable Suit
+0010799A	Faye Sengsavahn's Outfit
+0009F0F6	Festive Neocity Poncho
+003EC02E	Filthy Physician Uniform
+0024EF42	Fishworker Mask
+0024EF40	Fishworker Splashwear
+0024EF41	Fishworker Wetwear
+003E5D26	First Mercenary Outfit
+0021113E	First Officer Hat
+00228826	First Officer Outfit
+0021F3F4	First Soldier Helmet
+00228825	First Soldier Outfit
+000788A1	Formal Slack Suit
+0021BBF1	Franklin Roosevelt's Outfit
+0022856C	Freestar Duelwear
+00224FE9	Freestar Dustwear
+0021712A	Freestar Militia Hat
+00228827	Freestar Militia Uniform
+001CB843	GalBank Service Uniform
+003CD812	Generdyne Guard Helmet
+003CD80F	Generdyne Lab Uniform
+003CD810	Generdyne Security Uniform
+001D8426	Genghis Khan's Hat
+002262D2	Genghis Khan's Outfit
+00177492	Genevieve Monohan's Suit
+001466F0	Gray Elbow Grease Gear
+0029E175	Gray Labor Jumpsuit
+001466EC	Gray Leather Jumpsuit
+002619EF	Green Fashionable Suit
+0029AEAE	Hazmat Suit
+00273C05	Homesteader Scout Hat
+00185A6C	Hopetech Cap
+00108353	Ikande's SysDef Officer Uniform
+00177493	Imogene Salzo's Suit
+0025DEF0	Inclement Weather Outfit
+000788AA	Jacketed Leatherwear
+00009CC7	Leatherwear
+002619FD	Leather Streetwear
+002619FE	Leather Pocketwear
+00177495	Linden Calderi's Suit
+00030B4B	Matteo Khatri's Hat
+00030B4D	Matteo's Outfit
+00226298	Masako Imada's Outfit
+001A52D1	Megacorp Executive Suit
+000028A5	Medic Uniform
+002262D1	Mei Devine's Outfit
+0026D8AA	Miner Hard Hat Outfit
+0001D1D7	Miner Jumpsuit
+0001D1D9	Miner Jacketed Jumpsuit
+0009B72F	Miner Orebreaker Outfit
+0001D1E7	Miner Utility Outfit
+00225FCA	Naeva's Outfit
+000C47A0	NASA Lab Uniform
+001F1DC9	Navy Tan Dress
+002266A2	Neocity Corpwear
+000788A4	Neocity Hustler Outfit
+002266A3	Neon Businesswear
+001F1DD0	Neon Clublife Skirt
+000C900A	Neon Dancer Headwear
+00225FCC	Neon Dancer Outfit
+003556E7	Neon Nightlife Jumpsuit
+001F1DCF	Neon Nightlife Skirt
+001F73EF	Neon Security Helmet
+00225D9E	Neon Security Uniform
+00165720	Neon Socialite Skirt
+0021BBF2	New Atlantis Sec Uniform
+001A2507	NeuroBoost Mark I
+00100517	NeuroBoost Mark II
+00100518	NeuroBoost Mark III
+00100519	NeuroCom Mark I
+0010051A	NeuroCom Mark II
+0010051B	NeuroCom Mark III
+0010051C	NeuroTac Mark I
+0010051D	NeuroTac Mark II
+0010051F	NeuroTac Mark III
+00225DA0	Nightwear
+00036AFC	Noel's Outfit
+0018DE02	Nyx's Outfit
+0018B54A	Operative Suit
+00261A03	Padded Hat
+0002FE70	Paradiso Staff Uniform
+002BC183	Patient's Clothes
+003E5D27	Paxton's Officer Hat
+0022766B	Pirate Captain Outfit
+002491EA	Prison Scrubs
+00208E8B	Prisoner Uniform
+00226297	Physician Uniform
+001BF2F8	Pryce's Suit
+0013730B	Ranger Deputy Uniform
+002BA0E1	Ranger Hat
+001CFA01	Red Mile Service Uniform
+000028A6	Reliant Medical Uniform
+00003BF6	Resort Wear
+00003C4D	Resort Wear
+003EB4B4	Rokov's Officer Hat
+0037A34F	Ryujin Guard Helmet
+0037A34E	Ryujin Guard Uniform
+00034110	Ryujin Lab Outfit
+001823CB	Ryujin Lab Worker Hood
+001823CC	Ryujin Lab Worker Outfit
+00034114	Ryujin R&D Outfit
+0001D1DE	Sam Coe's Outfit
+0016571D	Sanctum Priest Headwear
+00055905	Sarah Morgan's Outfit
+0021C786	Sari Dress
+00165718	Security Guard Helmet
+000CC4D1	Security Flightsuit
+0021C783	Service Industry Uniform
+0025DEEF	Settler Adventure Hat
+00258039	Settler Casual Hat
+0024EF65	Settler Hat
+000753F4	Shielded Lab Outfit
+0021C782	Shinya Voss Outfit
+0016E0B9	Ship Captain Hat
+0021C781	Ship Captain's Uniform
+0029080F	Space Rogue Muscle Gear
+0029080E	Space Rogue Outfit
+002456F2	Space Trucker Bar Duds
+002456F3	Space Trucker Cap
+00246B31	Space Trucker Cargowear
+002456F4	Space Trucker Casualwear
+002470D1	Space Trucker Flannel
+002470D2	Space Trucker Flannel
+0029080D	Space Trucker Hat
+002470D0	Space Trucker Haul Wrap
+00165722	Space Undersuit
+002E18F6	Striker Maskwear
+00064A2E	Striker Streetwear
+00027189	Suit with Lapel Pin
+0002FA4	Swimsuit
+000D41F8	SY-920 Fatigues
+0011F3A8	Syndicate Capo Suit
+0011F3AC	Syndicate Club Suit
+0011F3AD	Syndicate Boss Suit
+0011F3B0	Syndicate Pinstripes
+0011F3A7	Syndicate Thug Suit
+002619FC	Synth Leatherwear
+002619FC	Synthleather Streetwear
+003329BB	SysDef Crew Uniform
+003329B4	SysDef Formal Uniform
+0021C1FB	SysDef Officer Uniform
+000D981C	SysDef Prison Scrubs
+00185A69	Taiyo Astroneering Cap
+001466F1	Teal Elbow Grease Gear
+001466F9	Teal Engineering Outfit
+001466ED	Teal Leather Jumpsuit
+001466FD	Teal Open Graviplas Helmet
+003CF431	TerraBrew Barista Outfit
+0007F88D	TerraBrew Uniform
+001CB7E7	Trade Authority Uniform
+00164BDD	Trident Crew Uniform
+0014E44E	Trident Guard Helmet
+000DBFDA	Trident Guard Uniform
+00185A68	Trident Luxury Lines Cap
+00034111	TRItek Lab Outfit
+00077818	UC Gray Utility Jumpsuit
+002C6E7D	UC Navy Armored Fatigues
+0018E260	UC Navy Crew Hat
+0021A86E	UC Navy Crew Uniform
+003E3ACF	UC Navy Duty Fatigues
+002C6E7F	UC Navy Fatigues
+002C6E7E	UC Navy Hat
+003E3AD1	UC Navy Recon Fatigues
+0021A86D	UC Navy Officer Uniform
+0025E8D5	UC Security Helmet
+0025E8D4	UC Security Uniform
+003329BC	UC SysDef Crew Hat
+003B2A81	Ularu's Suit
+00185A67	United Colonies Cap
+002619FB	Urban Operator Outfit
+000788A2	Urban Slackwear
+00251F56	Utility Flightsuit
+000781F9	Utility Headphone Cap
+00252AE7	Utility Headphones
+003CAF7E	Vanguard Officer Uniform
+002619F7	Vested Suit
+0002B5EE	White Neocity Poncho
+0029E173	Yellow Labor Jumpsuit
+0004008C	Xenofresh Clean Suit
+001466FF	Xenofresh Tech Outfit
+advertisement
+Jump to Table of Contents
+All Aid, Food, and Drink IDs in Starfield
+To spawn Aid, food, and drink items, use the following cheat code:
+
+player.additem (ID Code) (Amount)
+Item IDs	Aid Name
+0029A851	Addichrone
+000C1F57	Alien Genetic Material
+00299592	AMP
+0003D3AD	Anchored Immobilizers
+002F4436	Antibiotics
+0003D3A9	Antibiotic Cocktail
+0003D3AF	Antibiotic Injector
+0003D3AE	Antibiotic Paste
+00299590	Antibiotic Paste
+002543B9	Baguette
+002F4459	Bandages
+002A5024	Battlestim
+00249C2A	Blend
+0003D3AC	Boosted Injector
+0029959F	Boudicca
+0029A849	Boudicca
+002C7211	Bourbon
+002C7C0A	Butter
+002C722D	Can-uck! Bacon
+00249C49	Can-uck! Double Double
+00249C4A	Can-uck! Edmontonian
+00249C4C	Can-uck! Ham Boys
+00249C4D	Can-uck! Haligonian
+00249C48	Can-uck! Maple Cola
+002C720D	Can-uck! Pilsner
+002C7231	Can-uck! Poutine
+00249C4B	Can-uck! Shepherd's Pie
+002C7232	Can-uck! Tourtiere
+00092B98	Carrot
+00092B99	Celery
+002C7236	Cheddar Snack Crackers
+001FC9C1	Cheese
+002C7202	Chandra Cabernet Sauvignon
+002C7204	Chandra Chardonnay
+002C7203	Chandra Malbec
+002C7208	Chandra Merlot
+002C7206	Chandra Pinot Noir
+002C7209	Chandra Port
+002C7207	Chandra Sauvignon Blanc
+002C7205	Chandra Riesling
+00206770	Chunks Apple
+00206771	Chunks Apple - Packaged
+00206763	Chunks Beef
+0020676F	Chunks Beef - Packaged
+0020676D	Chunks Cake
+0020676E	Chunks Cake - Packaged
+0020676B	Chunks Cheesesteak
+0020676C	Chunks Cheesesteak - Packaged
+00206764	Chunks Chicken
+0020676A	Chunks Chick - Packaged
+00206769	Chunks Choco
+00206769	Chunks Choco - Packaged
+00206767	Chunks Cola - Packaged
+00206765	Chunks Egg
+001E29A8	Chunks Egg - Packaged
+0020675F	Chunks Pie
+00206760	Chunks Pie - Packaged
+00206761	Chunks Potato
+00206762	Chunks Potato - Packaged
+0020675D	Chunks Wine
+0020675E	Chunks Wine - Packaged
+00249C1A	Codos Crater
+0029A85E	CQB-X
+00139E45	Dark Lager
+002C72117	Drink Pack: Beer
+002C7216	Drink Pack: Milk
+002C721A	Drink Pack: Orange Juice
+002C7218	Drink Pack: Water
+002C7214	Drink Pack: White Wine
+002C7219	Drink Pack: Whiskey
+002C7215	Drink Pack: Red Wine
+0029B00E	Drink Pack: Vodka
+002A9DE8	Emergency Kit
+001FF69C	Erdebrau Dark Can
+001FF69E	Erdebrau Lager Can
+001FF6A0	Erdebrau Light Can
+001FF69A	Erdebrau Pils Can
+00249C20	Fried Pickles
+002995A1	Frostwolf
+002C5885	Frostwolf
+000304CE	FullFood Spiced Worms
+002C7235	Granola Mix
+00092B9A	Grapes
+0003D3AB	Heal Gel
+002F445C	Heal Paste
+0029CAD9	Heart Plus
+002C5883	Hippolyta
+002F445B	Immobilizer
+0029A85C	Infantry Alpha
+0003D3B0	Infused Bandages
+002F445A	Injector
+00143CB1	Junk Flush
+002C7213	Kefir
+0004B1D8	Lemon
+00092B9B	Lettuce
+0004B1D7	Lime
+002C7238	Marshmallow Treat Cereal
+00191214	Meal Kit
+002C7221	Meal Pack - Cereal
+002C721C	Meal Pack - Chicken
+002C7222	Meal Pack - Eggs
+002C721F	Meal Pack - Ramen
+002C721D	Meal Pack - Shrimp
+002C7220	Meal Pack - Sushi
+002C721E	Meal Pack - Tofu
+0000ABF9	Med Pack
+0019121F	Milk
+001EE5C7	Miso Soup Multipack
+001EDDDF	Mochi
+001EDDDE	Mochi Minibite
+001EDDE0	Mochi Multipack
+0029958F	Neurajack
+00003A22	Orange
+00139E44	Pale Ale
+002995A3	Panacea
+002C5881	Paramour
+00249C21	Patty Melt
+00003A23	Peach
+00003A21	Pear
+0029A84F	Penicillin X
+001944E4	Pepper Steak Sandwich
+00003A26	Potato
+002C7237	Raisin Bran Cereal
+001EE441	Ramen
+001EE442	Ramen Minibite
+001EE440	Ramen Multipack
+0029A855	Reconstim
+00139E43	Red Ale
+0001BBAB	Red Harvest Amber Ale
+0003614B	Red Harvest Double Malt Whiskey
+002C7241	Red Harvest Lentils
+0001BBAC	Red Harvest Milk Stout
+002C723F	Red Harvest Naan
+0001BBAA	Red Harvest Pale Ale
+0029B013	Red Harvest Rice
+002C723C	Red Harvest Rye
+0003614C	Red Harvest Single Malt Whiskey
+002C7240	Red Harvest Spaghetti
+002C723D	Red Harvest Wheat
+002C723E	Red Harvest White
+002C587F	Red Trench
+0003D3B1	Repairing Immobilizer
+002543B7	Sandwich
+002C724D	Seaweed Minibite
+0030283B	Seaweed Snacks Multipack
+0003FB19	Ship Parts
+0029A860	Smoked Salmon Fillet
+002C7223	Snack Pack - Apple Bites
+002C7225	Snack Pack - Choco Bites
+002C7226	Snack Pack - Gummi Bugs
+002C7224	Snack Pack - Protein Bar
+0029A850	Snake Oil
+001EDDE5	Soba
+001EDDE4	Soba Minibite
+00249C1B	Solomon's Reserve
+000304CC	Sparkling Water
+001DFCB4	Sparkling Wine
+002A9DE7	Squall
+00243FA5	Supernova
+001DFCAB	Sushi Rolls Minibite
+001DFCAC	Sushi Rolls Multiplack
+002C5880	Synapse Alpha
+002C7242	Synthameat Chicken
+002C7246	Synthameat Ham
+002C7243	Synthameat Hamburger
+000304D0	Synthameat Multi
+002C7244	Synthameat Steak
+0029A861	Synthameat Turkey
+002C7245	Synthameat Veal
+00249C15	Ta'ameya Pita
+00249C4E	TerraBew Cappuccino
+00249C50	TerraBew Classic
+003E3407	TerraBew Cortado
+0029A894	TerraBew Espresso
+00249C4F	TerraBew Latte
+003E3408	TerraBew Macchiato
+001DFCAE	Toast
+00092B96	Tomato
+0010FA09	Tranquilitea Earl Gray
+0029A847	Trauma Pack
+0029A893	UC BattleMeal
+0030283E	UC BattleMeal Multipack
+001EDF0F	Udon
+001EDF10	Udon Minibite
+001EDF10	Udon Multipack
+00249C1F	Veggie Grinder
+002C7C09	Yogurt
+0014098A	Yuko's Coffee
+0003D3AA	Zipper Bandages
+advertisement
+Jump to Table of Contents
+All Cooking Station Food and Drink IDs in Starfield
+To spawn cooking station food items, use the following cheat code:
+
+player.additem (ID Code) (Amount)
+Item Code	Cooking Station Item Name
+0029B046	Alien Broth
+0029B047	Alien Energy Drink
+002C7C0C	Alien Jerky
+0029B061	Alien Kebabs
+0029B04F	Alien Liquor
+0029B063	Alien Pie
+0029B062	Alien Sandwich
+0029B065	Alien Scramble
+0029B066	Alien Stew
+0029B064	Alien Stir Fry
+0029B052	Alien Tea
+0029B048	Alien Tonic
+0029B054	Barbacoa Wrap
+0029B050	Boba Alien Tea
+002C71F8	Boom Pop! Black Licorice
+0029A863	Boom Pop! Cherry
+002C71F5	Boom Pop! Cola
+0029B040	Boom Pop! Dynamite
+002C71F5	Boom Pop! Orange
+003038FE	Boom Pop! Reactor
+002C71F7	Boom Pop! Rhubarb
+002C71F4	Boom Pop! Root Beer
+0029B04B	Bullet Coffee
+0029B03E	Chai Latte
+002C7C0D	Chapaguri
+0029B05C	Chicken Marsala
+0029B05A	Chicken Tikka
+0029B04E	Colonel's Choice
+0029B05E	Creature Jam
+0029B060	Crispy Alien Nuggets
+0029B056	Dal Makhai
+0029B042	Disastrous Shipwreck
+0029B053	Distilled Water
+0029B059	Doro Wat
+0029B03F	Fully-Loaded Bloody Mary
+00122E94	Galaxy Lo Mein
+0029B05D	Grilled Cheese Sandwich
+002C722B	Ham and Cheese Sandwich
+002383E9	Latkes
+0029B04D	Lumberjack Julep
+0029B05B	Meatloaf
+00122E96	Nebula Wat
+0029B057	Pappardelle Bolognese
+0029B055	Reuben
+0029B058	Spaghetti Carbonara
+00122E95	Star Cluster Marsala
+00122E98	Stellar Kebabs
+0029B04C	Sunray Tonic
+0029B041	Very Heavy Water
+0029B05F	Xenowurst
+advertisement
+Jump to Table of Contents
+All Resource IDs in Starfield
+To spawn Resources, use the following cheat code:
+
+player.additem (ID Code) (Amount)
+Item ID	Resource Name
+00246B6A	Adaptive Frame
+000055B1	Adhesive
+00261295	Adhesive (Bone)
+00261294	Adhesive (Carapace)
+00260DBB	Adhesive (Flower)
+00261293	Adhesive (Gland)
+00261292	Adhesive (Hide)
+00260DBA	Adhesive (Leaf)
+00260DB9	Adhesive (Root)
+00260DB8	Adhesive (Sap)
+00260DB7	Adhesive (Seed)
+00260DB6	Adhesive (Stalk)
+00261291	Adhesive (Tissue)
+00261290	Adhesive (Vital Fluids)
+00005DEC	Aldumite
+00202F5A	Aldumite Drilling Rig
+00005570	Alkanes
+0000557D	Aluminum
+000055CD	Amino Acids
+0026128F	Amino Acids (Bone)
+0026128E	Amino Acids (Carapace)
+00260DB5	Amino Acids (Flower)
+0026128C	Amino Acids (Gland)
+0026128B	Amino Acids (Hide)
+00260DB4	Amino Acids (Leaf)
+00260DB3	Amino Acids (Root)
+00260DB2	Amino Acids (Sap)
+00260DB1	Amino Acids (Seed)
+00260DB0	Amino Acids (Stalk)
+0026128A	Amino Acids (Tissue)
+0026128D	Amino Acids (Vital Fluids)
+000055A9	Analgesic
+00261289	Analgesic (Bone)
+00261288	Analgesic (Carapace)
+00260DAF	Analgesic (Flower)
+00261286	Analgesic (Gland)
+00261285	Analgesic (Hide)
+00260DAE	Analgesic (Leaf)
+0260DAD	Analgesic (Root)
+00260DAC	Analgesic (Sap)
+00260D78	Analgesic (Seed)
+00260D77	Analgesic (Stalk)
+00261284	Analgesic (Tissue)
+00261287	Analgesic (Vital Fluids)
+000055AB	Antimicrobial
+002612C8	Antimicrobial (Bone)
+002612C7	Antimicrobial (Carapace)
+00260DFB	Antimicrobial (Flower)
+002612C9	Antimicrobial (Gland)
+0024F5C0	Antimicrobial (Hide)
+00260DF9	Antimicrobial (Leaf)
+00260DFA	Antimicrobial (Root)
+00260DF7	Antimicrobial (Sap)
+00250DF8	Antimicrobial (Seed)
+00260DFC	Antimicrobial (Stalk)
+0024F5BF	Antimicrobial (Tissue)
+0024F5C1	Antimicrobial (Vital Fluids)
+0000557B	Antimony
+00005588	Argon
+000055B8	Aromatic
+002612B3	Aromatic (Bone)
+002612AF	Aromatic (Carapace)
+00260DDC	Aromatic (Flower)
+002612B2	Aromatic (Gland)
+002612AE	Aromatic (Hide)
+00260DDB	Aromatic (Leaf)
+00260DDA	Aromatic (Root)
+00260DD9	Aromatic (Sap)
+00260DD8	Aromatic (Seed)
+002612B1	Aromatic (Tissue)
+002612B0	Aromatic (Vital Fluids)
+00246B7C	Austenitic Manifold
+00005585	Benzene
+000057D9	Beryllium
+000055B2	Biosuppressant
+00261274	Biosuppressant (Bone)
+00261273	Biosuppressant (Carapace)
+00260D67	Biosuppressant (Flower)
+00261271	Biosuppressant (Gland)
+00261270	Biosuppressant (Hide)
+00260D66	Biosuppressant (Leaf)
+00260D65	Biosuppressant (Root)
+00260D64	Biosuppressant (Sap)
+00260D63	Biosuppressant (Seed)
+00260D62	Biosuppressant (Stalk)
+0026126E	Biosuppressant (Tissue)
+00261272	Biosuppressant (Vital Fluids)
+00101273	Bulk Tranquilitea Breakfast
+000B2EE4	Bulk Tranquilitea Classic
+0010FA05	Bulk Tranquilitea Chamomile
+00097F0B	Bulk Tranquilitea Dynastic
+00097F0D	Bulk Tranquilitea Earl Grey
+00120D33	Bulk Tranquilitea Lemon
+00101274	Bulk Tranquilitea Lotus
+00097F0C	Bulk Tranquilitea Sleepy
+000F2C84	Bulk Tranquilitea Sunray
+000057DF	Caesium
+00005586	Carboxylic Acids
+0013BD9C	Chasmbass Oil
+000557C	Chlorine
+0000557E	Chlorosilanes
+0000557D	Cobalt
+0025B0FB	Coffee Bag
+00246B64	Comm Relay
+00246B7B	Control Rod
+00005576	Copper
+000055A8	Cosmetic
+002612AD	Cosmetic (Bone)
+002612AC	Cosmetic (Carapace)
+00260DD7	Cosmetic (Flower)
+002612AA	Cosmetic (Gland)
+002612A9	Cosmetic (Hide)
+00260DD6	Cosmetic (Leaf)
+00260DD5	Cosmetic (Root)
+00260DD4	Cosmetic (Sap)
+00260DD3	Cosmetic (Seed)
+00260DD2	Cosmetic (Stalk)
+002612A8	Cosmetic (Tissue)
+002612AB	Cosmetic (Vital Fluids)
+0020A02F	Drilling Rig
+00005569	Dysprosium
+000057E1	Europium
+000055AF	Fiber
+002612C2	Fiber (Bone)
+002612C3	Fiber (Carapace)
+0024F5C4	Fiber (Hide)
+00260DEE	Fiber (Leaf)
+00260DF0	Fiber (Root)
+0024F5C3	Fiber (Tissue)
+00005577	Fluorine
+00005579	Gold
+0029F405	Hallucinogen
+00261283	Hallucinogen (Bone)
+00261282	Hallucinogen (Carapace)
+00260D76	Hallucinogen (Flower)
+00261280	Hallucinogen (Gland)
+0026127F	Hallucinogen (Hide)
+00260D75	Hallucinogen (Leaf)
+00260D74	Hallucinogen (Root)
+00260D73	Hallucinogen (Sap)
+00260D72	Hallucinogen (Seed)
+00260D71	Hallucinogen (Stalk)
+0026127E	Hallucinogen (Tissue)
+00261281	Hallucinogen (Vital Fluids)
+0000558E	Helium-3
+0029F40D	Hypercatalyst
+0026126F	Hypercatalyst (Bone)
+0026126D	Hypercatalyst (Carapace)
+00260D61	Hypercatalyst (Flower)
+0026126B	Hypercatalyst (Gland)
+0026126A	Hypercatalyst (Hide)
+00260D60	Hypercatalyst (Leaf)
+00260D5F	Hypercatalyst (Root)
+00260D30	Hypercatalyst (Sap)
+00260D25	Hypercatalyst (Seed)
+00260D0C	Hypercatalyst (Stalk)
+00261269	Hypercatalyst (Tissue)
+0026126C	Hypercatalyst (Vital Fluids)
+000055B3	Immunostimulant
+0004BA37	Indicite
+00203EB4	Indicite Wafer
+0000557A	Ionic Liquids
+0000558A	Iridium
+0000556E	Iron
+00246B77	Isocentered Magnet
+00246B76	Isotopic Coolant
+00005568	Lead
+0000557F	Lithium
+000055BA	Lubricant
+00260D0B	Lubricant (Flower)
+00261267	Lubricant (Gland)
+00261266	Lubricant (Hide)
+00260D0A	Lubricant (Leaf)
+00260CE2	Lubricant (Root)
+00260CB6	Lubricant (Sap)
+00260C79	Lubricant (Seed)
+00260C74	Lubricant (Stalk)
+00261265	Lubricant (Tissue)
+00261268	Lubricant (Vital Fluids)
+0000559E	Luxury Textile
+00246B70	Mag Pressure Tank
+000055B0	Membrane
+002612A7	Membrane (Carapace)
+00260DD1	Membrane (Flower)
+002612A6	Membrane (Gland)
+002612A5	Membrane (Hide)
+00260DD0	Membrane (Leaf)
+00260DCF	Membrane (Root)
+00260DCE	Membrane (Stalk)
+002612A4	Membrane (Tissue)
+0027C4A1	Mercury
+0029F3FC	Metabolic Agent
+002612C1	Metabolic Agent (Bone)
+002612C0	Metabolic Agent (Carapace)
+00260DEC	Metabolic Agent (Flower)
+002612BF	Metabolic Agent (Gland)
+002612BE	Metabolic Agent (Hide)
+00260DEB	Metabolic Agent (Leaf)
+00260DEA	Metabolic Agent (Root)
+00260DE9	Metabolic Agent (Sap)
+00260DE8	Metabolic Agent (Seed)
+00260DED	Metabolic Agent (Stalk)
+0029F3F8	Metabolic Agent (Tissue)
+0029F3F9	Metabolic Agent (Vital Fluids)
+00246B5F	Microsecond Regulator
+00246B75	Molecular Sieve
+00246B74	Monopropellant
+00005580	Neodymium
+00005587	Neon
+00005572	Nickel
+00246B79	Nuclear Fuel Rod
+000777FD	Nutrient
+002612C6	Nutrient (Bone)
+002612C4	Nutrient (Carapace)
+00260DF6	Nutrient (Flower)
+002612C5	Nutrient (Gland)
+0029F3F6	Nutrient (Hide)
+00260DF5	Nutrient (Leaf)
+00260DF4	Nutrient (Root)
+00260DF3	Nutrient (Sap)
+00260DF2	Nutrient (Seed)
+00260DF1	Nutrient (Stalk)
+0024F5C2	Nutrient (Tissue)
+0029F3F7	Nutrient (Vital Fluids)
+002612BD	Ornamental (Bone)
+002612BC	Ornamental (Carapace)
+00260DE7	Ornamental (Flower)
+002612B9	Ornamental (Gland)
+002612BA	Ornamental (Hide)
+00260DE6	Ornamental (Leaf)
+00260DE5	Ornamental (Root)
+00260DE4	Ornamental (Sap)
+00260DE3	Ornamental (Seed)
+00260DE2	Ornamental (Stalk)
+002612B8	Ornamental (Tissue)
+002612BB	Ornamental (Vital Fluids)
+000055A7	Ornamental Material
+00005574	Palladium
+00246B73	Paramagnon Conductor
+0029F400	Pigment
+002612A3	Pigment (Bone)
+002612A2	Pigment (Carapace)
+00260DCD	Pigment (Flower)
+002612A0	Pigment (Gland)
+0026129F	Pigment (Hide)
+00260DCC	Pigment (Leaf)
+00260DCB	Pigment (Root)
+00260DCA	Pigment (Sap)
+00260DC9	Pigment (Seed)
+00260DC8	Pigment (Stalk)
+0026129E	Pigment (Tissue)
+002612A1	Pigment (Vital Fluids)
+00005573	Platinum
+000055A6	Polymer
+0026125E	Polymer (Bone)
+0026125D	Polymer (Carapace)
+00260C3B	Polymer (Flower)
+0026125B	Polymer (Gland)
+0026125A	Polymer (Hide)
+00260C38	Polymer (Leaf)
+00260C36	Polymer (Root)
+00260C2D	Polymer (Sap)
+00260C1C	Polymer (Seed)
+00260BFF	Polymer (Stalk)
+00261259	Polymer (Tissue)
+0026125C	Polymer (Vital Fluids)
+00246B72	Polytextile
+00246B71	Positron Battery
+00246B5C	Power Circuit
+00122EB8	Quark-Degenerate Tissues
+00246B6F	Reactive Gauge
+000028DF	Rothicite
+00203EB2	Rothicite Magnet
+000055CC	Sealant
+0026129D	Sealant (Carapace)
+00260DC7	Sealant (Flower)
+0026129C	Sealant (Gland)
+002AB397	Sealant (Hide)
+00260DC6	Sealant (Leaf)
+00260DC5	Sealant (Root)
+00260DC4	Sealant (Sap)
+00260DC3	Sealant (Seed)
+00260DC2	Sealant (Stalk)
+002AB399	Sealant (Tissue)
+002AB398	Sealant (Vital Fluids)
+000055AD	Sedative
+0026127D	Sedative (Bone)
+0026127C	Sedative (Carapace)
+00260D70	Sedative (Flower)
+0026127A	Sedative (Gland)
+00260D6F	Sedative (Leaf)
+00260D6E	Sedative (Root)
+00260D6D	Sedative (Sap)
+00260D6C	Sedative (Seed)
+00260D6B	Sedative (Stalk)
+00261278	Sedative (Tissue)
+0026127B	Sedative (Vital Fluids)
+00246B6D	Semimetal Wafer
+0000556A	Silver
+000055CE	Solvent
+00260BF7	Solvent (Flower)
+00261257	Solvent (Gland)
+00260BF6	Solvent (Leaf)
+00260BF5	Solvent (Root)
+00260BF4	Solvent (Sap)
+00260BF3	Solvent (Seed)
+00260BF2	Solvent (Stalk)
+00261256	Solvent (Tissue)
+00261258	Solvent (Vital Fluids)
+000055AC	Spice
+0026129B	Spice (Bone)
+0026129A	Spice (Carapace)
+00260DC1	Spice (Flower)
+00261298	Spice (Gland)
+00261297	Spice (Hide)
+00260DC0	Spice (Leaf)
+00260DBF	Spice (Root)
+00260DBE	Spice (Sap)
+00260DBD	Spice (Seed)
+00260DBC	Spice (Stalk)
+00261296	Spice (Tissue)
+00261299	Spice (Vital Fluids)
+00246B6C	Sterile Nanotubes
+000055AE	Stimulant
+00261264	Stimulant (Bone)
+00261263	Stimulant (Carapace)
+00260C66	Stimulant (Flower)
+00261260	Stimulant (Gland)
+00261261	Stimulant (Hide)
+00260C66	Stimulant (Leaf)
+00260C5C	Stimulant (Root)
+00260C3F	Stimulant (Sap)
+00260C3E	Stimulant (Seed)
+00260C3C	Stimulant (Stalk)
+0026125F	Stimulant (Tissue)
+00261262	Stimulant (Vital Fluids)
+000055B9	Structural Material
+00202782	Substrate Molecule Sieve
+00246B69	Supercooled Magnet
+0000556F	Tantalum
+00005DED	Tasine
+00203EAF	Tasine Superconductor
+00246B68	Tau Grade Rheostat
+00005578	Tetrafluorides
+0000556D	Titanium
+000055CB	Toxin
+002612B7	Toxin (Bone)
+002612B6	Toxin (Carapace)
+00260DE1	Toxin (Flower)
+002612B5	Toxin (Gland)
+002612B4	Toxin (Hide)
+00260DE0	Toxin (Leaf)
+00260DDF	Toxin (Root)
+00260DDE	Toxin (Sap)
+00260DDD	Toxin (Seed)
+0024F5C5	Toxin (Tissue)
+0024F5C6	Toxin (Vital Fluids)
+0028E7AB	Tranquilitea Breakfast Pack
+0028E7AC	Tranquilitea Classic Pack
+00188248	Tranquilitea Chamomile Pack
+001557FD	Tranquilitea Dynastic Pack
+001557F5	Tranquilitea Earl Gray Pack
+001346D9	Tranquilitea Lemon Pack
+00110F93	Tranquilitea Lotus Pack
+00094733	Tranquilitea Sleepy Pack
+00094732	Tranquilitea Sunray Pack
+000556B	Tungsten
+00005589	Uranium
+0000558B	Vanadium
+00005DEE	Veryl
+00203EB0	Veryl-Treated Manifold
+00203EBD	Veryl Explosive
+00005DEF	Vytinium
+00203EB3	Vytinium Fuel Rod
+00005591	Water
+000057DD	Xenon
+00005571	Ytterbium
+00246B65	Zero Wire
+00246B66	Zero-G Gimbal
+advertisement
+Jump to Table of Contents
+All Mineral IDs in Starfield
+To spawn minerals, use the following cheat code:
+
+player.additem (ID Code) (Amount)
+ID Code	Mineral Name
+00005DEC	Aldumite
+0000557D	Aluminum
+0000557B	Antimony
+000057D9	Beryllium
+000788D6	Caelumite
+00005575	Cobalt
+00005576	Copper
+00005569	Dysprosium
+000057E1	Europium
+00005579	Gold
+0004BA37	Indicite
+0000558A	Iridium
+0000556E	Iron
+00005568	Lead
+0000557F	Lithium
+00005580	Neodymium
+00005572	Nickel
+00005574	Palladium
+00005573	Platinum
+0000558C	Plutonium
+0000556A	Silver
+0000556D	Titanium
+00005589	Uranium
+0000558B	Vanadium
+00005DEF	Vytinium
+Jump to Table of Contents
+All Ship IDs in Starfield
+Starfield Purchasable Ships Slideshow
+
+
+View 45 Images
+
+
+
+Using console commands and cheats to spawn ships in Starfield can be a little challenging, as there are a few steps that you'll need to perform in order to add ships to your ever-growing collection. Here are the steps you'll need to take:
+
+advertisement
+Use the command "player.placeatme [Ship ID Code]" to spawn your desired ship.
+With your ship now spawned, you may notice the entrance has clipped into the ground. To bypass this, enter the command "tcl" to allow you to clip beneath the ground to find the entrance.
+Once you have found the entrance, open the command console, select the door, and use the "unlock" command. Should this not work, try opening the door from the inside of the ship.
+When the ship is finally accessible, be sure to retype the command "tcl" to turn off clipping mode.
+Below are all known free and quest-related ships that can be spawned using console commands in Starfield.
+
+All Free and Quest-Related Ship IDs
+ID Code	Ship Name	Class
+0000B730	Frontier	A
+0002CC6C	Razorleaf	A
+001322D8	Star Eagle	A
+00180F18	Starborn Guardian	A
+001E29E5	UC Prison Shuttle	A
+00038B42	Wanderwell	A
+All Purchasable Ship IDs
+ID Code	Ship Name	Class
+000F31DB	Abyss Trekker	C
+003A2E83	Achilles	A
+000F3078	Aegis	B
+0038D65C	Autobahn	C
+001E0528	Big Rig	B
+0038239C	Bireme	B
+0038D656	Civshuttle	C
+0031DF00	Crimson Fleet Ghost	A
+0031DF60	Crimson Fleet Haunt	A
+00322BE1	Crimson Fleet Phantom	A
+002E7461	Discovery	A
+003A2E11	Dragonfire	C
+003A2E0B	Dullahan	C
+002CE40B	Econohaul	A
+002E753C	Falcon	B
+0021CEAD	Galileo	A
+00147C8D	Gladius	A
+001A7F69	Hammerhead	B
+000D5575	Hoplite	B
+0038895D	Kfir	A
+0021C44B	Longsword	A
+001EB556	Mako	A
+000F2C63	Marathon	A
+003A2E8F	MULE	A
+000F31C5	Murasame	B
+00388965	Mustang	A
+003A2E41	Naginata	B
+0020C644	Narcissus	A
+000F3076	Narwhal	C
+0038234D	Orca	C
+001E052A	Pik Up	A
+0037F546	Privateer	B
+003A2E3B	Pterosaur	B
+00042372	Rambler	A
+0033A1C6	Ranger	B
+003A2E6B	Responder	A
+0021CEAB	Roanoke	B
+000F31C7	Shackleton	B
+000F2DBE	Shieldbreaker	B
+000F2E5B	Silent Runner	C
+000FAFE8	Slipstream	B
+0036D871	Space OX	B
+00215E9B	Sparrow	A
+003A2E35	Star Hawk	B
+0003CFB2	Star Semi	C
+000F31E4	Stronghold	C
+003A2E1D	Sunsail	B
+000423AB	Thresher	A
+00347145	Trade Wagon Train	B
+003A2E5F	Transpo	A
+001A39A8	Trebuchet	A
+000F31CE	Vagabond	A
+00001E9F	Vanquisher	C
+0018D3F0	Venture	B
+0003CF9C	Vindicator	C
+003A2E47	Wagontrain	B
+000F31D0	Wanderlust	B
+000F31C9	War Horse	A
+0020AFD0	Watchdog	A
+003A2E71	Wendigo	A
+0002C88F	Zumwalt	B
+advertisement
+Jump to Table of Contents
+All Faction IDs in Starfield
+To pay off any outstanding bounties in Starfield or even stop particular factions from attacking you, use the following cheat code:
+
+player.paycrimegold 0 0 (Faction ID)
+ID Code	Faction Name
+00010B30	Crimson Fleet
+0026FDEA	Neon / Ryujin Industries
+0005BD93	United Colonies
+000638E5	Freestar Collective
+Jump to Table of Contents
+All Skill IDs in Starfield
+To unlock and level up skills in Starfield, you'll want to use the following cheat code. Do note that you will need to repeat this code in order to rank up each skill tier.
+
+player.addperk (Perk ID)
+ID Code	Skill Name
+Physical Skills
+002C59DF	Boxing
+002CE2DD	Fitness
+002CFCB2	Stealth
+002C59D9	Weight Lifting
+002CE2E1	Wellness
+002C59E2	Energy Weapon Dissipation
+0028AE17	Environmental Conditioning
+0028AE29	Gymnastics
+002CFCAD	Nutrition
+002CFCAE	Pain Tolerance
+0028AE14	Cellular Regeneration
+002CE2A0	Decontamination
+002C5554	Martial Arts
+002C555E	Concealment
+002C53B4	Neurostrikes
+0028AE13	Rejuvenation
+Social Skills
+002C5A8E	Commerce
+002C5A94	Gastronomy
+0022EC82	Persuasion
+0028B853	Scavenging
+002C555B	Theft
+002CFCAF	Deception
+002C59E1	Diplomacy
+002C59DE	Intimidation
+002C53AE	Isolation
+002C555F	Negotiation
+002C555D	Instigation
+002C890D	Leadership
+0023826F	Outpost Management
+002C5555	Manipulation
+002C53B3	Ship Command
+002C53B0	Xenosociology
+Combat Skills
+002CFCAB	Ballistics
+002CFCB0	Dueling
+002C59DD	Lasers
+002080FF	Pistol Certification
+0027DF97	Shotgun Certification
+002C5556	Demolitions
+00147E38	Heavy Weapons Certification
+0027DF96	Incapacitation
+0027BAFD	Particle Beams
+002CE2E0	Rifle Certification
+002C890B	Marksmanship
+002C555A	Rapid Reloading
+002C53B1	Sniper Certification
+002C59DA	Targeting
+0027DF94	Armor Penetration
+0027CBBA	Crippling
+002C53AF	Sharpshooting
+Science Skills
+002C5560	Astrodynamics
+002CE29F	Geology
+002CE2DF	Medicine
+002C555C	Research Methods
+0027CBC1	Surveying
+002C5557	Botany
+002CFCB1	Scanning
+0027CBC3	Spacesuit Design
+002C890C	Weapon Engineering
+002C5552	Zoology
+0027CBBB	Astrophysics
+002CE2C0	Chemistry
+002C59E0	Outpost Engineering
+002C2C5A	Aneutronic Fusion
+0027CBC2	Planetary Habitation
+0004CE2D	Special Projects
+Tech Skills
+002CE2C2	Ballistic Weapon Systems
+00146C2C	Boost Pack Training
+002CFCAC	Piloting
+002CE2E2	Security
+002C5559	Targeting Control Systems
+002C59DB	Energy Weapon Systems
+002CE2DE	Engine Systems
+00143B6B	Payloads
+002C2C59	Shield Systems
+002C5558	Missile Weapon Systems
+002C2C5B	Particle Beam Weapon Systems
+002C5553	Robotics
+002C59DC	Starship Design
+002AC953	Starship Engineering
+0027B9ED	Automated Weapon Systems
+0008C3EE	Boost Assault Training
+002C53B2	EM Weapon Systems
+advertisement
+Jump to Table of Contents
+All Trait IDs in Starfield
+To add or remove character traits and backgrounds in Starfield, use the following cheat codes:
+
+player.removeperk (Trait ID)
+player.addperk (Perk ID)
+Do note that you must have an empty trait or background slot available to add a new trait or background to your character. So, be sure to remove a trait first before attempting this command.
+
+Alternatively, you can use "showlooksmenu player 1" which will allow you to adjust your character using the initial character creation menu.
+
+ID Code	Trait Name
+00227FDA	Alien DNA
+00227FDF	Dream Home
+00227FD6	Empath
+00227FD7	Extrovert
+00227FD5	Freestar Collective Settler
+00227FD9	Hero Worshipped
+00227FD8	Introvert
+00227FDE	Kid Stuff
+00227FD3	Neon Street Rat
+00227FD2	Raised Enlightened
+00227FD1	Raised Universal
+00227FD0	Serpent's Embrace
+00227FE2	Spaced
+00227FE0	Taskmaster
+00227FE1	Terra Firma
+00227FD4	United Colonies Native
+00227FDD	Wanted
+Jump to Table of Contents
+All Background IDs in Starfield
+To add or remove character traits and backgrounds in Starfield, use the following cheat codes:
+
+player.removeperk (Trait ID)
+player.addperk (Perk ID)
+Do note that you must have an empty trait or background slot available to add a new trait or background to your character. So, be sure to remove a trait first before attempting this command.
+
+Alternatively, you can use "showlooksmenu player 1" which will allow you to adjust your character using the initial character creation menu.
+
+ID Code	Background Name
+0022EC76	Beast Hunter
+0022EC81	Bouncer
+0022EC80	Bounty Hunter
+0022EC7F	Chef
+0022EC7E	Combat Medic
+0022EC7D	Cyber Runner
+0022EC7C	Cyberneticist
+0022EC7B	Diplomat
+0022EC79	Explorer
+0022EC78	Gangster
+0022EC77	Homesteader
+0022EC7A	Industrialist
+0022EC75	Long Hauler
+0022EC73	Pilgrim
+0022EC72	Professor
+0022EC74	Ronin
+0022EC71	Sculptor
+0022EC70	Soldier
+0022EC6F	Space Scoundrel
+0022EC6E	Xenobiologist
+002DFD1A	File Not Found
