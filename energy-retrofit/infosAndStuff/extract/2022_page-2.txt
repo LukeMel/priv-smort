@@ -1,0 +1,46 @@
+Stadtwerke
+Nurtingen
+Ihre Abrechnung fiir Heizung und
+Warmwasser 2022
+Entnahmestellennummer 818349
+Melhus, Ole Kundennummer 1000027695
+Am Reitplatz 39 Rechnungsnummer 3446200-0224-01082023
+72622 Niirtingen
+Liegenschaft Am Reitplatz 39
+72622 Niirtingen
+‘Stadtwerke Niirtingen GmbH
+Porschestr. 5
+72622 Nirtingen
+Liegenschaftsnummer 344.620-0
+Ihre Nutzernummer 224
+Ihr Nutzungszeitraum 01.01.2022 - 31.12.2022
+erstellt am 01.08.2023
+Ihr Verbrauch
+Heizung
+Geraétenummer Erlauterung Datum Anfangsstand MaBeinheit — Erlauterung Datum Endstand Verbrauch
+30016888 01.01.2022 3.659,00 kWh 31.12.2022 14.557,00 10.898,00
+Summe Verbrauch 10.898,00
+Summe Verbrauch Vorjahr 14542,00
+Warmwasser
+Geraétenummer Erlduterung Datum Anfangsstand MaBeinheit — Erlauterung Datum Endstand Verbrauch
+4966 01.01.2022 68,00 m3 31.12.2022 91,00 23,00
+Summe Verbrauch 23,00
+‘Summe Verbrauch Vorjahr 37,86
+Ihre Kosten Netto 7% Must, Brutto
+Kosten fiir Heizung
+Arbeitspreis 01.01.2022 10898,00 kWh x 0,0805880 € je kWh = 878,25 €
+Grundpreis 01.01.2022 13,00 kW Anschl.wert x 68,2857140 € je kW Anschl.wert = 887,71 €
+Messpreis 01.01.2022 1,00 Nutzer x 25,6974790 € je Nutzer = 25,70 €
+‘Summe Kosten fiir Heizung 1.791,66 € 125,42 € 1.917,08 €
+Kosten fiir Warmwasser
+Arbeitspreis 01.01.2022 23,00 m3 x 9,4285710 € je m3 = 216,86 €
+Summe Kosten fiir Warmwasser 216,86 € 15,18 € 232,04 €
+abziiglich Ihrer Vorauszahlungen (19% MwSt.) 2.063,87 € 392,13€ — 2.456,00€
+Erstattung des Bunds gemaB § 6 EWSG ("Dezember-Soforthilfe") 307,20 €
+Thr Guthaben (nach "Dezember-Soforthilfe") 614,08 €
+Bereits im letzten Jahr haben die Beschaffungskosten fiir Erdgas Rekordhéhen erreicht. Auch in diesem Jahr gibt es durch den Krieg in der
+Ukraine einen weiteren drastischen Anstieg der Preise. Um einer Nachzahlung bei Ihrer nachsten Warmeabrechnung entgegenzuwirken, sind
+die voraussichtlichen Mehrkosten im neuen Vorauszahlungsbetrag bereits beriicksichtigt.
+Die neue Vorauszahlung ab 01.09.2023 betragt 371,00 €
+Bitte beachten Sie, dass sich Ihre geleisteten Abschlage auf den o.g. Nutzungszeitraum beziehen.
+Bei Fragen zu Ihrer Abrechnung wenden Sie sich bitte an unser Kundenzentrum unter der Telefonnummer 07022/406-245.

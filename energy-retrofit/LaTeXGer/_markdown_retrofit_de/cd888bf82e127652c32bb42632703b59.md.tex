@@ -1,0 +1,60 @@
+\markdownRendererDocumentBegin
+Hinweise: - Der TWW‑Heizspeicher enthält Heizungswasser (kein Trinkwasser). Die FriWa erwärmt Trinkwasser im Durchlauf über einen Plattenwärmetauscher. - Der Heiz-/Kühlspeicher dient als hydraulische Weiche und Energiespeicher. Im Sommer nachts kühlen, tagsüber nutzen. - Optionaler Plattenwärmetauscher (PHE) zwischen WP und Hauskreis ermöglicht Glykol auf WP‑Seite und schützt die Wasserqualität.\markdownRendererInterblockSeparator
+{}\markdownRendererSectionBegin
+\markdownRendererSectionBegin
+\markdownRendererHeadingTwo{Betriebsarten}\markdownRendererInterblockSeparator
+{}\markdownRendererUlBegin
+\markdownRendererUlItem Winter\markdownRendererUlItemEnd 
+\markdownRendererUlItem Wettergeführter Betrieb; WP belädt den Heiz-/Kühlspeicher (Mitte) für den Heizbetrieb; Auslegung VL ≤ 35 °C.\markdownRendererUlItemEnd 
+\markdownRendererUlItem Mittags (PV‑Fenster) hat TWW Priorität: TWW‑Speicher auf 55–60 °C laden, danach Rückkehr zum Heizen.\markdownRendererUlItemEnd 
+\markdownRendererUlItem Ofen lädt Puffer oben (Rücklaufanhebung ≥ 60 °C); thermische Ablaufsicherung und Notkühlung gemäß EN 303‑5.\markdownRendererUlItemEnd 
+\markdownRendererUlItem HA orchestriert Prioritäten/Meldungen; Sicherheits- und Grenzwerte sind hart verdrahtet.\markdownRendererUlItemEnd 
+\markdownRendererUlItem Sommer\markdownRendererUlItemEnd 
+\markdownRendererUlItem Nacht: WP kühlt den Heiz-/Kühlspeicher auf ~16–18 °C.\markdownRendererUlItemEnd 
+\markdownRendererUlItem Tag: UFH‑Vorlauf wird auf ≥ (Taupunkt + 2 K) begrenzt, typ. 19–21 °C (Kondensationsschutz).\markdownRendererUlItemEnd 
+\markdownRendererUlItem TWW‑Speicher bleibt ganzjährig heiß; mittags per PV laden.\markdownRendererUlItemEnd 
+\markdownRendererUlItem Übergangszeit\markdownRendererUlItemEnd 
+\markdownRendererUlItem Minimale Puffersollwerte; TWW mittags; Nachtkühlung bei Hitzeperioden.\markdownRendererUlItemEnd 
+\markdownRendererUlEnd \markdownRendererInterblockSeparator
+{}
+\markdownRendererSectionEnd \markdownRendererSectionBegin
+\markdownRendererHeadingTwo{Sollwerte, Grenzen, Sensorik}\markdownRendererInterblockSeparator
+{}\markdownRendererUlBeginTight
+\markdownRendererUlItem TWW‑Heizspeicher: 55–60 °C; Verbrühschutz an Entnahmestellen.\markdownRendererUlItemEnd 
+\markdownRendererUlItem Heiz-/Kühlspeicher Winter: so, dass VL ≤ 35 °C erreicht wird.\markdownRendererUlItemEnd 
+\markdownRendererUlItem Heiz-/Kühlspeicher Sommer: Nachtziel 16–18 °C.\markdownRendererUlItemEnd 
+\markdownRendererUlItem UFH im Kühlbetrieb: ≥ (Taupunkt + 2 K). Beispiel: 26 °C/60 - Sensorik (Minimum):\markdownRendererUlItemEnd 
+\markdownRendererUlItem Speicher oben/Mitte/unten (beide Speicher)\markdownRendererUlItemEnd 
+\markdownRendererUlItem UFH: VL/RL; optional Oberflächensensor am Verteiler\markdownRendererUlItemEnd 
+\markdownRendererUlItem Raumklima: mind. ein T/r.F.-Sensor pro Etage (Taupunkt)\markdownRendererUlItemEnd 
+\markdownRendererUlItem Wärmemengen: WP→Puffer, ggf. FriWa‑Primär\markdownRendererUlItemEnd 
+\markdownRendererUlEndTight \markdownRendererInterblockSeparator
+{}
+\markdownRendererSectionEnd \markdownRendererSectionBegin
+\markdownRendererHeadingTwo{Dimensionierung (Richtwerte)}\markdownRendererInterblockSeparator
+{}\markdownRendererUlBeginTight
+\markdownRendererUlItem WP: nach EN 12831; typisch 4–6 kW @ −10 °C; Gerät 6–10 kW Klasse mit guter Modulation/Leisebetrieb.\markdownRendererUlItemEnd 
+\markdownRendererUlItem Heiz-/Kühlspeicher: 800–1000 L, 100–150 mm Dämmung, geringe Δp‑Anschlüsse, 3 Tauchhülsen.\markdownRendererUlItemEnd 
+\markdownRendererUlItem TWW‑Heizspeicher: 200–300 L, 3 Tauchhülsen, 55–60 °C.\markdownRendererUlItemEnd 
+\markdownRendererUlItem FriWa: 25–35 kW Platten‑WT‑Modul mit variabler Primärpumpe, Durchflusssensor, elektronischer Auslauftemperaturregelung; Trinkwasserseite mit Filter/Service.\markdownRendererUlItemEnd 
+\markdownRendererUlItem Ventile/Pumpen: Hocheffizienzpumpen; 3‑Wege‑Mischer (UFH) mit fester Taupunkt‑Begrenzung; motorische Absperrungen für Sommer/Winter; Rückflussverhinderer, Strangregulierungen.\markdownRendererUlItemEnd 
+\markdownRendererUlItem Optionaler PHE: auf volle Leistung mit kleinem Annäherungs‑ΔT; Glykol WP‑seitig; Luft/Schlammabscheider.\markdownRendererUlItemEnd 
+\markdownRendererUlItem Ausdehnungsgefäße: auf Gesamtvolumen ausgelegt (Speicher + Rohrnetz + Heizflächen).\markdownRendererUlItemEnd 
+\markdownRendererUlEndTight \markdownRendererInterblockSeparator
+{}
+\markdownRendererSectionEnd \markdownRendererSectionBegin
+\markdownRendererHeadingTwo{Sicherheit und Wasserqualität}\markdownRendererInterblockSeparator
+{}\markdownRendererUlBeginTight
+\markdownRendererUlItem Ofenkreis: Rücklaufanhebung (RLA, ≥ 60 °C), thermische Ablaufsicherung (TAS), schwerkrafttaugliche Notkühlung, ausreichendes Membran‑Ausdehnungsgefäß (MAG); EN 303‑5.\markdownRendererUlItemEnd 
+\markdownRendererUlItem System: Sicherheitsventile (i. d. R. 3 bar), Luft/Schlammabscheider, VDI 2035‑gerechtes Wasser; warme Leitungen dämmen, kalte diffusionsdicht inkl. Kondensatableitung.\markdownRendererUlItemEnd 
+\markdownRendererUlItem Elektro: Unterverteilung für wichtige Stromkreise (HP‑Freigabe, Pumpen, Regler, Netzwerk, Kühlung, ausgewählte Stromkreise).\markdownRendererUlItemEnd 
+\markdownRendererUlEndTight \markdownRendererInterblockSeparator
+{}
+\markdownRendererSectionEnd \markdownRendererSectionBegin
+\markdownRendererHeadingTwo{Regelungszuordnung}\markdownRendererInterblockSeparator
+{}\markdownRendererUlBeginTight
+\markdownRendererUlItem Primär/Sicherheit: WP‑Regler; Hydraulikregler für Mischer, Pumpen, Temperaturgrenzen, TWW‑Priorität; harte Verriegelungen (nicht HA‑abhängig).\markdownRendererUlItemEnd 
+\markdownRendererUlItem Orchestrierung (HA): PV‑Zeitfenster (z. B. TWW mittags), Saisonumschaltung, Meldungen (Ofen, Filterservice, r.F./T‑Abweichungen), Logging (Puffer, r.F., Energie, COP‑Proxy).\markdownRendererUlItemEnd 
+\markdownRendererUlEndTight 
+\markdownRendererSectionEnd 
+\markdownRendererSectionEnd \markdownRendererDocumentEnd

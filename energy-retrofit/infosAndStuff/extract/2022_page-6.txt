@@ -1,0 +1,61 @@
+Minol
+verse Ablesung von Heizkostenverteilern Minometer® M8 radio.
+Die wichtigsten Funktionen auf einen Blick.
+Die zuverlassigste Verbrauchserfassung fiir che Ablesewerte im gesamten Gebaude, unabhangig
+Heizkosten bietet der elektronische Heizkosten- davon, wann die Ablesung tatsachlich vorgenommen
+verteiler Minometer® MB radio. Die hohe Auf- wird. Zum Ablesestichtag werden die aufgelaufenen
+lésung der Verbrauchswerte und bester Schutz Verbrauchswerte im Speicher abgelegt und die lau-
+gegen thermische, elektrische und magnetische fende Anzeige beginnt wieder bei Null.
+Stérfaktoren werden héchsten Anforderungen Neben dem aktuellen Verbrauch sind an der Multi-
+gerecht. Diese Information erlautert die wesent- funktionsanzeige der Vorjahresverbrauch und zusatz-
+lichen Funktionen des Gerates und zeigt Ihnen, lich die letzten 18 Monatsendwerte ablesbar. Das
+welche Daten Sie selbst ablesen kénnen. erméglicht eine Kontrolle der Verbrauchswerte auch
+noch lange nach der Ablesung. Die Stromversorgung
+Der Minometer® M8 radio verfiigt ber einen Tem- _—_ des Gerats reicht fiir mindestens 10 Jahre.
+peratureinsatzbereich von 35 °C bis 130 °C und
+ist damit fiir Heizungsanlagen jeglicher Auslegungs- © Der Minometer® M8 radio ist ein elektronischer
+temperaturen geeignet. Der Minometer® M8 radio —_— Heizkostenverteiler mit integrierter Funkschnitt-
+arbeitet nach dem Zweiftihler-Messprinzip, beidem __ stelle. Er wird in die moderne loT-L6sung Minol
+Sensoren laufend kleinste Anderungen der Heizkér- — Connect eingebunden. Ein Betreten der Wohnung
+per- und Raumtemperatur erfassen. Die ermittelten zur Ablesung ist nicht erforderlich. Als Mieter oder
+Messdaten werden zuverlassig fiir die Verbrauchs- |= Wohnungseigentiimer ist es Ihnen aber auch selbst
+erfassung ausgewertet. jederzeit mit einer handelstblichen Taschenlampe
+méglich, verschiedene Anzeigen durch einfaches
+Die Stichtagsprogrammierung sorgt fiir datumsglei- = Anleuchten der Infrarotsensoren abzurufen.
+Mulituntionsanzeige der elektronischen Heizkostenversiler Minometer MS bis MB
+LLeuchten Sie den linkon Infrarotsonsor an. Es erscheint der Dsplaytest und nach
+| einer weiteren Sekunde der Zahlerstand am Abrechnungsstichtag. Nehmen Sie jetzt
+soot das Lich vom Sensor und der Zahlerstand am Stichtag und das Datum des
+—l Qa Se ei es ed er aod ee um eae
+Nach einer Minute schaltet das Geratautomatsch auf de laufende Verbrauchsanzeige
+‘ ‘ _urOck. Verwenden Sie bite Keine LED- oder Handy-Taschenlampe, weil in deren
+poss ssssaasassaar
+——— ——— ——
+’ aarueler | ae 6. Zaterstand am |
+| ic345 | acces! | OG 789 | wees |) E-OF
+aneeige) |) aisregiste) PF
+| as iden Anzeige inken | 6. Kennung fr die pro-
+. 1 pach 1 Sokunds im Wochsol | grammierte Skalenart
+a Taaaaa] rosie! Fa] «ost aos | mentees
+~ | 80888 | oe | aio! Zee, | Se
+segmente | stchiags f
+nn
+Nach Abschluss der ersten Anzeigeschllf lisa sich am Minomeler durch einen weiteren Lichmpuls de zwelteAnzeigeschleife aktvieren. Darin Konnen
+nacheinander 18 zurdeklegende Monatswerte abgefragt werden. Ein ganz besonderer Vorel, well Anfahrten far Zwvischenablesungen bet Nutzerwechsel
+neht mehr erfolgen mossen. Dutch de im Gerat gespeicherten Werte it eine Verbrauchsabgrenzung auch noch nachtragich bel der
+‘Abrechnungserstllung mégiich,
+—— 1
+teem | fa 5_ me | & Monee 1
+er || 92205)".
+‘schiefe | 1
+1 1
+| ‘tuck Sou vecae 1
+——— 1
+1 hh Zahler- 1
+I B40 | * sae ! 7p
+‘[. 342" | Rae
+: 1 “athe
+Oe aeaetie
+Minol Messtechnik Er Braet
+W. Lehmann GmbH & Co. KG | Nikolaus-Otto-StraBe 25 | 70771 Leinfelden-Echterdingen f- ELE E]
+Telefon 0711 94 91-0 | Telefax 0711 94 91-238 | info@minolcom | minol.de (Ol eer Pd

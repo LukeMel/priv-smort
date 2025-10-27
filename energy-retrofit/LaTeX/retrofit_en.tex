@@ -1,0 +1,840 @@
+% Energy Retrofit Documentation (English) — Self-contained
+\documentclass[11pt,oneside]{report}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{geometry}
+\geometry{a4paper,margin=1in}
+\usepackage[hidelinks]{hyperref}
+\usepackage{bookmark}
+\usepackage[english]{babel}
+\usepackage{textcomp}
+\usepackage{newunicodechar}
+\usepackage[hybrid]{markdown}
+% Unicode mapping for robust compilation
+\newunicodechar{≥}{$\ge$}
+\newunicodechar{≤}{$\le$}
+\newunicodechar{°}{$^\circ$}
+\newunicodechar{·}{\ensuremath{\cdot}}
+\newunicodechar{−}{-}
+\newunicodechar{–}{--}
+\newunicodechar{—}{---}
+\newunicodechar{↔}{$\leftrightarrow$}
+\newunicodechar{→}{$\to$}
+\newunicodechar{≈}{$\approx$}
+\newunicodechar{²}{\ensuremath{^2}}
+\newunicodechar{Δ}{$\Delta$}
+\newunicodechar{₂}{$_2$}
+\newunicodechar{⁻}{$^{-}$}
+\newunicodechar{€}{\texteuro{}}
+
+\title{Energy Retrofit Documentation\\Dual-Buffer Architecture, HRV, Controls, Funding}
+\author{Project: 1972 Mid-Terrace House}
+\date{\today}
+
+\begin{document}
+\maketitle
+\setcounter{secnumdepth}{3}
+\setcounter{tocdepth}{3}
+\tableofcontents
+\clearpage
+
+\chapter{Abbreviations}
+\begin{markdown}
+- AWHP — air‑to‑water heat pump
+- DHW — domestic hot water
+- FriWa — fresh‑water station (instantaneous DHW via plate heat exchanger)
+- UFH — underfloor heating
+- HRV — heat recovery ventilation
+- PHE — plate heat exchanger
+- PV — photovoltaics
+- HA — Home Assistant (open‑source automation)
+- HP — heat pump
+- COP — coefficient of performance
+- SoC — state of charge (battery)
+- SPD — surge protective device
+- ATS — automatic transfer switch
+- EEE — Energie‑Effizienz‑Experte (energy‑efficiency expert)
+- EH — Efficiency House standard (e.g., EH 85)
+- DIN — Deutsches Institut für Normung (German standards)
+- EN — European Norm (standards)
+- KfW — Kreditanstalt für Wiederaufbau (German development bank)
+- BAFA — Bundesamt für Wirtschaft und Ausfuhrkontrolle
+- BEG — Bundesförderung für effiziente Gebäude
+- iSFP — individueller Sanierungsfahrplan (individual retrofit roadmap)
+- BzA — Bestätigung zum Antrag (confirmation before application)
+- BnD — Bestätigung nach Durchführung (confirmation after completion)
+- VDI — Verein Deutscher Ingenieure (Association of German Engineers)
+- WMZ — heat meter (Wärmemengenzähler)
+- RCD — residual current device
+- MCB — miniature circuit breaker
+- RLA — return‑lift valve (keeps stove return ≥ ~60°C)
+- TAS — thermal discharge safety (valve)
+\end{markdown}
+
+\chapter{Project Overview}
+\begin{markdown}
+# Project Overview
+
+- Building: Mid‑terrace house (Reihenmittelhaus), ~113 m², built ~1972, EG + DG + cellar.
+- Occupancy: 3 persons.
+- Current energy (2023):
+  - Space heat: ~9,824 kWh/yr (~87 kWh/m²·yr), district heating.
+- Domestic hot water (DHW): ~16.86 m³ water (~≈881 kWh/yr thermal, ΔT≈45 K).
+  - Electricity: ~2,671 kWh/yr.
+- Goals:
+  - Achieve Effizienzhaus 85 + Erneuerbare‑Energien‑Klasse (≥65% renewable share for heat/cold).
+- Strong photovoltaics (PV) self‑consumption; resilience with battery and critical‑loads subpanel.
+  - Efficient, simple‑to‑operate system with safe controls and clean commissioning.
+  - Gentle hydronic cooling without AC (UFH cooling with dew‑point protection).
+
+## Key Design Decisions
+
+- Dual‑buffer system:
+  - DHW heating buffer (200–300 L) always hot (55–60°C), supplies FriWa (no potable storage).
+  - Heating/Cooling buffer (800–1,000 L) hot in winter, cold in summer (16–18°C target for night charging).
+- Heat source: Reversible air‑to‑water heat pump (AWHP, R290), monovalent for design heat load; wood stove with back‑boiler as comfort/backup.
+- Distribution: Water‑based underfloor heating (UFH) in main zones; no fan‑coils, no AC.
+- Ventilation: Decentralized single‑room heat recovery ventilation (HRV) units (6–8 total), DIN 1946‑6 compliant.
+- Controls: Hard‑wired safety + dew‑point logic; Home Assistant for PV‑aware orchestration and monitoring.
+
+## Performance Targets
+
+- Envelope targets (typical for EH 85):
+  - Basement ceiling U ≤ 0.25 W/(m²·K)
+  - Roof/attic U ≤ 0.14 W/(m²·K)
+  - Windows Uw ≤ 0.90 W/(m²·K)
+  - Airtightness n50 ≤ 1.5 h⁻¹ (pre/post blower‑door tests)
+- Hydronic targets:
+  - Heating design VL ≤ 35°C; long compressor runs.
+  - Cooling VL ≥ dew point + 2 K, typically 19–21°C.
+  - UFH cooling capacity expectation: ~10–25 W/m² (≈1.1–2.8 kW total).
+
+## Expected Impacts (order‑of‑magnitude)
+
+- Envelope + thermal bridge fixes: ~25–40% reduction in space‑heating energy vs. current baseline.
+- PV ~5.8–8 kWp: ~5.5–8.5 MWh/yr generation; with battery 10 kWh, self‑consumption 50–70% typically achievable.
+- Hydronic cooling: pleasant background cooling; humidity managed by ventilation and dew‑point limit (add dehumidifier only during unusual heat/humidity spells).
+
+## Constraints and Notes
+
+- Open basement staircase: add airtight glazed partition and insulate basement ceiling.
+- Loggia (interior balcony) and open entry are thermal bridges; see 05_envelope‑airtightness.md for options (winter garden / vestibule prioritized).
+- No central ventilation feasible; plan single‑room HRV units with proper placement and acoustics.
+\end{markdown}
+
+\chapter{Historical Consumption and Costs (2021--2023)}
+\begin{markdown}
+Figures extracted from district‑heating statements (see source files below). Focused on amounts and costs.
+
+## Key Figures
+
+- 2021
+  - Space heat: 14,542 kWh — 2,158.76 EUR
+  - DHW: 37.86 m³ — 341.11 EUR
+  - Total billed (heat + DHW): 2,499.88 EUR
+- 2022
+  - Space heat: 10,898 kWh — 1,917.08 EUR
+  - DHW: 23.00 m³ — 232.04 EUR
+  - Total billed (heat + DHW): 2,149.12 EUR
+- 2023
+  - Space heat: 9,824 kWh — 3,197.43 EUR
+  - DHW: 16.86 m³ — 445.41 EUR
+  - Total billed (heat + DHW): 3,642.84 EUR
+  - CO2 info (statement): factor 0.251 kg CO2/kWh; emissions 2,961 kg; CO2 cost 95.04 EUR
+
+## Source Documents
+
+- 2021: `infosAndStuff/2021_10000027695_818349.pdf`
+- 2022: `infosAndStuff/2022_10000027695_818349.pdf`
+- 2023: `infosAndStuff/2023_10000027695_818349.pdf`
+\end{markdown}
+
+\chapter{Design Architecture — Dual Buffers}
+\begin{markdown}
+# Design Architecture — Dual Buffers
+
+This document defines the hydraulic concept, operating modes, key setpoints, and component sizing for the dual‑buffer plan: a dedicated always‑hot DHW heating buffer feeding a fresh‑water station (FriWa), plus a separate heating/cooling buffer that is hot in winter and cold in summer. No air conditioners or fan‑coils are used; cooling is via underfloor heating (UFH) with dew‑point protection.
+
+## One‑Line Hydraulic Schematic (ASCII)
+
+\end{markdown}
+\begin{Verbatim}[fontsize=\small]
+           [PV + Battery + Critical Loads Subpanel]
+                          |
+                   [Electrical Supply]
+                          |
+                       [AWHP R290]
+                          |
+                   (optional Plate HX)
+                          |
+                 +--------+---------+
+                 |                  |
+       [Heating/Cooling Buffer]   [DHW Heating Buffer]
+          800-1000 L, strat.         200-300 L, 55-60 C
+                 |                  |
+                 |                  +--> [FriWa] --> Potable DHW
+                 |                           ^
+                 |                           |
+           +-----+----+                 Cold mains in
+           |          |
+        3-way       Return
+        mixing        from
+        valve        UFH
+           |          ^
+           v          |
+         [UFH Supply] +---> [UFH Loops] ---> [UFH Return]
+
+ [Wood Stove w/Back-Boiler] --(return lift, safety)--> Buffer Top
+\end{Verbatim}
+\begin{markdown}
+
+Notes:
+- The DHW heating buffer contains closed system water (not potable). The FriWa heats potable water on demand via a plate heat exchanger.
+- The heating/cooling buffer acts as hydraulic separator and energy store. In summer it is chilled at night; in winter it is kept warm.
+- An optional plate heat exchanger (PHE) between the AWHP and indoor circuit allows glycol on the AWHP side and protects indoor water quality.
+
+## Operating Modes
+
+- Winter
+  - AWHP runs weather‑compensated to charge the heating/cooling buffer (mid‑zone) for space heating; VL design ≤ 35°C.
+  - Midday PV window: AWHP prioritizes DHW heating buffer to 55–60°C for FriWa draws; thereafter returns to space heating.
+  - Wood stove charges the buffer top via return‑lift valve (≥60°C) and has thermal discharge safety and gravity emergency cooling per EN 303‑5.
+  - Home Assistant (HA) orchestrates priorities and notifications; safety/limits are hard‑wired in dedicated controllers.
+
+- Summer
+  - Night: AWHP chills the heating/cooling buffer to ~16–18°C.
+  - Day: UFH supply is limited to ≥(dew point + 2 K), typically 19–21°C, to avoid condensation.
+  - DHW heating buffer remains hot year‑round; AWHP charges it around midday using PV.
+
+- Shoulder Seasons
+  - Minimal buffer setpoints; DHW midday priority; occasional night‑chill during heatwaves.
+
+## Setpoints, Limits, and Sensors
+
+- DHW heating buffer: 55–60°C setpoint; anti‑scald mixing valves at fixtures if needed.
+- Heating/Cooling buffer (winter): weather‑compensated targets to achieve VL ≤ 35°C at design.
+- Heating/Cooling buffer (summer): night target 16–18°C.
+- UFH supply in cooling: ≥(dew point + 2 K). Example: 26°C and 60% RH → dew point ≈ 17.8°C → UFH supply ≥ 20°C.
+- Sensors (minimum):
+  - Buffers: top/mid/bottom temperatures on both tanks.
+  - UFH: supply and return temperatures; optional surface sensor at manifold.
+  - Ambient: at least one temperature/RH sensor per floor for dew‑point calculation.
+  - Heat/cold metering: heat meters on AWHP to buffer and FriWa primary if feasible.
+
+## Component Sizing (Guidance)
+
+- AWHP (reversible, R290): select by EN 12831 heat loss; typical post‑retrofit terrace house 4–6 kW at −10°C; choose 6–10 kW class with good turndown and quiet operation.
+- Heating/Cooling buffer: 800–1000 L, stratified, 100–150 mm insulation, low Δp connections, 3 thermowells (top/mid/bottom).
+- DHW heating buffer: 200–300 L, 3 thermowells, maintained at 55–60°C year‑round.
+- FriWa: 25–35 kW plate HX module with variable‑speed primary pump, flow sensor, electronic outlet control; potable‑side filtration/anti‑scale as required by local water hardness.
+- Valves/Pumps: ECM circulation pumps; 3‑way mixing valve for UFH with hard dew‑point input; motorized isolation valves for summer/winter decoupling; check valves and balancing valves.
+- Optional PHE: sized for full thermal capacity with low approach ΔT; glycol on AWHP side; include air/dirt separators on both circuits.
+- Expansion vessels: sized for total volume (buffers + pipework + emitters); verify per manufacturer; often 50–80 L combined.
+
+## Safety and Water Quality
+
+- Stove loop: return‑lift (e.g., 60°C cartridge), thermal discharge safety valve to drain, gravity‑safe emergency cooling path, adequate expansion vessel (EN 303‑5 compliance).
+- System protection: pressure relief valves (typically 3 bar), air/dirt separators, VDI 2035 water treatment (conductivity/hardness), full insulation of hot lines and diffusion‑tight insulation on all cold lines with managed condensate.
+- Electrical: critical‑loads subpanel to maintain HP enable, pumps, controls, network, fridge, and selected lighting/outlets during outages via battery.
+
+## Control Allocation
+
+- Safety/primary control: heat pump native controller; dedicated hydronic controller for mixing valves, pumps, temperature limits, dew‑point cutout; hard interlocks, not dependent on HA.
+- Orchestration (HA): PV‑aware scheduling (e.g., DHW midday), seasonal mode toggles, notifications (wood stove use, filter service, abnormal RH/temps), data logging (buffer temps, RH, energy meters, COP proxy).
+\end{markdown}
+
+\chapter{Domestic Hot Water (DHW)}
+\begin{markdown}
+# Domestic Hot Water (DHW) — FriWa + DHW Heating Buffer
+
+This design uses a dedicated DHW heating buffer (closed system water) held at ~55–60°C, feeding a Frischwasserstation (FriWa). There is no potable water storage; potable water is heated on demand through a plate heat exchanger.
+
+## Rationale
+
+- Hygiene: No stored potable hot water → minimized legionella risk; simple anti‑scald control at outlets.
+- Summer compatibility: The DHW buffer remains hot while the separate heating/cooling buffer can stay cold for UFH cooling.
+- PV synergy: Midday charging of the DHW buffer with PV improves self‑consumption and reduces evening load.
+
+## Hydraulics
+
+- DHW heating buffer (200–300 L): maintained at 55–60°C year‑round; fitted with top/mid/bottom sensors and good insulation.
+- FriWa module (25–35 kW): includes plate HX, primary variable‑speed pump, flow sensor, electronic temperature control; potable‑side filter/strainer and service valves.
+- AWHP priority logic: DHW charging has time‑of‑day priority (midday) and temperature priority (if buffer top < setpoint); otherwise AWHP serves space heating/cooling buffer.
+
+## Control and Setpoints
+
+- DHW buffer setpoint: 55–60°C (tune to water hardness and comfort). Use anti‑scald mixing valves at fixtures.
+- PV‑aware charging: If battery state of charge (SoC) is high and PV surplus available, run DHW charge to target; otherwise defer to off‑peak schedule.
+- Standby losses: Keep buffer well insulated; consider night setback only if draw patterns allow and comfort unaffected.
+
+## Sizing and Performance
+
+- Buffer volume: 200–300 L is typically sufficient for 3 persons with showers and occasional bath; choose larger end if simultaneous draws are common.
+- FriWa capacity: 25–35 kW HX module typically gives 10–16 L/min at 40–45°C with sufficient primary temperature; confirm with manufacturer curves.
+- Approach temperature: Ensure primary (DHW buffer) temperature margin to meet outlet setpoint during peak draws; tune FriWa PID.
+
+## Water Quality and Maintenance
+
+- Potable side: inline filter/strainer; periodic inspection/descaling based on local hardness.
+- Primary side (system water): VDI 2035 treatment to protect plate HX, pumps, valves; monitor conductivity/hardness.
+- Serviceability: install isolation valves, drains, and test taps for FriWa and DHW buffer.
+
+## Commissioning Checks
+
+- Verify FriWa outlet stability from 2–16 L/min; ensure no overshoot/undershoot.
+- Confirm anti‑scald protection at outlets (thermostatic mixers where applicable).
+- Log DHW charging periods and temperatures; validate PV alignment.
+\end{markdown}
+
+\chapter{Ventilation — Decentralized HRV}
+\begin{markdown}
+# Ventilation — Decentralized Single‑Room HRV (DIN 1946‑6)
+
+No central ventilation is feasible; this plan uses 6–8 decentralized HRV units to provide base air exchange with heat recovery, local boosts, and summer bypass.
+
+## Design Principles
+
+- Balance and coverage: Provide continuous background ventilation in living/bedrooms; stronger extraction or boost in wet rooms.
+- Acoustic comfort: Low noise at base flow, night mode for bedrooms, acoustic liners/baffles.
+- Simplicity: Short core drill per unit (160–200 mm), slight outward slope for condensate, easy filter access.
+
+## Unit Types
+
+- Dual‑fan continuous units (preferred): simultaneous supply and exhaust through a small counter‑flow core; more stable balance.
+- Alternating push‑pull units (paired): ceramic core stores heat; install in pairs to approximate balance.
+
+## Placement and Air Paths
+
+- Wet rooms (bath, WC, kitchen): units with boost 40–60 m³/h; grease filters where needed.
+- Living/bedrooms: base 15–30 m³/h per room; night mode in bedrooms.
+- Door undercuts/transfer grilles to enable crossflow; avoid short‑circuiting supply to immediate exhaust.
+- Exterior intakes with weather hoods and insect screens; consider façade acoustics.
+
+## Controls
+
+- Local control: manual boost switches (bath fans), humidity/CO₂‑based automatic boosts, night modes.
+- Central overview (optional): dry contacts or Modbus/IP bridge to integrate with Home Assistant for visibility and logging (not safety‑critical).
+- Summer bypass: enable to prevent unwanted heat recovery during cooling season; querventilation possible.
+
+## Installation and Commissioning
+
+- Core drills with slight outward slope for condensate; ensure airtight sleeve sealing.
+- Configure design flow rates per DIN 1946‑6 ventilation concept; measure and record flows.
+- Filters: set maintenance intervals; keep spare sets; include filter‑service notifications.
+
+## Interaction with Hydronic Cooling
+
+- HRV aids humidity control but does not dehumidify aggressively; monitor RH per floor.
+- If RH > 60% persists during heat events, consider temporary standalone dehumidifier while maintaining “no AC” constraint.
+\end{markdown}
+
+\chapter{Envelope, Airtightness, Thermal Bridges}
+\begin{markdown}
+# Envelope, Airtightness, Thermal Bridges
+
+This section defines measures for insulation, airtightness, and mitigation of key thermal bridges (loggia, open entrance/vestibule, open staircase to cellar).
+
+## Targets (EH85‑aligned)
+
+- Basement ceiling U ≤ 0.25 W/(m²·K)
+- Roof/attic U ≤ 0.14 W/(m²·K)
+- Windows Uw ≤ 0.90 W/(m²·K) with warm edge spacers
+- Airtightness n50 ≤ 1.5 h⁻¹ (blower‑door before/after)
+
+## Measures
+
+- Basement ceiling insulation (must): rigid boards or blown‑in solutions; ensure continuous coverage around beams and services; seal penetrations.
+- Roof/attic insulation (must): on‑roof insulation or upper ceiling; maintain continuous airtight layer; detail penetrations and edges.
+- Windows (must): triple glazing, airtight installation with tapes and compressible seals; verify reveal insulation.
+- Facade (optional, recommended): external WDVS where feasible; if not, capillary‑active internal insulation (e.g., CaSi/wood fibre) at critical interior surfaces; model details to avoid vapor traps.
+- Airtightness package (must): professional sealing, tape schedules, and blower‑door test pre/post.
+
+## Staircase to Cellar (Open Stair)
+
+- Install airtight glazed partition/door at basement or ground‑floor landing; maintain natural light; perimeter seals.
+- Combine with basement ceiling insulation to cut stack‑effect losses.
+
+## Loggia (Interior Balcony) Options
+
+- Winter garden conversion: high‑performance triple glazing, thermally broken frames, insulated parapets/soffits, exterior shading; best comfort and thermal‑bridge fix; requires structural and permit checks.
+- Targeted thermal‑bridge remediation: capillary‑active internal insulation at junctions; add exterior insulation if feasible; less impact but lower cost.
+
+## Open Entrance / Covered Entry (Below Living Space)
+
+- Glazed vestibule (Windfang): insulated framing and external door; major infiltration/comfort improvement; may require permit.
+- Underside insulation: rigid PIR/EPS below ceiling; seal side‑wall junctions; economical but smaller impact.
+
+## Verification
+
+- Thermography after completion to identify residual thermal bridges.
+- Blower‑door test (n50 ≤ 1.5 h⁻¹) with documented leakage sealing actions.
+\end{markdown}
+
+\chapter{Controls, Sensors, Monitoring}
+\begin{markdown}
+# Controls, Sensors, Monitoring
+
+Safety controls must be hard‑wired; Home Assistant (HA) is used for orchestration and monitoring only. Dew‑point protection is mandatory for UFH cooling.
+
+## Safety/Primary Controls (Hard‑wired)
+
+- Heat pump controller: compressor protections, defrost logic, supply/return limits.
+- Hydronic controller: 3‑way mixing valve control for UFH, pump control, buffer temperature limits, DHW priority.
+- Dew‑point cutout: direct input limiting UFH supply temperature to ≥(dew point + 2 K); independent of HA.
+- Stove safety: return‑lift valve (≥60°C), thermal discharge safety valve, gravity emergency cooling path; pressure relief; expansion vessel sizing.
+
+## Sensors and Instrumentation
+
+- Buffers: top/mid/bottom temperatures on DHW and heating/cooling buffers.
+- UFH: supply and return temperatures; optional manifold surface temperature.
+- Ambient: at least one temperature/RH sensor per floor for dew point.
+- Energy metering: heat meters for AWHP→buffer and FriWa primary (optional), electric sub‑meter for HP.
+- Flow/pressure: as required by FriWa and UFH balancing; include purge points and drains.
+
+## Orchestration (Home Assistant or similar)
+
+- PV‑aware schedules: DHW buffer charge at midday; optional winter buffer preheat during PV surplus.
+- Seasonal modes: winter (heating), summer (cooling + DHW only), shoulder (adaptive minimal setpoints).
+- Notifications: wood stove opportunity prompts; filter service (HRV/FriWa); abnormal RH/temperature alerts; fault relays from HP.
+- Data logging: buffer temps, UFH VL/RL, indoor RH/T, HP power, heat meter data; derive coefficient of performance (COP) proxy where meters available.
+
+## Example Dew‑Point Logic
+
+- Inputs: indoor T, indoor RH → dew point; measured UFH supply temperature.
+- Limit: UFH supply target = max(heating curve demand, dew point + 2 K) with absolute min typically 19–21°C.
+- Fault/lockout: if supply < (dew point + 2 K) or manifold surface moisture detected, close mixing valve/stop pump until conditions safe.
+
+## Electrical and Resilience
+
+- Critical‑loads subpanel: HP enable, circulators, hydronic controller, HA host, network gear, fridge, selected lights/outlets.
+- Surge protection: SPD coordination for PV, battery, HP, control electronics.
+- Night mode: reduce acoustic output of outdoor unit and HRV where possible.
+\end{markdown}
+
+\chapter{Funding, Compliance, Documentation}
+\begin{markdown}
+# Funding, Compliance, Documentation
+
+This section outlines a funding approach aligned with current concepts. Always verify current program rules and eligibility with an Energie‑Effizienz‑Experte (EEE) and your bank before committing.
+
+## Primary Route — KfW 261 (Wohngebäude – Kredit)
+
+- Goal: Effizienzhaus 85 + Erneuerbare‑Energien‑Klasse (≥65% renewable share for heat/cold).
+- Credit scope: heat pump system, buffers, FriWa, hydraulic periphery, safety, system electricals; potentially wood stove with back‑boiler as part of the system scope.
+- Repayment bonus: typically 10% on the financed portion once confirmed by EEE after completion.
+- Important: Costs financed within the EH loan pot cannot be double‑funded elsewhere.
+
+## Complementary — Einzelmaßnahmen (BAFA/BEG)
+
+- Apply to building envelope (basement/roof/windows/facade), decentralized HRV, measurement/control/automation (MSR), and UFH distribution.
+- Typical rates: 15% or 20% with iSFP (individueller Sanierungsfahrplan).
+- Rule: No double‑funding of the same cost position if already in KfW 261 EH pot.
+
+## Additional Financing
+
+- Supplementary loans (e.g., KfW programs 358/359) for Einzelmaßnahmen up to common caps per dwelling.
+- PV and battery: 0% VAT on supply/install; can be financed separately (e.g., KfW 270) or via bank.
+
+## Process and Timing
+
+- Engage an EEE early. Obtain “Bestätigung zum Antrag” (BzA) before awarding contracts, or use suspensive clauses.
+- Clean cost separation: define which positions are under EH‑loan vs. Einzelmaßnahmen to avoid double‑funding.
+- Post‑completion “Bestätigung nach Durchführung” (BnD) to trigger repayment bonus and finalize grants.
+
+## Documentation and Compliance
+
+- Design calculations: EN 12831 heat load; ventilation concept per DIN 1946‑6; dew‑point logic; thermal bridge details.
+- Commissioning protocols: blower‑door (pre/post), hydraulic balancing, water quality (VDI 2035), pressure tests, heat meter setup, HP commissioning.
+- Safety: stove per EN 303‑5 with return lift, thermal discharge, emergency cooling; electrical SPDs and backup subpanel documentation.
+- Monitoring: first‑season data logs (temperatures, humidity, heat/power meters) to validate performance.
+
+## Notes
+
+- Funding programs evolve. Validate all rates, caps, and eligibility windows at application time.
+- Maintain a single source of truth for cost allocation and supporting documents to simplify audits.
+\end{markdown}
+
+\chapter{Commissioning and Acceptance}
+\begin{markdown}
+# Commissioning and Acceptance
+
+This checklist defines the procedures and evidence required to safely commission and accept the system. It is structured to match funding documentation needs.
+
+## Pre‑Commissioning
+
+- Mechanical:
+  - Pipework flushed, pressure tested; leak‑free.
+  - Expansion vessels sized and pre‑charged for total volume (buffers + circuits).
+  - Air/dirt separators installed at strategic points; vents accessible.
+  - Insulation complete: hot lines insulated; cold lines diffusion‑tight with condensate routes.
+- Electrical:
+  - Critical‑loads subpanel wired; circuits labeled; RCD/MCB verified.
+  - Surge protection devices (SPDs) installed and coordinated with PV/battery.
+  - Control wiring (sensors, valves, pumps) labeled; emergency stops documented.
+- Water quality:
+  - System water prepared per VDI 2035; conductivity/hardness logged.
+- Safety (stove):
+  - Return‑lift valve operation verified; thermal discharge safety connected to drain; gravity emergency cooling path tested; chimney approvals.
+
+## Controls and Sensors Validation
+
+- Buffers: confirm top/mid/bottom sensor readings; directions of flow validated.
+- UFH: verify supply/return sensors; 3‑way valve orientation; pump rotation.
+- Dew‑point logic: inject high RH in test zone or simulate via controller; confirm UFH supply limit and lockout behavior.
+- HP controller: weather curve loaded; limits set (min/max VL, anti‑short‑cycle).
+- FriWa: outlet temperature control tuned; stable performance over 2–16 L/min draws; anti‑scald verified.
+
+## Functional Tests
+
+- Heating mode (winter simulation):
+  - Long steady compressor operation; buffer stratification observed; target VL achieved at test outdoor setpoint.
+  - DHW midday priority: buffer top reaches 55–60°C; resume space heating post‑charge.
+- Cooling mode (summer simulation):
+  - Night buffer chill to ~16–18°C; daytime UFH VL maintained at dew point + 2 K; no condensation on manifolds/lines.
+- Stove integration:
+  - Charge buffer top; verify AWHP priority reduction on high top‑of‑buffer temperature.
+
+## Hydraulic Balancing
+
+- UFH circuits: measure and record volume flows per loop; adjust to design; document setpoints.
+- Heat meters: verify installation direction and pulse outputs if logging.
+
+## Ventilation (Decentralized HRV)
+
+- Design flows set per room; boost functions verified; summer bypass configured.
+- Filters installed; maintenance calendar established; acoustic checks.
+
+## Acceptance Documentation
+
+- Blower‑door test results (pre + post) with achieved n50 ≤ 1.5 h⁻¹ (target).
+- Hydronic balancing protocol (flows per loop), HP and FriWa commissioning reports.
+- VDI 2035 water quality report; pressure test certificates; electrical test reports (RCD/insulation/SPD).
+- Schematics: final hydraulic diagram, control I/O map, sensor list.
+- Safety attestations: stove compliance (EN 303‑5), chimney sweep approvals, emergency procedures.
+- Monitoring plan: which data is logged and retention period (first season minimum).
+\end{markdown}
+
+\chapter{Project Phases and Recommended Order}
+\begin{markdown}
+# Project Phases and Recommended Order
+
+A practical sequence minimizes rework, aligns with funding steps, and protects commissioning quality.
+
+## Phases
+
+1) Pre‑checks and Surveys
+- Hazard screening (1972 build): asbestos in adhesives/fibre‑cement, PCB, old mineral wool.
+- Roof statics for PV; outdoor unit siting and acoustics; local permits (loggia/vestibule).
+
+2) Concept and Calculations
+- EN 12831 heat and (if needed) cooling loads; DIN 1946‑6 ventilation concept.
+- Thermal‑bridge detailing at loggia and entry; dew‑point strategy for UFH cooling.
+- Define cost allocation to EH loan vs. Einzelmaßnahmen.
+
+3) Funding Applications
+- EEE issues BzA (confirmation before application) and supports bank discussion.
+- Submit KfW 261 EH loan; plan complementary Einzelmaßnahmen (BAFA/BEG) and any supplementary loans.
+
+4) Envelope and Airtightness
+- Basement ceiling, roof/attic, windows; optional facade.
+- Stair partition; loggia/vestibule if approved.
+- Blower‑door test (intermediate if feasible) for QA.
+
+5) Technical Systems
+- UFH installation and distribution; hydraulic balancing readiness.
+- AWHP, buffers (DHW + heating/cooling), FriWa, pumps/valves, sensors, electrical subpanel.
+- Decentralized HRV units with commissioning of design flows.
+
+6) PV and Battery
+- PV array and battery install; integrate critical‑loads subpanel; SPDs.
+
+7) Commissioning and Tuning
+- Flush, pressure test, VDI 2035; parameterization; dew‑point test; stove safety tests.
+- Hydraulic balancing protocol; data logging setup.
+
+8) Post‑Completion
+- EEE issues BnD (confirmation after completion); repayment bonus/grants processed.
+- First‑season monitoring; optimize setpoints; perform thermography if needed.
+\end{markdown}
+
+\chapter{Bill of Materials}
+\begin{markdown}
+# Bill of Materials (Specification Classes)
+
+Brand‑agnostic list with size ranges. Final selections should follow detailed calcs and installer standards.
+
+## Heat Generation and Storage
+
+- Reversible AWHP (R290), 6–10 kW class, monobloc or split; low noise kit; night mode.
+- Optional Plate Heat Exchanger (AWHP↔House), sized for full capacity with low approach ΔT; glycol on AWHP side.
+- Heating/Cooling Buffer: 800–1000 L, stratified, 100–150 mm insulation, 3× thermowells.
+- DHW Heating Buffer: 200–300 L, high insulation, 3× thermowells.
+- FriWa Module: 25–35 kW plate HX, variable‑speed primary pump, flow sensor, electronic outlet control, service valves, potable filter/strainer.
+- Wood Stove w/Back‑Boiler (optional): rated output matched to buffer; return‑lift valve (≥60°C), thermal discharge valve, emergency cooling path components; chimney parts as required.
+
+## Hydronic Periphery
+
+- Circulation Pumps: ECM pumps for AWHP loop(s), buffer charging, UFH circuits, FriWa primary.
+- Valves: 3‑way mixing valve (UFH), motorized zone valves for seasonal decoupling, check valves, balancing valves, drain/fill valves.
+- Separators: air and dirt separators at key locations; magnetic dirt separator if needed.
+- Expansion Vessels: sized for total water volume; service valves and gauges.
+- Safety: PRVs (typically 3 bar), manometers, automatic air vents; condensate traps for cold lines.
+
+## Distribution
+
+- UFH Manifolds and Loops: oxygen‑barrier PEX/MLCP, manifold cabinets, flow meters, actuators if zoned.
+- Pipe Insulation: hot lines to code; cold lines diffusion‑tight; manifold/valve box insulation where possible.
+
+## Ventilation (Decentralized HRV)
+
+- 6–8 single‑room HRV units (dual‑fan continuous or push‑pull pairs), wall sleeves, exterior hoods, acoustic liners, filters.
+- Control accessories: boost switches, humidity/CO₂ sensors (where supported), integration gateway (optional).
+
+## Controls, Sensors, Electrical
+
+- Hydronic Controller: mixing valve + pump control with dew‑point input and lockout.
+- Sensors: buffer temps (top/mid/bottom), UFH VL/RL, ambient T/RH per floor, optional manifold surface probe.
+- Energy Meters: heat meter(s) on AWHP and FriWa primary (optional), sub‑meter for HP electrical.
+- Electrical: critical‑loads subpanel, automatic transfer switch (ATS) for backup, surge protective devices (SPDs), labeling, wiring accessories.
+- Home Assistant Host: small, reliable compute (e.g., SBC or mini‑PC), network connectivity, UPS (optional).
+
+## Water Treatment and Service
+
+- VDI 2035 treatment unit/chemistry, test kit (conductivity/hardness), fill/drain assemblies.
+- Filters/Strainers: potable filter for FriWa; strainers where needed on primary; spare filter sets.
+- Serviceability: isolation valves, drain points, thermowells/test points, access panels.
+\end{markdown}
+
+\chapter{Risks and Mitigations}
+\begin{markdown}
+# Risks and Mitigations
+
+Key technical and project risks with practical mitigations.
+
+## Hydronic Cooling and Condensation
+
+- Risk: UFH surface and manifolds falling below dew point → condensation, damage.
+- Mitigations: hard dew‑point limit controlling mixing valve; diffusion‑tight insulation on cold lines; condensate routing; humidity monitoring per floor; disable cooling if RH persistently > 60%.
+
+## System Complexity
+
+- Risk: Dual buffers + FriWa + stove add components and controls.
+- Mitigations: safety interlocks in dedicated controllers (not HA); clear operating modes; thorough commissioning; labeled valves/wiring; service documentation.
+
+## Noise (Terrace Context)
+
+- Risk: Outdoor unit and HRV noise disturbing occupants/neighbors.
+- Mitigations: acoustic siting and shielding; resilient mounts; night mode; façade‑friendly HRV placements with baffles.
+
+## Thermal Bridges (Loggia, Entry)
+
+- Risk: Heat loss, cold surfaces, moisture.
+- Mitigations: Prefer enclosure (winter garden/vestibule); otherwise capillary‑active internal insulation and exterior shading; thermography post‑works.
+
+## Water Quality and Scaling
+
+- Risk: Scaling and corrosion in plate HX, pumps, valves.
+- Mitigations: VDI 2035 treatment; potable‑side filters; periodic checks; bypass/flush ports for service.
+
+## Funding/Timing Errors
+
+- Risk: Double‑funding, out‑of‑sequence contracting jeopardizing eligibility.
+- Mitigations: EEE involvement; BzA before award; clean cost split; BnD after completion; maintain documentation.
+
+## Safety (Stove Integration)
+
+- Risk: Overheating without heat dump; low return temp tar formation; insufficient expansion.
+- Mitigations: return‑lift valve (≥60°C), thermal discharge valve to drain, gravity emergency cooling path, expansion vessel sizing; certified components and installation.
+\end{markdown}
+
+\chapter{Open Decisions and Options}
+\begin{markdown}
+# Open Decisions and Options
+
+Use this page to track pending choices and finalize with the installer/EEE.
+
+## DHW and Buffers
+
+- Confirm DHW heating buffer volume: 200 L vs. 300 L based on peak draw habits.
+- FriWa capacity class: 25 kW vs. 35 kW based on simultaneous draw expectations.
+- Optional cross‑charge: allow emergency heat transfer from heating/cooling buffer top to DHW buffer (complexity vs. resilience).
+
+## Separation and Fluids
+
+- Optional AWHP↔House plate heat exchanger (glycol on AWHP side):
+  - Pros: freeze protection and oxygen ingress isolation.
+  - Cons: small efficiency penalty; added components.
+
+## Loggia and Entryway
+
+- Loggia: winter garden enclosure (permit, cost, highest benefit) vs. targeted internal insulation + exterior shading (budget option).
+- Entry: glazed vestibule (high impact) vs. underside insulation only (lower impact).
+
+## HRV Units
+
+- Device type: dual‑fan continuous vs. push‑pull pairs; acoustic priorities.
+- Controls: standalone vs. optional gateway into HA for monitoring.
+
+## Heat Pump Selection
+
+- Capacity class: based on EN 12831 result and modulation range.
+- Acoustic package and siting: night mode, shielding, neighbor impact.
+
+## Monitoring and Data
+
+- Heat meters scope: AWHP only vs. AWHP + FriWa primary.
+- Data retention: first season mandatory; optional long‑term trends.
+\end{markdown}
+
+\chapter{Hydraulic Diagram — Tags and I/O Map}
+\begin{markdown}
+# Hydraulic Diagram — Tags and I/O Map
+
+This augments the architecture with reference tags for components, sensors, and control I/O. Use it to drive wiring, labels, and commissioning.
+
+## Tagging Convention
+
+- Tanks: T1 = Heating/Cooling Buffer, T2 = DHW Heating Buffer
+- Heat Pump: HP1
+- Plate Heat Exchanger (optional): HX1 (AWHP↔House)
+- FriWa: FW1
+- Wood Stove Loop: WS1
+- Pumps: P‑xx, Valves: V‑xx, Sensors: S‑xx, Controllers/Relays: C‑xx/R‑xx
+
+## Components and Tags
+
+- HP1: Reversible AWHP (R290)
+- HX1: Optional PHE with glycol on HP1 side
+- T1: Heating/Cooling Buffer (800–1000 L)
+  - S‑T1‑TOP, S‑T1‑MID, S‑T1‑BOT (temperatures)
+- T2: DHW Heating Buffer (200–300 L)
+  - S‑T2‑TOP, S‑T2‑MID, S‑T2‑BOT (temperatures)
+- FW1: FriWa module (plate HX, primary pump, outlet control)
+  - S‑FW‑FLOW (flow sensor), S‑FW‑OUT (DHW outlet temp)
+- WS1: Wood stove with back‑boiler and safety kit
+  - V‑WS‑RL (return‑lift valve ≥60°C), V‑WS‑TD (thermal discharge safety)
+- UFH: Manifold(s) and loops
+  - V‑MX‑UFH (3‑way mixing valve), P‑UFH (circulator), S‑UFH‑VL/S‑UFH‑RL (temps), S‑UFH‑SURF (optional surface)
+- Seasonal Decoupling Valves
+  - V‑SEAS‑T1 (isolate T1), V‑SEAS‑T2 (isolate T2) as needed for service/mode control
+
+## Ambient Sensors
+
+- S‑AMB‑GF: Ground floor T/RH (dew‑point input)
+- S‑AMB‑DG: Top floor T/RH (dew‑point input)
+
+## Electrical and Meters
+
+- R‑HP‑EN: Heat pump enable relay (from hydronic controller/safety chain)
+- M‑HP‑EL: Electric sub‑meter for HP
+- M‑HP‑HT: Heat meter HP→T1
+- M‑FW‑HT: Heat meter T2→FW1 primary (optional)
+
+## Control I/O Map (Example)
+
+- Controller C‑HYD (hydronic):
+  - Inputs: S‑T1‑TOP/MID/BOT, S‑T2‑TOP/MID/BOT, S‑UFH‑VL/RL, S‑AMB‑GF/DG, S‑UFH‑SURF (opt.)
+  - Outputs: V‑MX‑UFH (0–10 V), P‑UFH (on/off or PWM), P‑FW‑PRI (via FW1), R‑HP‑EN, V‑SEAS‑T1/T2, alarm relay
+  - Logic: dew‑point limit; DHW priority window; seasonal mode; anti‑short‑cycle; safe shutdown
+- Controller C‑HP (in HP1):
+  - Weather curve; supply/return temp limits; defrost; interface with R‑HP‑EN.
+- FW1 internal controller:
+  - Outlet temperature setpoint; modulates P‑FW‑PRI by flow/ΔT.
+
+## Labeling and Documentation
+
+- Each tag must appear on: hydraulic schematic, wiring diagram, device labels, and commissioning forms.
+- Provide a printed tag legend and laminate a small copy near T1/T2 manifolds.
+\end{markdown}
+
+\chapter{Operating Guide}
+\begin{markdown}
+# Operating Guide — Daily Use and Seasonal Tips
+
+This guide summarizes how to operate the system day‑to‑day and what to expect seasonally.
+
+## Everyday
+
+- DHW is on demand via FriWa; expect stable temperature at taps. Large simultaneous draws may cause a brief temperature dip; the DHW buffer will recover quickly.
+- The system prefers midday DHW charging using PV. If weather is poor, DHW will still be maintained.
+- Home Assistant shows buffer temps, humidity, and basic status; use notifications for filter service and unusual conditions.
+
+## Winter (Heating)
+
+- Weather‑compensated heating curve aims for low VL (~28–35°C). Radiant comfort is gradual but steady.
+- Wood stove usage: enjoy as desired; it will lift buffer top temperature and the heat pump will trim back accordingly.
+- If rooms feel cool, increase room setpoint slightly or raise the heating curve minimally; avoid large jumps.
+
+## Summer (Cooling)
+
+- Night charging chills the buffer to ~16–18°C. Daytime UFH supply is limited by dew‑point logic (typically 19–21°C); expect gentle background cooling.
+- If indoor RH rises toward 60% and cooling pauses, ventilate during dry periods or use a temporary dehumidifier. This system intentionally avoids AC.
+
+## Shoulder Seasons
+
+- Minimal buffer temps; most comfort from passive gains and small heating boosts. DHW still prioritized around midday.
+
+## Maintenance
+
+- Filters: HRV and FriWa potable filter — inspect every 3–6 months (adjust to dust/water conditions).
+- Visual checks: inspect for any condensation on cold manifolds/lines in early summer; increase dew‑point margin if needed.
+- Annual service: verify safety valves, expansion vessel pressures, water quality (VDI 2035), heat meter readings.
+
+## Troubleshooting Hints
+
+- Hot water too cool: check DHW buffer temperature, FriWa outlet setting, and potable filter cleanliness.
+- Cooling feels weak: check dew‑point limit vs. supply temp; if RH high, dry the air (ventilate when dry or dehumidify temporarily).
+- Noise: enable night modes (HP and HRV), verify mounts and baffles.
+\end{markdown}
+
+\chapter{Costing — Order-of-Magnitude}
+\begin{markdown}
+# Costing — Order-of-Magnitude Ranges
+
+Indicative ranges only; verify with quotes and current funding rules.
+
+## Envelope
+
+- Basement ceiling insulation: €20–90/m²
+- Roof/attic insulation: €50–200/m²
+- Triple-glazed windows incl. airtight install: €600–1,000 per window (or €280–900/m² window area)
+- Facade insulation (WDVS): €90–210/m² (if feasible)
+- Airtightness package + blower-door (pre/post): €1,500–4,200
+- Stair partition (glazed): €1,000–3,000
+- Loggia winter garden: €5,000–20,000 (design-dependent)
+- Entry vestibule (glazed): similar to above, case-dependent
+
+## Generation, Storage, Distribution
+
+- Reversible AWHP (R290), installed: €18,000–35,000
+- Heating/Cooling buffer 800–1000 L: €2,200–6,000
+- DHW heating buffer 200–300 L: €800–1,800
+- FriWa station: €1,700–3,500
+- UFH retrofit (materials + install): €60–145/m²
+- Hydronic periphery + full pipe insulation: €1,500–3,500
+- Optional PHE (AWHP↔house): €800–2,700
+- Wood stove with safety kit + flue works: €3,500–10,000 (+€800–3,000 chimney adjustments)
+
+## Ventilation, PV, Electrical
+
+- Decentralized HRV (6–8 units): €6,000–12,000
+- PV 5.8–8 kWp: €8,000–12,000 (0% VAT) + grid fees
+- Battery ~10 kWh with backup: €6,000–10,000 (0% VAT)
+- Critical-loads subpanel + transfer: €1,500–3,000
+
+## Soft Costs
+
+- EEE (confirmations, site supervision): €2,000–5,000
+- Technical planning (heat/cool load, schematics, LV, oversight): €3,000–8,000
+- Commissioning and balancing protocols: €1,000–2,500
+
+## Totals (Very Rough)
+
+- Without facade: ~€67,000–90,000
+- With facade: ~€82,000–115,000
+
+Funding may reduce net costs (e.g., EH loan repayment bonus; Einzelmaßnahmen 15–20% with iSFP; PV/battery 0% VAT). Avoid double-funding and confirm all current terms prior to award.
+\end{markdown}
+
+\end{document}

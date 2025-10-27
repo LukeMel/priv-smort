@@ -1,0 +1,53 @@
+\markdownRendererDocumentBegin
+\markdownRendererSectionBegin
+\markdownRendererHeadingOne{Domestic Hot Water (DHW) — FriWa + DHW Heating Buffer}\markdownRendererInterblockSeparator
+{}This design uses a dedicated DHW heating buffer (closed system water) held at ~55–60°C, feeding a Frischwasserstation (FriWa). There is no potable water storage; potable water is heated on demand through a plate heat exchanger.\markdownRendererInterblockSeparator
+{}\markdownRendererSectionBegin
+\markdownRendererHeadingTwo{Rationale}\markdownRendererInterblockSeparator
+{}\markdownRendererUlBeginTight
+\markdownRendererUlItem Hygiene: No stored potable hot water → minimized legionella risk; simple anti‑scald control at outlets.\markdownRendererUlItemEnd 
+\markdownRendererUlItem Summer compatibility: The DHW buffer remains hot while the separate heating/cooling buffer can stay cold for UFH cooling.\markdownRendererUlItemEnd 
+\markdownRendererUlItem PV synergy: Midday charging of the DHW buffer with PV improves self‑consumption and reduces evening load.\markdownRendererUlItemEnd 
+\markdownRendererUlEndTight \markdownRendererInterblockSeparator
+{}
+\markdownRendererSectionEnd \markdownRendererSectionBegin
+\markdownRendererHeadingTwo{Hydraulics}\markdownRendererInterblockSeparator
+{}\markdownRendererUlBeginTight
+\markdownRendererUlItem DHW heating buffer (200–300 L): maintained at 55–60°C year‑round; fitted with top/mid/bottom sensors and good insulation.\markdownRendererUlItemEnd 
+\markdownRendererUlItem FriWa module (25–35 kW): includes plate HX, primary variable‑speed pump, flow sensor, electronic temperature control; potable‑side filter/strainer and service valves.\markdownRendererUlItemEnd 
+\markdownRendererUlItem AWHP priority logic: DHW charging has time‑of‑day priority (midday) and temperature priority (if buffer top < setpoint); otherwise AWHP serves space heating/cooling buffer.\markdownRendererUlItemEnd 
+\markdownRendererUlEndTight \markdownRendererInterblockSeparator
+{}
+\markdownRendererSectionEnd \markdownRendererSectionBegin
+\markdownRendererHeadingTwo{Control and Setpoints}\markdownRendererInterblockSeparator
+{}\markdownRendererUlBeginTight
+\markdownRendererUlItem DHW buffer setpoint: 55–60°C (tune to water hardness and comfort). Use anti‑scald mixing valves at fixtures.\markdownRendererUlItemEnd 
+\markdownRendererUlItem PV‑aware charging: If battery SoC is high and PV surplus available, run DHW charge to target; otherwise defer to off‑peak schedule.\markdownRendererUlItemEnd 
+\markdownRendererUlItem Standby losses: Keep buffer well insulated; consider night setback only if draw patterns allow and comfort unaffected.\markdownRendererUlItemEnd 
+\markdownRendererUlEndTight \markdownRendererInterblockSeparator
+{}
+\markdownRendererSectionEnd \markdownRendererSectionBegin
+\markdownRendererHeadingTwo{Sizing and Performance}\markdownRendererInterblockSeparator
+{}\markdownRendererUlBeginTight
+\markdownRendererUlItem Buffer volume: 200–300 L is typically sufficient for 3 persons with showers and occasional bath; choose larger end if simultaneous draws are common.\markdownRendererUlItemEnd 
+\markdownRendererUlItem FriWa capacity: 25–35 kW HX module typically gives 10–16 L/min at 40–45°C with sufficient primary temperature; confirm with manufacturer curves.\markdownRendererUlItemEnd 
+\markdownRendererUlItem Approach temperature: Ensure primary (DHW buffer) temperature margin to meet outlet setpoint during peak draws; tune FriWa PID.\markdownRendererUlItemEnd 
+\markdownRendererUlEndTight \markdownRendererInterblockSeparator
+{}
+\markdownRendererSectionEnd \markdownRendererSectionBegin
+\markdownRendererHeadingTwo{Water Quality and Maintenance}\markdownRendererInterblockSeparator
+{}\markdownRendererUlBeginTight
+\markdownRendererUlItem Potable side: inline filter/strainer; periodic inspection/descaling based on local hardness.\markdownRendererUlItemEnd 
+\markdownRendererUlItem Primary side (system water): VDI 2035 treatment to protect plate HX, pumps, valves; monitor conductivity/hardness.\markdownRendererUlItemEnd 
+\markdownRendererUlItem Serviceability: install isolation valves, drains, and test taps for FriWa and DHW buffer.\markdownRendererUlItemEnd 
+\markdownRendererUlEndTight \markdownRendererInterblockSeparator
+{}
+\markdownRendererSectionEnd \markdownRendererSectionBegin
+\markdownRendererHeadingTwo{Commissioning Checks}\markdownRendererInterblockSeparator
+{}\markdownRendererUlBeginTight
+\markdownRendererUlItem Verify FriWa outlet stability from 2–16 L/min; ensure no overshoot/undershoot.\markdownRendererUlItemEnd 
+\markdownRendererUlItem Confirm anti‑scald protection at outlets (thermostatic mixers where applicable).\markdownRendererUlItemEnd 
+\markdownRendererUlItem Log DHW charging periods and temperatures; validate PV alignment.\markdownRendererUlItemEnd 
+\markdownRendererUlEndTight 
+\markdownRendererSectionEnd 
+\markdownRendererSectionEnd \markdownRendererDocumentEnd

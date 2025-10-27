@@ -1,0 +1,71 @@
+\markdownRendererDocumentBegin
+\markdownRendererSectionBegin
+\markdownRendererHeadingOne{Hydraulikschema — Kennzeichnung und I/O‑Plan}\markdownRendererInterblockSeparator
+{}Ergänzende Kennzeichen (Tags) für Komponenten, Sensoren und Regel‑I/O zur Verdrahtung, Beschriftung und Inbetriebnahme.\markdownRendererInterblockSeparator
+{}\markdownRendererSectionBegin
+\markdownRendererHeadingTwo{Tag‑Konvention}\markdownRendererInterblockSeparator
+{}\markdownRendererUlBeginTight
+\markdownRendererUlItem Speicher: T1 = Heiz-/Kühlspeicher, T2 = TWW‑Heizspeicher\markdownRendererUlItemEnd 
+\markdownRendererUlItem Wärmepumpe: HP1\markdownRendererUlItemEnd 
+\markdownRendererUlItem Plattenwärmetauscher (optional): HX1 (WP↔Haus)\markdownRendererUlItemEnd 
+\markdownRendererUlItem Frischwasserstation: FW1\markdownRendererUlItemEnd 
+\markdownRendererUlItem Ofenkreis: WS1\markdownRendererUlItemEnd 
+\markdownRendererUlItem Pumpen: P‑xx, Ventile: V‑xx, Sensoren: S‑xx, Regler/Relais: C‑xx/R‑xx\markdownRendererUlItemEnd 
+\markdownRendererUlEndTight \markdownRendererInterblockSeparator
+{}
+\markdownRendererSectionEnd \markdownRendererSectionBegin
+\markdownRendererHeadingTwo{Komponenten/Tags}\markdownRendererInterblockSeparator
+{}\markdownRendererUlBeginTight
+\markdownRendererUlItem HP1: Reversible L/W‑WP (R290)\markdownRendererUlItemEnd 
+\markdownRendererUlItem HX1: Optionaler PHE, Glykol WP‑seitig\markdownRendererUlItemEnd 
+\markdownRendererUlItem T1: Heiz-/Kühlspeicher (800–1000 L)\markdownRendererUlItemEnd 
+\markdownRendererUlItem S‑T1‑TOP/MID/BOT (Temperaturen)\markdownRendererUlItemEnd 
+\markdownRendererUlItem T2: TWW‑Heizspeicher (200–300 L)\markdownRendererUlItemEnd 
+\markdownRendererUlItem S‑T2‑TOP/MID/BOT (Temperaturen)\markdownRendererUlItemEnd 
+\markdownRendererUlItem FW1: FriWa (Platten‑WT, Primärpumpe, Auslauftemp‑Regelung)\markdownRendererUlItemEnd 
+\markdownRendererUlItem S‑FW‑FLOW (Durchfluss), S‑FW‑OUT (TWW‑Auslauf)\markdownRendererUlItemEnd 
+\markdownRendererUlItem WS1: Wasserführender Ofen inkl. Sicherheit\markdownRendererUlItemEnd 
+\markdownRendererUlItem V‑WS‑RL (Rücklaufanhebung ≥60 °C), V‑WS‑TD (thermische Ablaufsicherung)\markdownRendererUlItemEnd 
+\markdownRendererUlItem UFH: Verteiler/Schleifen\markdownRendererUlItemEnd 
+\markdownRendererUlItem V‑MX‑UFH (3‑Wege‑Mischer), P‑UFH, S‑UFH‑VL/RL, S‑UFH‑SURF (optional)\markdownRendererUlItemEnd 
+\markdownRendererUlItem Saisonarmaturen\markdownRendererUlItemEnd 
+\markdownRendererUlItem V‑SEAS‑T1/T2 für Service/Modus\markdownRendererUlItemEnd 
+\markdownRendererUlEndTight \markdownRendererInterblockSeparator
+{}
+\markdownRendererSectionEnd \markdownRendererSectionBegin
+\markdownRendererHeadingTwo{Raum‑Sensorik}\markdownRendererInterblockSeparator
+{}\markdownRendererUlBeginTight
+\markdownRendererUlItem S‑AMB‑GF: EG T/r.F. (Taupunkt)\markdownRendererUlItemEnd 
+\markdownRendererUlItem S‑AMB‑DG: DG T/r.F. (Taupunkt)\markdownRendererUlItemEnd 
+\markdownRendererUlEndTight \markdownRendererInterblockSeparator
+{}
+\markdownRendererSectionEnd \markdownRendererSectionBegin
+\markdownRendererHeadingTwo{Elektro/Zähler}\markdownRendererInterblockSeparator
+{}\markdownRendererUlBeginTight
+\markdownRendererUlItem R‑HP‑EN: WP‑Freigabe‑Relais\markdownRendererUlItemEnd 
+\markdownRendererUlItem M‑HP‑EL: Stromzähler WP\markdownRendererUlItemEnd 
+\markdownRendererUlItem M‑HP‑HT: WMZ WP→T1\markdownRendererUlItemEnd 
+\markdownRendererUlItem M‑FW‑HT: WMZ T2→FW1 (optional)\markdownRendererUlItemEnd 
+\markdownRendererUlEndTight \markdownRendererInterblockSeparator
+{}
+\markdownRendererSectionEnd \markdownRendererSectionBegin
+\markdownRendererHeadingTwo{I/O‑Plan (Beispiel)}\markdownRendererInterblockSeparator
+{}\markdownRendererUlBeginTight
+\markdownRendererUlItem Regler C‑HYD (Hydraulik):\markdownRendererUlItemEnd 
+\markdownRendererUlItem Eingänge: S‑T1‑TOP/MID/BOT, S‑T2‑TOP/MID/BOT, S‑UFH‑VL/RL, S‑AMB‑GF/DG, S‑UFH‑SURF (opt.)\markdownRendererUlItemEnd 
+\markdownRendererUlItem Ausgänge: V‑MX‑UFH (0–10 V), P‑UFH (Ein/Aus oder PWM), P‑FW‑PRI (via FW1), R‑HP‑EN, V‑SEAS‑T1/T2, Alarm\markdownRendererUlItemEnd 
+\markdownRendererUlItem Logik: Taupunktlimit; TWW‑Priorität; Saison; Antitakt; sicherer Stopp\markdownRendererUlItemEnd 
+\markdownRendererUlItem Regler C‑HP (in HP1):\markdownRendererUlItemEnd 
+\markdownRendererUlItem Heizkurve; Vor-/Rücklaufgrenzen; Abtauung; Schnittstelle R‑HP‑EN\markdownRendererUlItemEnd 
+\markdownRendererUlItem FW1 intern:\markdownRendererUlItemEnd 
+\markdownRendererUlItem Auslauftemperatur‑Soll; moduliert Primärpumpe nach Durchfluss/ΔT\markdownRendererUlItemEnd 
+\markdownRendererUlEndTight \markdownRendererInterblockSeparator
+{}
+\markdownRendererSectionEnd \markdownRendererSectionBegin
+\markdownRendererHeadingTwo{Beschriftung/Doku}\markdownRendererInterblockSeparator
+{}\markdownRendererUlBeginTight
+\markdownRendererUlItem Jeder Tag erscheint in Schema, Verdrahtung, Geräteschild, Protokollen.\markdownRendererUlItemEnd 
+\markdownRendererUlItem Tag‑Legende ausdrucken und nahe T1/T2 anbringen.\markdownRendererUlItemEnd 
+\markdownRendererUlEndTight 
+\markdownRendererSectionEnd 
+\markdownRendererSectionEnd \markdownRendererDocumentEnd

@@ -1,0 +1,71 @@
+\markdownRendererDocumentBegin
+\markdownRendererSectionBegin
+\markdownRendererHeadingOne{Hydraulic Diagram — Tags and I/O Map}\markdownRendererInterblockSeparator
+{}This augments the architecture with reference tags for components, sensors, and control I/O. Use it to drive wiring, labels, and commissioning.\markdownRendererInterblockSeparator
+{}\markdownRendererSectionBegin
+\markdownRendererHeadingTwo{Tagging Convention}\markdownRendererInterblockSeparator
+{}\markdownRendererUlBeginTight
+\markdownRendererUlItem Tanks: T1 = Heating/Cooling Buffer, T2 = DHW Heating Buffer\markdownRendererUlItemEnd 
+\markdownRendererUlItem Heat Pump: HP1\markdownRendererUlItemEnd 
+\markdownRendererUlItem Plate Heat Exchanger (optional): HX1 (AWHP↔House)\markdownRendererUlItemEnd 
+\markdownRendererUlItem FriWa: FW1\markdownRendererUlItemEnd 
+\markdownRendererUlItem Wood Stove Loop: WS1\markdownRendererUlItemEnd 
+\markdownRendererUlItem Pumps: P‑xx, Valves: V‑xx, Sensors: S‑xx, Controllers/Relays: C‑xx/R‑xx\markdownRendererUlItemEnd 
+\markdownRendererUlEndTight \markdownRendererInterblockSeparator
+{}
+\markdownRendererSectionEnd \markdownRendererSectionBegin
+\markdownRendererHeadingTwo{Components and Tags}\markdownRendererInterblockSeparator
+{}\markdownRendererUlBeginTight
+\markdownRendererUlItem HP1: Reversible AWHP (R290)\markdownRendererUlItemEnd 
+\markdownRendererUlItem HX1: Optional PHE with glycol on HP1 side\markdownRendererUlItemEnd 
+\markdownRendererUlItem T1: Heating/Cooling Buffer (800–1000 L)\markdownRendererUlItemEnd 
+\markdownRendererUlItem S‑T1‑TOP, S‑T1‑MID, S‑T1‑BOT (temperatures)\markdownRendererUlItemEnd 
+\markdownRendererUlItem T2: DHW Heating Buffer (200–300 L)\markdownRendererUlItemEnd 
+\markdownRendererUlItem S‑T2‑TOP, S‑T2‑MID, S‑T2‑BOT (temperatures)\markdownRendererUlItemEnd 
+\markdownRendererUlItem FW1: FriWa module (plate HX, primary pump, outlet control)\markdownRendererUlItemEnd 
+\markdownRendererUlItem S‑FW‑FLOW (flow sensor), S‑FW‑OUT (DHW outlet temp)\markdownRendererUlItemEnd 
+\markdownRendererUlItem WS1: Wood stove with back‑boiler and safety kit\markdownRendererUlItemEnd 
+\markdownRendererUlItem V‑WS‑RL (return‑lift valve ≥60°C), V‑WS‑TD (thermal discharge safety)\markdownRendererUlItemEnd 
+\markdownRendererUlItem UFH: Manifold(s) and loops\markdownRendererUlItemEnd 
+\markdownRendererUlItem V‑MX‑UFH (3‑way mixing valve), P‑UFH (circulator), S‑UFH‑VL/S‑UFH‑RL (temps), S‑UFH‑SURF (optional surface)\markdownRendererUlItemEnd 
+\markdownRendererUlItem Seasonal Decoupling Valves\markdownRendererUlItemEnd 
+\markdownRendererUlItem V‑SEAS‑T1 (isolate T1), V‑SEAS‑T2 (isolate T2) as needed for service/mode control\markdownRendererUlItemEnd 
+\markdownRendererUlEndTight \markdownRendererInterblockSeparator
+{}
+\markdownRendererSectionEnd \markdownRendererSectionBegin
+\markdownRendererHeadingTwo{Ambient Sensors}\markdownRendererInterblockSeparator
+{}\markdownRendererUlBeginTight
+\markdownRendererUlItem S‑AMB‑GF: Ground floor T/RH (dew‑point input)\markdownRendererUlItemEnd 
+\markdownRendererUlItem S‑AMB‑DG: Top floor T/RH (dew‑point input)\markdownRendererUlItemEnd 
+\markdownRendererUlEndTight \markdownRendererInterblockSeparator
+{}
+\markdownRendererSectionEnd \markdownRendererSectionBegin
+\markdownRendererHeadingTwo{Electrical and Meters}\markdownRendererInterblockSeparator
+{}\markdownRendererUlBeginTight
+\markdownRendererUlItem R‑HP‑EN: Heat pump enable relay (from hydronic controller/safety chain)\markdownRendererUlItemEnd 
+\markdownRendererUlItem M‑HP‑EL: Electric sub‑meter for HP\markdownRendererUlItemEnd 
+\markdownRendererUlItem M‑HP‑HT: Heat meter HP→T1\markdownRendererUlItemEnd 
+\markdownRendererUlItem M‑FW‑HT: Heat meter T2→FW1 primary (optional)\markdownRendererUlItemEnd 
+\markdownRendererUlEndTight \markdownRendererInterblockSeparator
+{}
+\markdownRendererSectionEnd \markdownRendererSectionBegin
+\markdownRendererHeadingTwo{Control I/O Map (Example)}\markdownRendererInterblockSeparator
+{}\markdownRendererUlBeginTight
+\markdownRendererUlItem Controller C‑HYD (hydronic):\markdownRendererUlItemEnd 
+\markdownRendererUlItem Inputs: S‑T1‑TOP/MID/BOT, S‑T2‑TOP/MID/BOT, S‑UFH‑VL/RL, S‑AMB‑GF/DG, S‑UFH‑SURF (opt.)\markdownRendererUlItemEnd 
+\markdownRendererUlItem Outputs: V‑MX‑UFH (0–10 V), P‑UFH (on/off or PWM), P‑FW‑PRI (via FW1), R‑HP‑EN, V‑SEAS‑T1/T2, alarm relay\markdownRendererUlItemEnd 
+\markdownRendererUlItem Logic: dew‑point limit; DHW priority window; seasonal mode; anti‑short‑cycle; safe shutdown\markdownRendererUlItemEnd 
+\markdownRendererUlItem Controller C‑HP (in HP1):\markdownRendererUlItemEnd 
+\markdownRendererUlItem Weather curve; supply/return temp limits; defrost; interface with R‑HP‑EN.\markdownRendererUlItemEnd 
+\markdownRendererUlItem FW1 internal controller:\markdownRendererUlItemEnd 
+\markdownRendererUlItem Outlet temperature setpoint; modulates P‑FW‑PRI by flow/ΔT.\markdownRendererUlItemEnd 
+\markdownRendererUlEndTight \markdownRendererInterblockSeparator
+{}
+\markdownRendererSectionEnd \markdownRendererSectionBegin
+\markdownRendererHeadingTwo{Labeling and Documentation}\markdownRendererInterblockSeparator
+{}\markdownRendererUlBeginTight
+\markdownRendererUlItem Each tag must appear on: hydraulic schematic, wiring diagram, device labels, and commissioning forms.\markdownRendererUlItemEnd 
+\markdownRendererUlItem Provide a printed tag legend and laminate a small copy near T1/T2 manifolds.\markdownRendererUlItemEnd 
+\markdownRendererUlEndTight 
+\markdownRendererSectionEnd 
+\markdownRendererSectionEnd \markdownRendererDocumentEnd

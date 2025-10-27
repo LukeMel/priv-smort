@@ -1,0 +1,838 @@
+% Energie-Sanierungsdokumentation (Deutsch) — Selbstenthaltend
+\documentclass[11pt,oneside]{report}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{geometry}
+\geometry{a4paper,margin=1in}
+\usepackage[hidelinks]{hyperref}
+\usepackage{bookmark}
+\usepackage[ngerman]{babel}
+\usepackage{textcomp}
+\usepackage{newunicodechar}
+\usepackage[hybrid]{markdown}
+% Unicode-Zeichen abbilden
+\newunicodechar{≥}{$\ge$}
+\newunicodechar{≤}{$\le$}
+\newunicodechar{°}{$^\circ$}
+\newunicodechar{·}{\ensuremath{\cdot}}
+\newunicodechar{−}{-}
+\newunicodechar{–}{--}
+\newunicodechar{—}{---}
+\newunicodechar{↔}{$\leftrightarrow$}
+\newunicodechar{→}{$\to$}
+\newunicodechar{≈}{$\approx$}
+\newunicodechar{²}{\ensuremath{^2}}
+\newunicodechar{Δ}{$\Delta$}
+\newunicodechar{₂}{$_2$}
+\newunicodechar{⁻}{$^{-}$}
+\newunicodechar{€}{\texteuro{}}
+
+\title{Energie-Sanierungsdokumentation\\Doppelpuffer, WRG, Regelung, Förderung}
+\author{Projekt: Reihenmittelhaus Baujahr 1972}
+\date{\today}
+
+\begin{document}
+\maketitle
+\setcounter{secnumdepth}{3}
+\setcounter{tocdepth}{3}
+\tableofcontents
+\clearpage
+
+\chapter{Abkürzungen}
+\begin{markdown}
+- L/W‑WP — Luft‑Wasser‑Wärmepumpe
+- WP — Wärmepumpe
+- TWW — Trinkwarmwasser
+- FriWa — Frischwasserstation (Durchlauf‑TWW über Plattenwärmetauscher)
+- UFH — Fußbodenheizung
+- WRG — Wärmerückgewinnung
+- PHE/PWT — Plattenwärmetauscher
+- PV — Photovoltaik
+- HA — Home Assistant (Open‑Source‑Automation)
+- COP — Leistungszahl (Coefficient of Performance)
+- SoC — Ladezustand (Batterie)
+- SPD — Überspannungsschutzgerät (Surge Protective Device)
+- MAG — Membran‑Ausdehnungsgefäß
+- RLA — Rücklaufanhebung (z. B. ≥ 60 °C)
+- TAS — Thermische Ablaufsicherung
+- VDI — Verein Deutscher Ingenieure
+- DIN — Deutsches Institut für Normung
+- EN — Europäische Norm
+- KfW — Kreditanstalt für Wiederaufbau
+- BAFA — Bundesamt für Wirtschaft und Ausfuhrkontrolle
+- BEG — Bundesförderung für effiziente Gebäude
+- iSFP — individueller Sanierungsfahrplan
+- BzA — Bestätigung zum Antrag
+- BnD — Bestätigung nach Durchführung
+- WMZ — Wärmemengenzähler
+- RCD — Fehlerstromschutzschalter
+- LS — Leitungsschutzschalter (MCB)
+- ATS — Automatischer Netzumschalter (Automatic Transfer Switch)
+\end{markdown}
+
+\chapter{Projektüberblick}
+\begin{markdown}
+# Projektüberblick
+
+- Gebäude: Reihenmittelhaus (~113 m²), Baujahr ~1972, EG + DG + Keller.
+- Belegung: 3 Personen.
+- Energie (2023):
+  - Raumwärme: ~9.824 kWh/a (~87 kWh/m²·a), Fernwärme.
+  - TWW‑Volumen: ~16,86 m³ (≈881 kWh/a thermisch, ΔT≈45 K).
+  - Strom: ~2.671 kWh/a.
+- Ziele:
+  - Effizienzhaus 85 + Erneuerbare‑Energien‑Klasse (≥65 % erneuerbare Wärme/Kälte) erreichen.
+  - Hohen PV‑Eigenverbrauch, Resilienz durch Batteriespeicher und Unterverteilung für wichtige Stromkreise.
+  - Einfache, effiziente Bedienung, sichere Regelung, saubere Inbetriebnahme.
+  - Sanftes hydronisches Kühlen ohne Klimageräte (UFH + Taupunkt‑Schutz).
+
+## Schlüsselentscheidungen
+
+- Doppelpuffer‑System:
+  - TWW‑Heizspeicher (200–300 L) ganzjährig heiß (55–60 °C), speist FriWa (kein Trinkwasserspeicher).
+  - Heiz-/Kühlspeicher (800–1.000 L) im Winter warm, im Sommer kalt (Ziel 16–18 °C für Nachtladung).
+- Wärmeerzeuger: Reversible Luft‑Wasser‑Wärmepumpe (L/W‑WP, R290), monovalent nach Heizlast; wasserführender Holzofen als Komfort/Backup.
+- Verteilung: Wassergeführte Fußbodenheizung (UFH) in Hauptzonen; keine Gebläsekonvektoren, keine AC.
+- Lüftung: Dezentrale Einzelraumgeräte (6–8 Stück) gemäß DIN 1946‑6.
+- Steuerung: Harte Sicherheits‑/Regeltechnik + Taupunktlogik; Home Assistant (HA) zur PV‑Orchestrierung/Monitoring.
+
+## Zielwerte
+
+- Hülle (typisch EH85):
+  - Kellerdecke U ≤ 0,25 W/(m²·K)
+  - Dach/Oberste Decke U ≤ 0,14 W/(m²·K)
+  - Fenster Uw ≤ 0,90 W/(m²·K)
+  - Luftdichtheit n50 ≤ 1,5 h⁻¹ (Blower‑Door vorher/nachher)
+- Hydronik:
+  - Heizen: Auslegung VL ≤ 35 °C; lange Verdichterlaufzeiten.
+  - Kühlen: VL ≥ Taupunkt + 2 K, typ. 19–21 °C.
+  - UFH‑Kühlleistung: ~10–25 W/m² (≈1,1–2,8 kW gesamt).
+
+## Erwartete Wirkungen (grobe Ordnung)
+
+- Hülle + Wärmebrücken: ~25–40 % weniger Heizenergie ggü. Ist‑Zustand.
+- PV ~5,8–8 kWp: ~5,5–8,5 MWh/a; mit ~10 kWh Speicher 50–70 % Eigenverbrauch realistisch.
+- Hydronisches Kühlen: angenehme Grundkühlung; Feuchte über Lüftung/Taupunktlogik geführt (bei Extremwetter ggf. mobiler Entfeuchter).
+
+## Randbedingungen
+
+- Offenes Kellertreppenhaus: Luftdichte, transparente Abtrennung + Kellerdeckendämmung.
+- Loggia/Eingangsbereich: ausgeprägte Wärmebrücken; Optionen siehe 05_envelope-airtightness.md.
+- Keine zentrale Lüftung möglich: Einzelraumgeräte mit akustischer und strömungstechnischer Planung.
+\end{markdown}
+
+\chapter{Verbrauch und Kosten (2021--2023)}
+\begin{markdown}
+Konzentriert auf Mengen und Kosten aus den Fernwärme‑Rechnungen (Quellen siehe unten).
+
+## Kennzahlen
+
+- 2021
+  - Raumwärme: 14.542 kWh — 2.158,76 EUR
+  - TWW: 37,86 m³ — 341,11 EUR
+  - Summe (Wärme + TWW): 2.499,88 EUR
+- 2022
+  - Raumwärme: 10.898 kWh — 1.917,08 EUR
+  - TWW: 23,00 m³ — 232,04 EUR
+  - Summe (Wärme + TWW): 2.149,12 EUR
+- 2023
+  - Raumwärme: 9.824 kWh — 3.197,43 EUR
+  - TWW: 16,86 m³ — 445,41 EUR
+  - Summe (Wärme + TWW): 3.642,84 EUR
+  - CO2‑Info (aus Rechnung): Faktor 0,251 kg CO2/kWh; Emissionen 2.961 kg; CO2‑Kosten 95,04 EUR
+
+## Quellen
+
+- 2021: `infosAndStuff/2021_10000027695_818349.pdf`
+- 2022: `infosAndStuff/2022_10000027695_818349.pdf`
+- 2023: `infosAndStuff/2023_10000027695_818349.pdf`
+\end{markdown}
+
+\chapter{Entwurfsarchitektur — Doppelpuffer}
+\begin{markdown}
+# Entwurfsarchitektur — Doppelpuffer
+
+Hydraulisches Konzept mit zwei Speichern: ein separater, ganzjährig heißer TWW‑Heizspeicher (speist eine Frischwasserstation, FriWa) sowie ein Heiz‑/Kühlspeicher, der im Winter warm und im Sommer kalt betrieben wird. Keine Klimageräte oder Fan‑Coils; Kühlung über UFH mit Taupunkt‑Schutz.
+
+## Einlinienschema (ASCII)
+
+\end{markdown}
+\begin{Verbatim}[fontsize=\small]
+           [PV + Batterie + Unterverteilung Wichtige Stromkreise]
+                              |
+                        [Netzversorgung]
+                              |
+                         [L/W-WP R290]
+                              |
+                     (optional Platten-WT)
+                              |
+                     +--------+---------+
+                     |                  |
+          [Heiz-/Kuehlspeicher]       [TWW-Heizspeicher]
+            800-1000 L, schichtend      200-300 L, 55-60 C
+                     |                  |
+                     |                  +--> [FriWa] --> TWW zu Zapfstellen
+                     |                           ^
+                     |                           |
+               +-----+----+                 Kaltwasser
+               |          |
+            3-Wege      Ruecklauf
+            Mischer       UFH
+               |          ^
+               v          |
+            [UFH VL]  --> Loops --> [UFH RL]
+
+ [Wasserfuehrender Ofen] --(Ruecklaufanhebung, Sicherheit)--> Puffer oben
+\end{Verbatim}
+\begin{markdown}
+
+Hinweise:
+- Der TWW‑Heizspeicher enthält Heizungswasser (kein Trinkwasser). Die FriWa erwärmt Trinkwasser im Durchlauf über einen Plattenwärmetauscher.
+- Der Heiz-/Kühlspeicher dient als hydraulische Weiche und Energiespeicher. Im Sommer nachts kühlen, tagsüber nutzen.
+- Optionaler Plattenwärmetauscher (PHE) zwischen WP und Hauskreis ermöglicht Glykol auf WP‑Seite und schützt die Wasserqualität.
+
+## Betriebsarten
+
+- Winter
+  - Wettergeführter Betrieb; WP belädt den Heiz-/Kühlspeicher (Mitte) für den Heizbetrieb; Auslegung VL ≤ 35 °C.
+  - Mittags (PV‑Fenster) hat TWW Priorität: TWW‑Speicher auf 55–60 °C laden, danach Rückkehr zum Heizen.
+  - Ofen lädt Puffer oben (Rücklaufanhebung ≥ 60 °C); thermische Ablaufsicherung und Notkühlung gemäß EN 303‑5.
+  - HA orchestriert Prioritäten/Meldungen; Sicherheits- und Grenzwerte sind hart verdrahtet.
+
+- Sommer
+  - Nacht: WP kühlt den Heiz-/Kühlspeicher auf ~16–18 °C.
+  - Tag: UFH‑Vorlauf wird auf ≥ (Taupunkt + 2 K) begrenzt, typ. 19–21 °C (Kondensationsschutz).
+  - TWW‑Speicher bleibt ganzjährig heiß; mittags per PV laden.
+
+- Übergangszeit
+  - Minimale Puffersollwerte; TWW mittags; Nachtkühlung bei Hitzeperioden.
+
+## Sollwerte, Grenzen, Sensorik
+
+- TWW‑Heizspeicher: 55–60 °C; Verbrühschutz an Entnahmestellen.
+- Heiz-/Kühlspeicher Winter: so, dass VL ≤ 35 °C erreicht wird.
+- Heiz-/Kühlspeicher Sommer: Nachtziel 16–18 °C.
+- UFH im Kühlbetrieb: ≥ (Taupunkt + 2 K). Beispiel: 26 °C/60 % r.F. → Taupunkt ≈ 17,8 °C → VL ≥ 20 °C.
+- Sensorik (Minimum):
+  - Speicher oben/Mitte/unten (beide Speicher)
+  - UFH: VL/RL; optional Oberflächensensor am Verteiler
+  - Raumklima: mind. ein T/r.F.-Sensor pro Etage (Taupunkt)
+  - Wärmemengen: WP→Puffer, ggf. FriWa‑Primär
+
+## Dimensionierung (Richtwerte)
+
+- WP: nach EN 12831; typisch 4–6 kW @ −10 °C; Gerät 6–10 kW Klasse mit guter Modulation/Leisebetrieb.
+- Heiz-/Kühlspeicher: 800–1000 L, 100–150 mm Dämmung, geringe Δp‑Anschlüsse, 3 Tauchhülsen.
+- TWW‑Heizspeicher: 200–300 L, 3 Tauchhülsen, 55–60 °C.
+- FriWa: 25–35 kW Platten‑WT‑Modul mit variabler Primärpumpe, Durchflusssensor, elektronischer Auslauftemperaturregelung; Trinkwasserseite mit Filter/Service.
+- Ventile/Pumpen: Hocheffizienzpumpen; 3‑Wege‑Mischer (UFH) mit fester Taupunkt‑Begrenzung; motorische Absperrungen für Sommer/Winter; Rückflussverhinderer, Strangregulierungen.
+- Optionaler PHE: auf volle Leistung mit kleinem Annäherungs‑ΔT; Glykol WP‑seitig; Luft/Schlammabscheider.
+- Ausdehnungsgefäße: auf Gesamtvolumen ausgelegt (Speicher + Rohrnetz + Heizflächen).
+
+## Sicherheit und Wasserqualität
+
+- Ofenkreis: Rücklaufanhebung (RLA, ≥ 60 °C), thermische Ablaufsicherung (TAS), schwerkrafttaugliche Notkühlung, ausreichendes Membran‑Ausdehnungsgefäß (MAG); EN 303‑5.
+- System: Sicherheitsventile (i. d. R. 3 bar), Luft/Schlammabscheider, VDI 2035‑gerechtes Wasser; warme Leitungen dämmen, kalte diffusionsdicht inkl. Kondensatableitung.
+- Elektro: Unterverteilung für wichtige Stromkreise (HP‑Freigabe, Pumpen, Regler, Netzwerk, Kühlung, ausgewählte Stromkreise).
+
+## Regelungszuordnung
+
+- Primär/Sicherheit: WP‑Regler; Hydraulikregler für Mischer, Pumpen, Temperaturgrenzen, TWW‑Priorität; harte Verriegelungen (nicht HA‑abhängig).
+- Orchestrierung (HA): PV‑Zeitfenster (z. B. TWW mittags), Saisonumschaltung, Meldungen (Ofen, Filterservice, r.F./T‑Abweichungen), Logging (Puffer, r.F., Energie, COP‑Proxy).
+\end{markdown}
+
+\chapter{Trinkwarmwasser (TWW)}
+\begin{markdown}
+# Trinkwarmwasser (TWW) — FriWa + TWW‑Heizspeicher
+
+Separater TWW‑Heizspeicher (Heizungswasser) mit ~55–60 °C versorgt eine Frischwasserstation (FriWa). Es gibt keinen Trinkwasserspeicher; TWW wird im Durchlauf erwärmt.
+
+## Begründung
+
+- Hygiene: Kein stehendes Trinkwarmwasser → minimiertes Legionellenrisiko; Verbrühschutz an Zapfstellen.
+- Sommerkompatibilität: TWW‑Speicher bleibt heiß, Heiz-/Kühlspeicher kann kalt bleiben (UFH‑Kühlung).
+- PV‑Synergie: TWW‑Ladung mittags nutzt PV‑Überschuss, reduziert Abendlast.
+
+## Hydraulik
+
+- TWW‑Heizspeicher (200–300 L): 55–60 °C ganzjährig; oben/Mitte/unten Sensoren; gute Dämmung.
+- FriWa (25–35 kW): Platten‑WT, variable Primärpumpe, Durchflusssensor, elektronische Auslauftemperatur; Trinkwasserseite mit Filter/Absperrungen.
+- WP‑Priorität: Zeitbasiert (mittags) und temperaturgeführt (wenn Speichertemperatur < Soll) zuerst TWW, sonst Heiz-/Kühlspeicher.
+
+## Regelung/Sollwerte
+
+- TWW‑Soll: 55–60 °C (Wasserhärte/Komfort beachten). Verbrühschutzmischer einsetzen.
+- PV‑Fenster: Bei hohem Ladezustand (SoC) und PV‑Überschuss TWW laden; sonst zeitversetzt/off‑peak.
+- Stillstandsverluste: Speicher gut dämmen; ggf. Nachtabschaltung, wenn Bedarfsmuster es zulässt.
+
+## Dimensionierung/Leistung
+
+- Speicher: 200–300 L für 3 Personen (Duschen, gelegentlich Baden); eher 300 L bei parallelen Zapfungen.
+- FriWa: 25–35 kW liefern typ. 10–16 L/min bei 40–45 °C (abhängig von Primärtemperatur/Kennlinien).
+- Annäherung ΔT: Primärtemperatur mit Reserve zur Auslauftemperatur; FriWa‑Regelung fein abstimmen.
+
+## Wasserqualität/Wartung
+
+- Trinkwasserseite: Filter/Sieb; Inspektion/Entkalkung gemäß Wasserhärte.
+- Primärseite: VDI 2035 (Leitfähigkeit/Härte) zum Schutz von WT, Pumpen, Ventilen.
+- Service: Absperrungen, Entleerungen, Messstellen vorsehen.
+
+## Inbetriebnahme‑Checks
+
+- Stabiler TWW‑Auslauf 2–16 L/min ohne Überschwingen.
+- Verbrühschutz prüfen.
+- TWW‑Ladezeiten/Temperaturverläufe loggen und PV‑Timing verifizieren.
+\end{markdown}
+
+\chapter{Lüftung — Dezentrale Einzelraum-WRG}
+\begin{markdown}
+# Lüftung — Dezentrale Einzelraum‑WRG (DIN 1946‑6)
+
+Da keine zentrale Lüftung möglich ist, kommen 6–8 dezentrale Geräte zum Einsatz. Sie stellen den Grundluftwechsel mit Wärmerückgewinnung (WRG) sicher, besitzen Boost‑Funktionen und Sommerbypass.
+
+## Prinzipien
+
+- Bilanz/Abdeckung: Kontinuierlicher Grundluftwechsel in Wohn‑/Schlafräumen; stärkere Abfuhr/Boost in Feuchträumen.
+- Akustik: Leise im Grundbetrieb, Nachtmodus; akustische Einbauteile.
+- Einfacher Einbau: Kernbohrung 160–200 mm, leichtes Gefälle nach außen (Kondensat), Filterzugang.
+
+## Gerätetypen
+
+- Doppellüfter‑Dauerbetrieb (bevorzugt): gleichzeitige Zu‑/Abluft über kleinen Gegenstromkern; stabile Luftbilanz.
+- Wechselbetrieb (Paarweise): Keramikspeicher; paarweise Montage zur Bilanzierung.
+
+## Platzierung/Luftwege
+
+- Feuchträume (Bad/WC/Küche): Geräte mit Boost 40–60 m³/h; ggf. Fettfilter.
+- Wohn‑/Schlafräume: Grundvolumen 15–30 m³/h je Raum; Schlafräume mit Nachtmodus.
+- Türunterkanten/Überströmöffnungen; Kurzschlussströmung vermeiden.
+- Außenhauben mit Wetterschutz/Insektenschutz; Fassadenakustik beachten.
+
+## Steuerung
+
+- Lokal: Taster für Boost (Bad), automatische Boosts (r.F./CO₂), Nachtmodi.
+- Zentrale Übersicht (optional): potentialfreie Kontakte oder Modbus/IP‑Gateway zur HA‑Integration (Monitoring, nicht sicherheitskritisch).
+- Sommerbypass: aktivieren, um unerwünschte Wärmerückgewinnung in der Kühlperiode zu vermeiden; Querlüftung nutzen.
+
+## Einbau/Inbetriebnahme
+
+- Kernbohrungen mit leichtem Gefälle nach außen; luftdichte Hüll‑Anbindung.
+- Volumenströme gemäß DIN 1946‑6 einstellen, messen, protokollieren.
+- Filter: Wartungsintervalle definieren; Ersatzfiltersätze vorhalten; Service‑Hinweise in HA.
+
+## Zusammenspiel mit hydronischem Kühlen
+
+- WRG hilft bei Feuchtestabilisierung, entfeuchtet aber nur begrenzt; r.F. pro Etage überwachen.
+- Bei anhaltend >60 % r.F. in Hitzephasen temporär Entfeuchter einsetzen (weiterhin „keine AC“).
+\end{markdown}
+
+\chapter{Gebäudehülle, Luftdichtheit, Wärmebrücken}
+\begin{markdown}
+# Gebäudehülle, Luftdichtheit, Wärmebrücken
+
+Maßnahmen für Dämmung, Luftdichtheit und die neuralgischen Wärmebrücken (Loggia, offener Eingangsbereich, offenes Kellertreppenhaus).
+
+## Zielwerte (EH85‑nah)
+
+- Kellerdecke U ≤ 0,25 W/(m²·K)
+- Dach/Oberste Decke U ≤ 0,14 W/(m²·K)
+- Fenster Uw ≤ 0,90 W/(m²·K) mit warmer Kante
+- Luftdichtheit n50 ≤ 1,5 h⁻¹ (Blower‑Door vorher/nachher)
+
+## Maßnahmen
+
+- Kellerdecke (muss): Platten oder Einblasdämmung; Durchdringungen abdichten; Anschlussdetails durchgängig.
+- Dach/Oberste Decke (muss): Aufdachdämmung oder oberste Decke; luftdichte Ebene konsequent; Details an Durchdringungen.
+- Fenster (muss): Dreifachverglasung, luftdichte Montage mit Bändern/Kompribändern; Laibungsdämmung prüfen.
+- Fassade (optional, empfohlen): WDVS außen, falls möglich; sonst kapillaraktive Innendämmung (z. B. CaSi/Holzfaser) an kritischen Innenflächen; Feuchteführung planen (keine Dampfsperrfallen).
+- Luftdichtheitspaket (muss): Professionelle Abdichtung, Blower‑Door vor/nach Sanierung.
+
+## Offenes Kellertreppenhaus
+
+- Luftdichte, transparente Abtrennung (Glas/Schiebetür) auf Keller‑ oder EG‑Ebene; Lichtbezug erhalten; Dichtprofile.
+- In Kombination mit Kellerdeckendämmung verringert Kamineffekt.
+
+## Loggia (innenliegender Balkon)
+
+- Wintergarten: Dreifachglas, thermisch getrennte Rahmen, gedämmte Brüstungen/Laibungen, außenliegende Verschattung; beste Behaglichkeit; Genehmigung/Statik beachten.
+- Zielgerichtete Wärmebrücken‑Sanierung: kapillaraktive Innendämmung an Knoten; ggf. außen ergänzen; geringer, aber günstiger Effekt.
+
+## Offener Eingang/überdeckter Vorbereich
+
+- Verglaster Windfang: gedämmte Rahmen und Außentür; großer Nutzen gegen Infiltration/Kälte; ggf. Genehmigung.
+- Unterseitige Dämmung: starre PIR/EPS‑Platten; Seitenanschlüsse luftdicht/gedämmt.
+
+## Verifikation
+
+- Thermografie nach Fertigstellung zur Restwärmebrückensuche.
+- Blower‑Door (n50 ≤ 1,5 h⁻¹), Leckagenachweise.
+\end{markdown}
+
+\chapter{Regelung, Sensorik, Monitoring}
+\begin{markdown}
+# Regelung, Sensorik, Monitoring
+
+Sicherheits‑ und Primärregelung sind hart verdrahtet; Home Assistant (HA) dient nur zur Orchestrierung/Visualisierung. Taupunkt‑Schutz ist Pflicht.
+
+## Sicherheit/Primärregelung (hart)
+
+- WP‑Regler: Verdichterschutz, Abtauung, Vor-/Rücklauftemperaturlimits.
+- Hydraulikregler: 3‑Wege‑Mischer UFH, Pumpen, Puffertemperaturgrenzen, TWW‑Priorität.
+- Taupunktabschaltung: harte Begrenzung UFH‑VL ≥ (Taupunkt + 2 K), unabhängig von HA.
+- Ofen: Rücklaufanhebung (≥ 60 °C), thermische Ablaufsicherung, schwerkraftgeeignete Notkühlung, MAG/PRV.
+
+## Sensorik/Messtechnik
+
+- Speicher: oben/Mitte/unten an TWW- und Heiz-/Kühlspeicher.
+- UFH: VL/RL; optional Oberflächensensor am Verteiler.
+- Raum: mind. ein T/r.F. je Etage (Taupunktberechnung).
+- Energiemessung: Wärmemengen WP→Puffer, optional FriWa‑Primär; Strom‑Unterzähler WP.
+- Durchfluss/Druck: nach Bedarf (FriWa/Strangregulierung), Entlüftungen/Spülstellen.
+
+## Orchestrierung (HA o. ä.)
+
+- PV‑Zeitfenster: TWW‑Ladung mittags; im Winter optional Puffer‑Vorwärmung bei PV‑Überschuss.
+- Saisons: Winter (Heizen), Sommer (Kühlen + TWW), Übergang (minimal).
+- Meldungen: Ofen‑Hinweise, Filterservice (WRG/FriWa), r.F./T‑Alarme, Fehlerrelais WP.
+- Logging: Puffer‑T, UFH VL/RL, r.F./T innen, WP‑Leistung, WMZ; Leistungszahl (COP)‑Proxy möglich.
+
+## Beispiel Taupunktlogik
+
+- Eingang: T innen, r.F. innen → Taupunkt; gemessener UFH‑VL.
+- Limit: UFH‑VL‑Soll = max(Heizkurvenbedarf, Taupunkt + 2 K), absolut min. typ. 19–21 °C.
+- Sperre: Bei VL < (Taupunkt + 2 K) oder Feuchte am Verteiler: Mischer schließen/Pumpe stoppen bis sicher.
+
+## Elektro/Resilienz
+
+- Unterverteilung wichtige Stromkreise: WP‑Freigabe, Pumpen, Hydraulikregler, HA‑Host, Netzwerk, Kühlgerät, ausgewählte Licht/Steckdosen.
+- Überspannungsschutz (SPD) für PV, Speicher, WP, MSR.
+- Nachtmodus: reduzierte Schallemission WP/WRG.
+\end{markdown}
+
+\chapter{Förderung, Konformität, Dokumentation}
+\begin{markdown}
+# Förderung, Konformität, Dokumentation
+
+Strategie zur Förderung (Stand: konzeptionell). Verbindliche Prüfung stets mit Energie‑Effizienz‑Experte (EEE) und Bank vor Beauftragung.
+
+## Primär — KfW 261 (Wohngebäude – Kredit)
+
+- Ziel: Effizienzhaus 85 + Erneuerbare‑Energien‑Klasse (≥65 % erneuerbare Wärme/Kälte).
+- Inhalt: Wärmepumpe, Speicher (Heiz/Kühl + TWW), FriWa, Hydraulik‑Peripherie, Sicherheit, System‑Elektro; ggf. wasserführender Ofen.
+- Tilgungszuschuss: typ. 10 % auf finanzierten Anteil nach BnD durch EEE.
+- Wichtig: Keine Doppelförderung derselben Kostenposition außerhalb des EH‑Topfs.
+
+## Ergänzend — Einzelmaßnahmen (BAFA/BEG)
+
+- Hülle (Keller/Dach/Fenster/Fassade), dezentrale Lüftung, Mess‑/Steuer‑/Regelung (MSR), UFH‑Verteilung.
+- Sätze: 15 % bzw. 20 % mit iSFP.
+- Regel: Keine Doppelansetzung, wenn bereits im EH‑Kredit enthalten.
+
+## Weitere Finanzierung
+
+- Ergänzungskredite (z. B. KfW 358/359) für Einzelmaßnahmen.
+- PV/Batterie: 0 % MwSt.; separat finanzierbar (z. B. KfW 270) oder Hausbank.
+
+## Prozess/Timing
+
+- EEE frühzeitig einbinden; „Bestätigung vor Antrag“ (BzA) vor Auftragsvergabe bzw. mit aufschiebender Bedingung.
+- Saubere Kostentrennung: EH‑Topf vs. Einzelmaßnahmen definieren.
+- „Bestätigung nach Durchführung“ (BnD) zur Zuschussgutschrift/Abschluss.
+
+## Nachweise/Doku
+
+- Berechnungen: EN 12831 (Heizlast), Lüftungskonzept nach DIN 1946‑6, Taupunktstrategie, Wärmebrückendetails.
+- Inbetriebnahmeprotokolle: Blower‑Door (vor/nach), hydraulischer Abgleich, Wasserqualität (VDI 2035), Druckprobe, Wärmemengenzähler, WP‑Inbetriebnahme.
+- Sicherheit: Ofen EN 303‑5 (RLA, TAS, Notkühlung), Elektro‑SPDs, Unterverteilung für Notbetrieb.
+- Monitoring: erste Betriebsperiode (T, r.F., WMZ/EMZ) zur Performancevalidierung.
+
+## Hinweise
+
+- Programme ändern sich; Konditionen/Caps/Fristen aktuell prüfen.
+- Eine „Single Source of Truth“ für Kostenzuordnung/Belege vereinfacht Prüfungen.
+\end{markdown}
+
+\chapter{Inbetriebnahme und Abnahme}
+\begin{markdown}
+# Inbetriebnahme und Abnahme
+
+Checkliste für sichere Inbetriebnahme und förderkonforme Nachweise.
+
+## Vor‑Inbetriebnahme
+
+- Mechanik:
+  - Spülung/Druckprobe bestanden; dicht.
+  - MAG dimensioniert und voreingestellt (Gesamtvolumen Speicher+Anlage).
+  - Luft/Schlammabscheider gesetzt; Entlüftungen zugänglich.
+  - Dämmung vollständig: warm gedämmt; kalt diffusionsdicht inkl. Kondensatführung.
+- Elektro:
+  - Unterverteilung wichtige Stromkreise verdrahtet; Beschriftung; RCD/LS geprüft.
+  - SPDs installiert und mit PV/Batterie koordiniert.
+  - Sensorik/Aktoren beschriftet; Not‑Stop dokumentiert.
+- Wasserqualität:
+- VDI‑Richtlinie 2035 (Verein Deutscher Ingenieure) konformes Wasser; Leitfähigkeit/Härte protokolliert.
+- Sicherheit (Ofen):
+  - Rücklaufanhebung, thermische Ablaufsicherung, Notkühlweg, Schornsteinfreigaben geprüft.
+
+## Regelung/Sensorik prüfen
+
+- Speicher: oben/Mitte/unten plausibel; Flussrichtungen geprüft.
+- UFH: VL/RL‑Sensoren, 3‑Wege‑Mischer‑Richtung, Pumpendrehzahl.
+- Taupunktlogik: Feuchte‑Szenario testen; Begrenzung/Abschaltung verifizieren.
+- WP‑Regler: Heizkurve/Min‑Max VL/Antitakt eingestellt.
+- FriWa: Auslauftemperatur stabil, 2–16 L/min; Verbrühschutz verifiziert.
+
+## Funktionstests
+
+- Heizen (Winter‑Simulation):
+  - Lange Verdichterläufe; Schichtung sichtbar; Ziel‑VL erreicht.
+  - TWW‑Mittagspriorität auf 55–60 °C; danach Heizen.
+- Kühlen (Sommer‑Simulation):
+  - Nachtkühlung Puffer ~16–18 °C; Tag VL = Taupunkt + 2 K; keine Kondensation.
+- Ofen‑Einbindung:
+  - Puffer oben aufladen; WP‑Leistungsreduktion bei hoher Top‑Temperatur.
+
+## Hydraulischer Abgleich
+
+- UFH‑Kreise messen, einstellen, protokollieren.
+- WMZ prüfen (Einbaurichtung, Impulse fürs Logging).
+
+## Lüftung (Dezentrale WRG)
+
+- Raumweise Volumenströme einstellen; Boost; Sommerbypass.
+- Filter eingesetzt; Wartungsplan; Akustik prüfen.
+
+## Abnahmedokumente
+
+- Blower‑Door (vor/nach), n50 ≤ 1,5 h⁻¹ (Ziel).
+- Protokolle hydraulischer Abgleich, WP/FriWa‑Inbetriebnahme.
+- VDI 2035, Druckprüfungen, Elektro (RCD/Isolationsmessung/SPD).
+- Schemata: finales Hydraulik‑Schema, I/O‑Plan, Sensorliste.
+- Sicherheit: EN 303‑5 Nachweise, Schornsteinfeger‑Abnahmen, Notfall‑Prozeduren.
+- Monitoringplan: zu erfassende Daten, Aufbewahrungsdauer (mind. 1. Saison).
+\end{markdown}
+
+\chapter{Projektphasen und Reihenfolge}
+\begin{markdown}
+# Projektphasen und Reihenfolge
+
+Pragmatische Abfolge zur Minimierung von Rückbau, passgenauer Förderung und qualitativem Hochlauf.
+
+## Phasen
+
+1) Voruntersuchungen
+- Gefahrstoffe (Bj. 1972): Asbest/PCB/alte Mineralwolle.
+- Statik Flachdach für PV; Aufstellort/Schall; Genehmigungen (Loggia/Windfang).
+
+2) Konzept/Berechnungen
+- EN 12831 Heiz‑ (und ggf. Kühl‑)last; DIN 1946‑6 Lüftungskonzept.
+- Wärmebrückendetails Loggia/Eingang; Taupunktstrategie UFH.
+- Kostenzuordnung EH‑Topf vs. Einzelmaßnahmen.
+
+3) Förderanträge
+- BzA durch EEE; Bankgespräch.
+- KfW 261 (EH); ergänzende BAFA/BEG‑Einzelmaßnahmen und evtl. Zusatzkredite.
+
+4) Hülle/Luftdichtheit
+- Kellerdecke, Dach, Fenster; optional Fassade.
+- Treppenhaus‑Abtrennung; Loggia/Windfang (falls genehmigt).
+- Blower‑Door (Zwischenmessung) als QS.
+
+5) Technik
+- UFH‑Verteilung; Abgleich‑Bereitschaft.
+- WP, Speicher (TWW + Heiz/Kühl), FriWa, Pumpen/Ventile, Sensorik, Unterverteilung.
+- Dezentrale WRG inkl. Einregulierung.
+
+6) PV/Batterie
+- PV/Batterie; Unterverteilung integrieren; SPD.
+
+7) Inbetriebnahme/Feinabstimmung
+- Spülung/Druckprobe/VDI 2035; Parametrierung; Taupunkt‑Test; Ofen‑Sicherheitstests.
+- Abgleich‑Protokoll; Datenlogging.
+
+8) Abschluss
+- BnD (EEE); Zuschüsse/Tilgungszuschuss.
+- Erste Saison: Monitoring/Optimierung; ggf. Thermografie.
+\end{markdown}
+
+\chapter{Stückliste}
+\begin{markdown}
+# Stückliste (Spezifikationsklassen)
+
+Markenneutrale Auswahl mit Größenordnungen. Endgültige Auswahl nach Detailberechnung und Installationsstandard.
+
+## Erzeugung/Speicher
+
+- Reversible L/W‑WP (R290), 6–10 kW Klasse, Monoblock/Split; Leise‑Kit; Nachtmodus.
+- Optionaler Plattenwärmetauscher (WP↔Haus), volle Leistung bei kleinem ΔT; Glykol WP‑seitig.
+- Heiz-/Kühlspeicher: 800–1000 L, schichtend, 100–150 mm Dämmung, 3× Tauchhülsen.
+- TWW‑Heizspeicher: 200–300 L, hohe Dämmung, 3× Tauchhülsen.
+- FriWa‑Modul: 25–35 kW Platten‑WT, variable Primärpumpe, Durchflusssensor, Auslauftemp‑Regelung, Servicearmaturen, Trinkwasserfilter.
+- Wasserführender Ofen (optional): Leistung passend; Rücklaufanhebung (≥60 °C), TAS, Notkühlweg; Schornstein‑Zubehör.
+
+## Hydraulische Peripherie
+
+- Pumpen: ECM für WP‑, Puffer‑, UFH‑ und FriWa‑Kreise.
+- Ventile: 3‑Wege‑Mischer (UFH), motorische Absperrungen (Saison), RVs, Strangregulierventile, Füll/Entleer.
+- Abscheider: Luft/Schlamm; optional Magnetit.
+- MAG (Membran‑Ausdehnungsgefäß): auf Gesamtvolumen ausgelegt, mit Serviceventil/Manometer.
+- Sicherheit: Sicherheitsventile (PRV, pressure relief valves, typ. 3 bar), Manometer, Automatikentlüfter; Kondensatfallen an Kaltleitungen.
+
+## Verteilung
+
+- UFH‑Verteiler/Schleifen: sauerstoffdiffusionsdicht (PEX/MLCP), Verteilerkästen, Durchflussmesser, Stellantriebe (bei Zonenbetrieb).
+- Rohrdämmung: warm gemäß Norm; kalt diffusionsdicht; Verteiler/Armaturen dämmen.
+
+## Lüftung (dezentral)
+
+- 6–8 Einzelraum‑WRG‑Geräte (Doppellüfter oder Paar‑Wechsel), Wandeinbauhülsen, Außenhauben, Akustikelemente, Filter.
+- Steuerung: Boost‑Taster, r.F./CO₂‑Sensoren (sofern unterstützt), optional Gateway zur HA‑Integration.
+
+## Regelung/Sensorik/Elektro
+
+- Hydraulikregler: Mischer/Pumpen mit Taupunkt‑Eingang und Abschaltung.
+- Sensoren: Speicher T oben/Mitte/unten, UFH VL/RL, Raum T/r.F. je Etage, optional Verteiler‑Oberfläche.
+- Energiemessung: WMZ WP und optional FriWa‑Primär; Strom‑Unterzähler WP.
+- Elektro: Unterverteilung wichtige Stromkreise, Umschalter/Ersatzstrom, SPD, Beschriftung, Installationsmaterial.
+- HA‑Host: zuverlässige Kleinrechner‑Plattform; Netzwerk; optional USV.
+
+## Wasseraufbereitung/Service
+
+- VDI 2035‑Einheit/Chemie; Testkit (Leitfähigkeit/Härte); Befüll/Entleer.
+- Filter/Siebe: Trinkwasserfilter FriWa; Strainer primär; Ersatzfilter.
+- Service: Absperrungen, Entleerungen, Tauchhülsen/Messstellen, Zugänge.
+\end{markdown}
+
+\chapter{Risiken und Gegenmaßnahmen}
+\begin{markdown}
+# Risiken und Gegenmaßnahmen
+
+Wesentliche technische/projektbezogene Risiken und praxistaugliche Lösungen.
+
+## Hydronisches Kühlen/Kondensation
+
+- Risiko: UFH‑Oberflächen/Verteiler unter Taupunkt → Tauwasser/Schäden.
+- Maßnahmen: harte Taupunkt‑Limitierung (Mischer), diffusionsdichte Kältedämmung, Kondensatführung, r.F.‑Überwachung je Etage, Kühlung bei >60 % r.F. temporär sperren.
+
+## Systemkomplexität
+
+- Risiko: Doppelpuffer + FriWa + Ofen erhöhen Komponenten/Regelung.
+- Maßnahmen: Sicherheitsverriegelungen in dedizierten Reglern (nicht HA), klare Betriebsmodi, strukturierte Inbetriebnahme, Beschriftung, Servicedoku.
+
+## Schall (Reihenhaus)
+
+- Risiko: Außengerät/WRG stören Bewohner/Nachbarn.
+- Maßnahmen: akustisch günstiger Standort/Schirm, entkoppelte Montage, Nachtmodus, WRG‑Akustikmaßnahmen.
+
+## Wärmebrücken (Loggia, Eingang)
+
+- Risiko: Energieverlust, kalte Oberflächen, Feuchte.
+- Maßnahmen: bevorzugt Wintergarten/Windfang; alternativ kapillaraktive Innendämmung + außenliegende Verschattung; Thermografie nach Fertigstellung.
+
+## Wasserqualität/Verkalkung
+
+- Risiko: Platten‑WT, Pumpen, Ventile betroffen.
+- Maßnahmen: VDI 2035‑Wasser; Trinkwasserfilter; regelmäßige Checks; Spül-/Bypassöffnungen.
+
+## Förderung/Timing
+
+- Risiko: Doppelförderung, falsche Reihenfolge.
+- Maßnahmen: EEE‑Begleitung; BzA vor Auftrag; saubere Kostentrennung; BnD zum Abschluss; Doku pflegen.
+
+## Sicherheit (Ofen)
+
+- Risiko: Überhitzung ohne Wärmesenke; zu kalter Rücklauf (Teer); unzureichender Ausdehnungsraum.
+- Maßnahmen: RLA (≥60 °C), TAS, Notkühlweg, korrekt dimensioniertes MAG; zertifizierte Komponenten/Einbau.
+\end{markdown}
+
+\chapter{Offene Entscheidungen}
+\begin{markdown}
+# Offene Entscheidungen und Optionen
+
+Zur Abstimmung mit Installationsbetrieb und EEE.
+
+## TWW und Speicher
+
+- Volumen TWW‑Heizspeicher: 200 L vs. 300 L (Nutzungsprofil/Parallellasten).
+- FriWa‑Leistungsklasse: 25 kW vs. 35 kW (gleichzeitige Zapfungen).
+- Option Querladung: Notfall‑Wärmeübertrag vom Heiz-/Kühlspeicher‑Top nach TWW (Komplexität vs. Resilienz).
+
+## Entkopplung und Medien
+
+- Optionaler PHE WP↔Haus (Glykol WP‑seitig):
+  - Pro: Frostschutz, Sauerstoffeintrag begrenzt.
+  - Contra: geringe Effizienzeinbuße, mehr Komponenten.
+
+## Loggia/Eingang
+
+- Loggia: Wintergarten (höchster Nutzen, Genehmigung) vs. zielgerichtete Innendämmung + Verschattung (Budget).
+- Eingang: verglaster Windfang (hoher Nutzen) vs. reine Unterseitendämmung (geringerer Nutzen).
+
+## WRG‑Geräte
+
+- Typ: Doppellüfter‑Dauerbetrieb vs. Paar‑Wechsel; Akustikpriorisierung.
+- Steuerung: Stand‑alone vs. Gateway in HA (Monitoring).
+
+## Wärmepumpe
+
+- Leistungsklasse: nach EN 12831 und Modulationsbereich.
+- Akustik/Standort: Nachtmodus, Schallschirm, Nachbarschaft.
+
+## Monitoring/Daten
+
+- WMZ‑Umfang: nur WP vs. WP + FriWa‑Primär.
+- Datenhaltung: erste Saison obligatorisch; optional Langzeittrends.
+\end{markdown}
+
+\chapter{Hydraulikschema — Tags und I/O}
+\begin{markdown}
+# Hydraulikschema — Kennzeichnung und I/O‑Plan
+
+Ergänzende Kennzeichen (Tags) für Komponenten, Sensoren und Regel‑I/O zur Verdrahtung, Beschriftung und Inbetriebnahme.
+
+## Tag‑Konvention
+
+- Speicher: T1 = Heiz-/Kühlspeicher, T2 = TWW‑Heizspeicher
+- Wärmepumpe: HP1
+- Plattenwärmetauscher (optional): HX1 (WP↔Haus)
+- Frischwasserstation: FW1
+- Ofenkreis: WS1
+- Pumpen: P‑xx, Ventile: V‑xx, Sensoren: S‑xx, Regler/Relais: C‑xx/R‑xx
+
+## Komponenten/Tags
+
+- HP1: Reversible L/W‑WP (R290)
+- HX1: Optionaler PHE, Glykol WP‑seitig
+- T1: Heiz-/Kühlspeicher (800–1000 L)
+  - S‑T1‑TOP/MID/BOT (Temperaturen)
+- T2: TWW‑Heizspeicher (200–300 L)
+  - S‑T2‑TOP/MID/BOT (Temperaturen)
+- FW1: FriWa (Platten‑WT, Primärpumpe, Auslauftemp‑Regelung)
+  - S‑FW‑FLOW (Durchfluss), S‑FW‑OUT (TWW‑Auslauf)
+- WS1: Wasserführender Ofen inkl. Sicherheit
+  - V‑WS‑RL (Rücklaufanhebung ≥60 °C), V‑WS‑TD (thermische Ablaufsicherung)
+- UFH: Verteiler/Schleifen
+  - V‑MX‑UFH (3‑Wege‑Mischer), P‑UFH, S‑UFH‑VL/RL, S‑UFH‑SURF (optional)
+- Saisonarmaturen
+  - V‑SEAS‑T1/T2 für Service/Modus
+
+## Raum‑Sensorik
+
+- S‑AMB‑GF: EG T/r.F. (Taupunkt)
+- S‑AMB‑DG: DG T/r.F. (Taupunkt)
+
+## Elektro/Zähler
+
+- R‑HP‑EN: WP‑Freigabe‑Relais
+- M‑HP‑EL: Stromzähler WP
+- M‑HP‑HT: WMZ WP→T1
+- M‑FW‑HT: WMZ T2→FW1 (optional)
+
+## I/O‑Plan (Beispiel)
+
+- Regler C‑HYD (Hydraulik):
+  - Eingänge: S‑T1‑TOP/MID/BOT, S‑T2‑TOP/MID/BOT, S‑UFH‑VL/RL, S‑AMB‑GF/DG, S‑UFH‑SURF (opt.)
+  - Ausgänge: V‑MX‑UFH (0–10 V), P‑UFH (Ein/Aus oder PWM), P‑FW‑PRI (via FW1), R‑HP‑EN, V‑SEAS‑T1/T2, Alarm
+  - Logik: Taupunktlimit; TWW‑Priorität; Saison; Antitakt; sicherer Stopp
+- Regler C‑HP (in HP1):
+  - Heizkurve; Vor-/Rücklaufgrenzen; Abtauung; Schnittstelle R‑HP‑EN
+- FW1 intern:
+  - Auslauftemperatur‑Soll; moduliert Primärpumpe nach Durchfluss/ΔT
+
+## Beschriftung/Doku
+
+- Jeder Tag erscheint in Schema, Verdrahtung, Geräteschild, Protokollen.
+- Tag‑Legende ausdrucken und nahe T1/T2 anbringen.
+\end{markdown}
+
+\chapter{Betriebsleitfaden}
+\begin{markdown}
+# Betriebsleitfaden — Alltag und Saisontipps
+
+Kurzanleitung für den täglichen Betrieb und saisonale Besonderheiten.
+
+## Alltag
+
+- TWW über FriWa im Durchlauf; konstante Auslauftemperatur. Bei parallelen Großzapfungen kurzzeitige Absenkung möglich; Speicher lädt nach.
+- TWW‑Ladung bevorzugt mittags mit PV. Bei Schlechtwetter bleibt TWW‑Komfort dennoch gewährleistet.
+- HA zeigt Puffertemperaturen, Luftfeuchte, Grundstatus; Meldungen für Filterservice/Abweichungen nutzen.
+
+## Winter (Heizen)
+
+- Wettergeführte Heizkurve mit niedrigen VL (~28–35 °C). Strahlungswärme baut sich träge, aber behaglich auf.
+- Holzofen nach Wunsch: hebt Puffertop an, WP reduziert Leistung.
+- Bei zu kühlen Räumen: Raum‑Soll leicht erhöhen oder Heizkurve minimal anpassen; große Sprünge vermeiden.
+
+## Sommer (Kühlen)
+
+- Nacht: Puffer ~16–18 °C; Tag: UFH‑VL durch Taupunktlogik begrenzt (typ. 19–21 °C); sanfte Grundkühlung.
+- Steigt r.F. gegen 60 % und Kühlung pausiert: lüften bei trockener Außenluft oder kurzzeitig entfeuchten (kein AC‑Betrieb vorgesehen).
+
+## Übergangszeit
+
+- Niedrige Puffersollwerte; Komfort überwiegend passiv + kurze Heizphasen; TWW weiterhin mittags.
+
+## Wartung
+
+- Filter: WRG und FriWa Trinkwasserfilter alle 3–6 Monate sichten (Umgebungsabhängig).
+- Sichtkontrolle: zu Sommerbeginn auf Kondensat an Kaltleitungen/Verteilern achten; Taupunkt‑Abstand ggf. erhöhen.
+- Jährlich: Sicherheitsventile, MAG‑Vordruck, VDI 2035‑Wasser, Wärmemengenzähler prüfen.
+
+## Störungshilfen
+
+- TWW zu kühl: TWW‑Speicher, FriWa‑Soll, Trinkwasserfilter prüfen.
+- Kühlung schwach: Taupunktlimit vs. VL checken; bei hoher r.F. Luft trocknen (Lüften/Entfeuchter).
+- Geräusche: Nachtmodus (WP/WRG); Montage/Schalldämpfung prüfen.
+\end{markdown}
+
+\chapter{Kosten — Größenordnungen}
+\begin{markdown}
+# Kosten — Größenordnungen
+
+Richtwerte zur Orientierung; verbindlich sind Angebote und aktuelle Förderbedingungen.
+
+## Hülle
+
+- Kellerdeckendämmung: 20–90 €/m²
+- Dach/Oberste Decke: 50–200 €/m²
+- Dreifachfenster inkl. luftdichter Montage: 600–1.000 € je Fenster (oder 280–900 €/m² Fensterfläche)
+- WDVS Fassade: 90–210 €/m² (falls machbar)
+- Luftdichtheit + Blower‑Door (vor/nach): 1.500–4.200 €
+- Treppenhaus‑Abtrennung (Glas): 1.000–3.000 €
+- Loggia Wintergarten: 5.000–20.000 € (abhängig vom Aufbau)
+- Verglaster Windfang: ähnlich, objektabhängig
+
+## Erzeugung/Speicher/Verteilung
+
+- Reversible L/W‑WP (R290), installiert: 18.000–35.000 €
+- Heiz-/Kühlspeicher 800–1000 L: 2.200–6.000 €
+- TWW‑Heizspeicher 200–300 L: 800–1.800 €
+- FriWa‑Station: 1.700–3.500 €
+- UFH‑Nachrüstung: 60–145 €/m²
+- Hydraulikperipherie + vollständige Rohrdämmung: 1.500–3.500 €
+- Optionaler PHE (WP↔Haus): 800–2.700 €
+- Wasserführender Ofen + Sicherheit/Abgasanlage: 3.500–10.000 € (+800–3.000 € Kaminanpassungen)
+
+## Lüftung, PV, Elektro
+
+- Dezentrale WRG (6–8 Geräte): 6.000–12.000 €
+- PV 5,8–8 kWp: 8.000–12.000 € (0 % MwSt.) + Netzgebühren
+- Batterie ~10 kWh mit Ersatzstrom: 6.000–10.000 € (0 % MwSt.)
+- Unterverteilung wichtige Stromkreise + Umschaltung: 1.500–3.000 €
+
+## Nebenkosten
+
+- EEE (Bestätigungen, Baubegleitung): 2.000–5.000 €
+- Technische Planung (Heiz/Kühllast, Schemata, LV, Bauüberwachung): 3.000–8.000 €
+- Inbetriebnahme/Abgleich‑Protokolle: 1.000–2.500 €
+
+## Summen (grob)
+
+- Ohne Fassade: ~67.000–90.000 €
+- Mit Fassade: ~82.000–115.000 €
+
+Förderungen senken Nettokosten (z. B. EH‑Tilgungszuschuss; Einzelmaßnahmen 15–20 % mit iSFP; PV/Batterie 0 % MwSt.). Doppelförderung vermeiden; aktuelle Bedingungen vor Beauftragung prüfen.
+\end{markdown}
+
+\end{document}

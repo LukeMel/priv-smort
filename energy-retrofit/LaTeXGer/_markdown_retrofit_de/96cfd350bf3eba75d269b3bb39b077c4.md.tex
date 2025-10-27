@@ -1,0 +1,49 @@
+\markdownRendererDocumentBegin
+\markdownRendererSectionBegin
+\markdownRendererHeadingOne{Regelung, Sensorik, Monitoring}\markdownRendererInterblockSeparator
+{}Sicherheits‑ und Primärregelung sind hart verdrahtet; Home Assistant (HA) dient nur zur Orchestrierung/Visualisierung. Taupunkt‑Schutz ist Pflicht.\markdownRendererInterblockSeparator
+{}\markdownRendererSectionBegin
+\markdownRendererHeadingTwo{Sicherheit/Primärregelung (hart)}\markdownRendererInterblockSeparator
+{}\markdownRendererUlBeginTight
+\markdownRendererUlItem WP‑Regler: Verdichterschutz, Abtauung, Vor-/Rücklauftemperaturlimits.\markdownRendererUlItemEnd 
+\markdownRendererUlItem Hydraulikregler: 3‑Wege‑Mischer UFH, Pumpen, Puffertemperaturgrenzen, TWW‑Priorität.\markdownRendererUlItemEnd 
+\markdownRendererUlItem Taupunktabschaltung: harte Begrenzung UFH‑VL ≥ (Taupunkt + 2 K), unabhängig von HA.\markdownRendererUlItemEnd 
+\markdownRendererUlItem Ofen: Rücklaufanhebung (≥ 60 °C), thermische Ablaufsicherung, schwerkraftgeeignete Notkühlung, MAG/PRV.\markdownRendererUlItemEnd 
+\markdownRendererUlEndTight \markdownRendererInterblockSeparator
+{}
+\markdownRendererSectionEnd \markdownRendererSectionBegin
+\markdownRendererHeadingTwo{Sensorik/Messtechnik}\markdownRendererInterblockSeparator
+{}\markdownRendererUlBeginTight
+\markdownRendererUlItem Speicher: oben/Mitte/unten an TWW- und Heiz-/Kühlspeicher.\markdownRendererUlItemEnd 
+\markdownRendererUlItem UFH: VL/RL; optional Oberflächensensor am Verteiler.\markdownRendererUlItemEnd 
+\markdownRendererUlItem Raum: mind. ein T/r.F. je Etage (Taupunktberechnung).\markdownRendererUlItemEnd 
+\markdownRendererUlItem Energiemessung: Wärmemengen WP→Puffer, optional FriWa‑Primär; Strom‑Unterzähler WP.\markdownRendererUlItemEnd 
+\markdownRendererUlItem Durchfluss/Druck: nach Bedarf (FriWa/Strangregulierung), Entlüftungen/Spülstellen.\markdownRendererUlItemEnd 
+\markdownRendererUlEndTight \markdownRendererInterblockSeparator
+{}
+\markdownRendererSectionEnd \markdownRendererSectionBegin
+\markdownRendererHeadingTwo{Orchestrierung (HA o. ä.)}\markdownRendererInterblockSeparator
+{}\markdownRendererUlBeginTight
+\markdownRendererUlItem PV‑Zeitfenster: TWW‑Ladung mittags; im Winter optional Puffer‑Vorwärmung bei PV‑Überschuss.\markdownRendererUlItemEnd 
+\markdownRendererUlItem Saisons: Winter (Heizen), Sommer (Kühlen + TWW), Übergang (minimal).\markdownRendererUlItemEnd 
+\markdownRendererUlItem Meldungen: Ofen‑Hinweise, Filterservice (WRG/FriWa), r.F./T‑Alarme, Fehlerrelais WP.\markdownRendererUlItemEnd 
+\markdownRendererUlItem Logging: Puffer‑T, UFH VL/RL, r.F./T innen, WP‑Leistung, WMZ; COP‑Proxy möglich.\markdownRendererUlItemEnd 
+\markdownRendererUlEndTight \markdownRendererInterblockSeparator
+{}
+\markdownRendererSectionEnd \markdownRendererSectionBegin
+\markdownRendererHeadingTwo{Beispiel Taupunktlogik}\markdownRendererInterblockSeparator
+{}\markdownRendererUlBeginTight
+\markdownRendererUlItem Eingang: T innen, r.F. innen → Taupunkt; gemessener UFH‑VL.\markdownRendererUlItemEnd 
+\markdownRendererUlItem Limit: UFH‑VL‑Soll = max(Heizkurvenbedarf, Taupunkt + 2 K), absolut min. typ. 19–21 °C.\markdownRendererUlItemEnd 
+\markdownRendererUlItem Sperre: Bei VL < (Taupunkt + 2 K) oder Feuchte am Verteiler: Mischer schließen/Pumpe stoppen bis sicher.\markdownRendererUlItemEnd 
+\markdownRendererUlEndTight \markdownRendererInterblockSeparator
+{}
+\markdownRendererSectionEnd \markdownRendererSectionBegin
+\markdownRendererHeadingTwo{Elektro/Resilienz}\markdownRendererInterblockSeparator
+{}\markdownRendererUlBeginTight
+\markdownRendererUlItem Unterverteilung wichtige Stromkreise: WP‑Freigabe, Pumpen, Hydraulikregler, HA‑Host, Netzwerk, Kühlgerät, ausgewählte Licht/Steckdosen.\markdownRendererUlItemEnd 
+\markdownRendererUlItem Überspannungsschutz (SPD) für PV, Speicher, WP, MSR.\markdownRendererUlItemEnd 
+\markdownRendererUlItem Nachtmodus: reduzierte Schallemission WP/WRG.\markdownRendererUlItemEnd 
+\markdownRendererUlEndTight 
+\markdownRendererSectionEnd 
+\markdownRendererSectionEnd \markdownRendererDocumentEnd

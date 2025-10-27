@@ -1,0 +1,238 @@
+% Savings scenarios for dual-buffer retrofit (English)
+\documentclass[11pt,oneside]{report}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{geometry}
+\geometry{a4paper,margin=1in}
+\usepackage[hidelinks]{hyperref}
+\usepackage{booktabs}
+\usepackage{siunitx}
+\sisetup{detect-all,group-minimum-digits=3,group-separator=\,,round-mode=places,round-precision=2}
+\usepackage{longtable}
+\usepackage{tabularx}
+\usepackage{textcomp}
+\usepackage{newunicodechar}
+\newunicodechar{≥}{$\ge$}
+\newunicodechar{≤}{$\le$}
+\newunicodechar{°}{$^\circ$}
+\newunicodechar{·}{\ensuremath{\cdot}}
+\newunicodechar{−}{-}
+\newunicodechar{–}{--}
+\newunicodechar{—}{---}
+\newunicodechar{Δ}{$\Delta$}
+
+\title{Savings Scenarios\\Dual-Buffer Heat Pump Retrofit}
+\author{Project: 1972 Mid-Terrace House}
+\date{\today}
+
+\begin{document}
+\maketitle
+\tableofcontents
+\clearpage
+
+\chapter{Abbreviations}
+\begin{longtable}{@{}ll@{}}
+\toprule
+AWHP & air-to-water heat pump \\
+DHW & domestic hot water \\
+FriWa & fresh-water station (instantaneous DHW via plate heat exchanger) \\
+UFH & underfloor heating \\
+PV & photovoltaics \\
+SCOP & seasonal coefficient of performance (heating) \\
+COP & coefficient of performance (DHW) \\
+\bottomrule
+\end{longtable}
+
+\chapter{Baseline and Assumptions}
+
+\section{Baseline (2023 statements)}
+\begin{tabularx}{\textwidth}{@{}l>{\raggedleft\arraybackslash}X@{}}
+\toprule
+Space heat delivered (district heat) & \num{9824} kWh$_\mathrm{th}$/yr \\
+DHW volume & \num{16.86} m$^3$/yr (\(\approx\) \num{883} kWh$_\mathrm{th}$/yr) \\
+District heat + DHW cost & \euro\,\num{3642.84}/yr \\
+Effective heat tariff & \euro\,\num{0.340}/kWh$_\mathrm{th}$ (\(\approx\) \num{3642.84}/\num{10707} kWh$_\mathrm{th}$) \\
+Household electricity (context) & \num{2671} kWh/yr (tariff not used in savings calc) \\
+\bottomrule
+\end{tabularx}
+
+\section{Retrofit set-up used in scenarios}
+\begin{itemize}
+  \item Reversible air-to-water heat pump (AWHP), dual buffers: DHW heating buffer feeding FriWa, and a separate heating/cooling buffer.
+  \item Envelope improvements reduce space-heating demand (range shown per scenario).
+  \item DHW setpoints 55--60\,\textcelsius; FriWa prepares potable hot water on demand.
+  \item Photovoltaics (PV) coverage is represented as a fixed share of the HP electricity displaced (grid-share factor).
+\end{itemize}
+
+\section{Scenarios}
+We report three brackets: Worst, Mid, Best. Each specifies envelope reduction, HP efficiencies, electricity tariff, PV/grid share for HP electricity, and price growth of electricity and district heat.
+
+\begin{longtable}{@{}lcccccc@{}}
+\toprule
+Scenario & Heat red. & SCOP (heat) & COP (DHW) & Elec. price & Grid share & Growth (DH / Elec) \\
+\midrule
+Worst & \num{15}\,\% & \num{3.0} & \num{2.2} & \euro\,\num{0.35}/kWh & \num{1.00} & \num{3}\,\% / \num{6}\,\% \\
+Mid   & \num{30}\,\% & \num{3.3} & \num{2.4} & \euro\,\num{0.30}/kWh & \num{0.60} & \num{3}\,\% / \num{3}\,\% \\
+Best  & \num{40}\,\% & \num{3.6} & \num{2.6} & \euro\,\num{0.25}/kWh & \num{0.30} & \num{6}\,\% / \num{0}\,\% \\
+\bottomrule
+\end{longtable}
+
+Notes: Grid share is the fraction of HP electricity bought from the grid (the balance is assumed covered by PV self-consumption). Growth rates apply year-on-year to prices (not volumes): first value to district-heat tariff, second to electricity.
+
+\chapter{Year-1 Results}
+\label{ch:year1}
+Space-heating thermal energy after envelope: \(Q_\mathrm{heat} = 9824\,\mathrm{kWh}_{th} \times (1-\mathrm{reduction})\). DHW thermal energy left unchanged at \(Q_\mathrm{dhw}=\num{883}\,\mathrm{kWh}_{th}\).
+
+HP electricity (year 1): \(E_\mathrm{HP} = Q_\mathrm{heat}/\mathrm{SCOP} + Q_\mathrm{dhw}/\mathrm{COP}\). Grid electricity for HP: \(E_\mathrm{grid} = E_\mathrm{HP} \times \mathrm{grid\ share}\). HP electricity cost: \(C_\mathrm{HP} = E_\mathrm{grid} \times p_\mathrm{elec}\).
+
+Avoided district-heat cost (year 1): \(C_\mathrm{DH,0} = \) \euro\,\num{3642.84}.
+
+\begin{longtable}{@{}lrrrr@{}}
+\toprule
+Scenario & \multicolumn{1}{c}{HP elec. [kWh]} & \multicolumn{1}{c}{HP grid cost [EUR]} & \multicolumn{1}{c}{Avoided DH [EUR]} & \multicolumn{1}{c}{Year-1 savings [EUR]} \\
+\midrule
+Worst & \num{3184.83} & \num{1114.69} & \num{3642.84} & \num{2528.15} \\
+Mid   & \num{2451.80} & \num{441.33}  & \num{3642.84} & \num{3201.51} \\
+Best  & \num{1976.95} & \num{148.27}  & \num{3642.84} & \num{3494.57} \\
+\bottomrule
+\end{longtable}
+
+For reference, the \emph{gross} HP electricity cost (if entirely paid from the grid without PV) would be: Worst \euro\,\num{1114.69}; Mid \euro\,\num{735.54}; Best \euro\,\num{494.24}.
+
+\chapter{10-Year and 20-Year Cumulative Savings}
+Let the year-1 avoided DH cost be \(C_{\mathrm{DH},0}\) and HP grid cost be \(C_{\mathrm{HP},0}\). With annual price growth rates \(g_\mathrm{DH}\) and \(g_\mathrm{elec}\), the cumulative savings over \(N\) years are approximated by
+\[\sum_{t=1}^{N} C_{\mathrm{DH},0}(1+g_\mathrm{DH})^{t-1} - \sum_{t=1}^{N} C_{\mathrm{HP},0}(1+g_\mathrm{elec})^{t-1}\]
+which equals
+\[ C_{\mathrm{DH},0}\,\frac{(1+g_\mathrm{DH})^{N}-1}{g_\mathrm{DH}}\ -\ C_{\mathrm{HP},0}\,\frac{(1+g_\mathrm{elec})^{N}-1}{g_\mathrm{elec}}\] when growth rates are nonzero, and reduces to simple \(N\times C\) when a growth rate is zero.
+
+Using the scenario growth rates:
+
+\begin{longtable}{@{}lrr@{}}
+\toprule
+Scenario & 10-year cumulative [EUR] & 20-year cumulative [EUR] \\
+\midrule
+Worst (DH +3\%, Elec +6\%) & \num{27046.7} & \num{56931.8} \\
+Mid   (DH +3\%, Elec +3\%) & \num{36677.1} & \num{86081.2} \\
+Best  (DH +6\%, Elec +0\%) & \num{46535.0} & \num{131009.8} \\
+\bottomrule
+\end{longtable}
+
+Notes:
+\begin{itemize}
+  \item The figures above use HP grid costs (i.e., after PV self-consumption per scenario). The corresponding 10/20-year savings using \emph{gross} HP grid share (no PV) are: Mid \euro\,\num{33305} / \euro\,\num{78176}; Best \euro\,\num{43075} / \euro\,\num{124090}.
+  \item Volumes are kept at the 2023 baseline for the counterfactual (no retrofit). Savings therefore include both the unit-cost advantage of electricity via HP \emph{and} the envelope-driven demand reduction.
+  \item Adding small wood-stove coverage would further reduce HP electricity costs in winter (small upside not included).
+\end{itemize}
+
+\chapter{Self-Sufficiency Ladder (9 Scenarios)}
+
+We consider “prices rise” for both district-heat and electricity (assumed +5\%/yr and +3\%/yr respectively). Envelope reduction is held at \num{30}\,\%, seasonal coefficient of performance (SCOP) for space heating \num{3.3}, coefficient of performance (COP) for DHW \num{2.4}, and year‑1 electricity tariff \euro\,\num{0.30}/kWh. The nine scenarios vary only by self‑sufficiency level for heat‑pump electricity (i.e., PV coverage), expressed via the grid‑share parameter.
+
+\section{Definitions}
+\begin{tabularx}{\textwidth}{@{}l>{\raggedleft\arraybackslash}X>{\raggedleft\arraybackslash}X@{}}
+\toprule
+Scenario name & Self‑sufficiency [\%] & Grid share (HP elec.) \\
+\midrule
+Surplus 110 & 110 & 0.00 \\
+Surplus 105 & 105 & 0.00 \\
+Island 100 & 100 & 0.00 \\
+Resilient 90 & 90 & 0.10 \\
+Resilient 80 & 80 & 0.20 \\
+Balanced 70 & 70 & 0.30 \\
+Balanced 60 & 60 & 0.40 \\
+Grid‑Lean 50 & 50 & 0.50 \\
+Grid‑Tilt 40 & 40 & 0.60 \\
+Grid‑Tilt 30 & 30 & 0.70 \\
+Grid‑Heavy 20 & 20 & 0.80 \\
+\bottomrule
+\end{tabularx}
+
+\section{Year‑1 Results (common efficiency assumptions)}
+HP electricity (with 30\% envelope reduction) is \num{2451.80} kWh. HP grid cost equals HP electricity \(\times\) grid share \(\times\) tariff; avoided district heat is \euro\,\num{3642.84}.
+
+\begin{tabularx}{\textwidth}{@{}l>{\raggedleft\arraybackslash}X>{\raggedleft\arraybackslash}X@{}}
+\toprule
+Scenario & HP grid cost [EUR] & Year‑1 savings [EUR] \\
+\midrule
+Surplus 110 & \num{0.00}   & \num{3642.84} \\
+Surplus 105 & \num{0.00}   & \num{3642.84} \\
+Island 100 & \num{0.00}   & \num{3642.84} \\
+Resilient 90 & \num{73.56}  & \num{3569.28} \\
+Resilient 80 & \num{147.11} & \num{3495.73} \\
+Balanced 70 & \num{220.66} & \num{3422.18} \\
+Balanced 60 & \num{294.22} & \num{3348.62} \\
+Grid‑Lean 50 & \num{367.77} & \num{3275.07} \\
+Grid‑Tilt 40 & \num{441.32} & \num{3201.52} \\
+Grid‑Tilt 30 & \num{514.88} & \num{3127.96} \\
+Grid‑Heavy 20 & \num{588.43} & \num{3054.41} \\
+\bottomrule
+\end{tabularx}
+
+\section{Cumulative Savings (10y / 20y)}
+Using +5\%/yr district‑heat price growth and +3\%/yr electricity growth (year‑1 avoided \euro\,\num{3642.84}; year‑1 HP grid cost per table):
+
+\begin{tabularx}{\textwidth}{@{}l>{\raggedleft\arraybackslash}X>{\raggedleft\arraybackslash}X@{}}
+\toprule
+Scenario (examples) & 10‑year [EUR] & 20‑year [EUR] \\
+\midrule
+Surplus 110  & \num{45819} & \num{120454} \\
+Surplus 105  & \num{45819} & \num{120454} \\
+Island 100  & \num{45819} & \num{120454} \\
+Balanced 60 & \num{42446} & \num{112545} \\
+Grid‑Heavy 20 & \num{39073} & \num{104636} \\
+\bottomrule
+\end{tabularx}
+
+\paragraph{Note on surplus production} Scenarios above 100\% self‑sufficiency (``Surplus 105/110'') assume HP grid cost is zero; any export revenue from surplus PV is \emph{not} credited here. If desired, feed‑in remuneration (e.g., \euro\,\num{0.08}/kWh) can be added to savings as an extra term.
+
+\section{Viability and Likelihood}
+Scale: 1 = very unlikely; 3 = plausible; 5 = very likely for this home with \(\approx\) 6–8 kWp PV and battery.
+
+\begin{longtable}{@{}lcl@{}}
+\toprule
+Scenario & Likelihood (1–5) & Notes \\
+\midrule
+Island 100 & 1 & Year‑round 100\% HP self‑sufficiency is rare in DE climate; feasible only in shoulder months with large PV/storage and strict load shifting.
+\\
+Resilient 90 & 2 & High PV+battery and aggressive daytime charging; winter weeks still need grid; achievable in best sites with careful control.
+\\
+Resilient 80 & 3 & Plausible with \(\sim\)8 kWp, good load shifting and mild winters; winter grid draw remains.
+\\
+Balanced 70 & 4 & High likelihood with 6–8 kWp PV and smart DHW midday boosts.
+\\
+Balanced 60 & 4 & Typical for well‑run systems; modest storage suffices.
+\\
+Grid‑Lean 50 & 5 & Very likely; represents conservative planning baseline.
+\\
+Grid‑Tilt 40 & 5 & Very likely; acceptable even with limited PV.
+\\
+Grid‑Tilt 30 & 5 & Very likely; grid provides most winter HP energy.
+\\
+Grid‑Heavy 20 & 5 & Very likely; minimal PV contribution.
+\\
+\bottomrule
+\end{longtable}
+
+\section{Wood‑Fire Oven (water jacket) Assist}
+If the wood‑fire oven provides a share of the \emph{space‑heating} thermal energy, HP electricity drops proportionally to the displaced load divided by SCOP. Example (``Balanced 60 + wood 10\%'' at year‑1 assumptions):
+\begin{itemize}
+  \item Space‑heating after envelope: \(Q_\mathrm{heat}=9824\,(1-0.30)=\num{6876.8}\,\mathrm{kWh}_{th}\).
+  \item Wood 10\% coverage: \(\Delta Q = \num{687.68}\,\mathrm{kWh}_{th}\) not served by HP.
+  \item HP electricity reduction: \(\Delta E=\Delta Q/\mathrm{SCOP}=\num{208.39}\,\mathrm{kWh}\) (with SCOP=\num{3.3}).
+  \item New HP electricity: \(\num{2451.80}-\num{208.39}=\num{2243.41}\,\mathrm{kWh}\); with 40\% grid share \(\Rightarrow\) grid energy \(\num{897.36}\,\mathrm{kWh}\) \(\Rightarrow\) HP grid cost \euro\,\num{269.21}.
+  \item Year‑1 savings increase by \(\approx\) \euro\,\num{25.0} vs. \euro\,\num{3348.62} baseline (``Balanced 60'').
+\end{itemize}
+Rule of thumb: each 10\% wood coverage of post‑envelope space‑heating reduces HP electricity by \(\approx Q_\mathrm{heat}\times 0.10/\mathrm{SCOP}\), a modest but positive effect. Larger wood contribution or higher electricity prices scale the benefit.
+
+\chapter{Takeaways}
+\begin{itemize}
+  \item With 2023 district-heat unit costs (\(\approx\) \euro\,\num{0.34}/kWh$_\mathrm{th}$), an AWHP with SCOP \(\ge\)\,\num{3} remains strongly cost-positive across realistic price-growth brackets.
+  \item Envelope measures that enable lower flow temperatures (UFH) and modest UFH cooling do not erode the business case; they help by reducing kWh demand.
+  \item PV improves savings by displacing a share of HP electricity; even without PV coverage (gross case), savings remain large in all three brackets.
+\end{itemize}
+
+\section*{Parameter Tweaks}
+If desired, this sheet can be extended with an input table for tariffs, SCOP/COP, envelope reduction, and PV grid share, to regenerate the numbers for your utility quotes.
+
+\end{document}

@@ -1,0 +1,56 @@
+\markdownRendererDocumentBegin
+\markdownRendererSectionBegin
+\markdownRendererHeadingOne{Project Overview}\markdownRendererInterblockSeparator
+{}\markdownRendererUlBeginTight
+\markdownRendererUlItem Building: Mid‑terrace house (Reihenmittelhaus), ~113 m², built ~1972, EG + DG + cellar.\markdownRendererUlItemEnd 
+\markdownRendererUlItem Occupancy: 3 persons.\markdownRendererUlItemEnd 
+\markdownRendererUlItem Current energy (2023):\markdownRendererUlItemEnd 
+\markdownRendererUlItem Space heat: ~9,824 kWh/yr (~87 kWh/m²·yr), district heating.\markdownRendererUlItemEnd 
+\markdownRendererUlItem Domestic hot water (DHW): ~16.86 m³ water (~≈881 kWh/yr thermal, ΔT≈45 K).\markdownRendererUlItemEnd 
+\markdownRendererUlItem Electricity: ~2,671 kWh/yr.\markdownRendererUlItemEnd 
+\markdownRendererUlItem Goals:\markdownRendererUlItemEnd 
+\markdownRendererUlItem Achieve Effizienzhaus 85 + Erneuerbare‑Energien‑Klasse (≥65- Strong photovoltaics (PV) self‑consumption; resilience with battery and critical‑loads subpanel.\markdownRendererUlItemEnd 
+\markdownRendererUlItem Efficient, simple‑to‑operate system with safe controls and clean commissioning.\markdownRendererUlItemEnd 
+\markdownRendererUlItem Gentle hydronic cooling without AC (UFH cooling with dew‑point protection).\markdownRendererUlItemEnd 
+\markdownRendererUlEndTight \markdownRendererInterblockSeparator
+{}\markdownRendererSectionBegin
+\markdownRendererHeadingTwo{Key Design Decisions}\markdownRendererInterblockSeparator
+{}\markdownRendererUlBeginTight
+\markdownRendererUlItem Dual‑buffer system:\markdownRendererUlItemEnd 
+\markdownRendererUlItem DHW heating buffer (200–300 L) always hot (55–60°C), supplies FriWa (no potable storage).\markdownRendererUlItemEnd 
+\markdownRendererUlItem Heating/Cooling buffer (800–1,000 L) hot in winter, cold in summer (16–18°C target for night charging).\markdownRendererUlItemEnd 
+\markdownRendererUlItem Heat source: Reversible air‑to‑water heat pump (AWHP, R290), monovalent for design heat load; wood stove with back‑boiler as comfort/backup.\markdownRendererUlItemEnd 
+\markdownRendererUlItem Distribution: Water‑based underfloor heating (UFH) in main zones; no fan‑coils, no AC.\markdownRendererUlItemEnd 
+\markdownRendererUlItem Ventilation: Decentralized single‑room heat recovery ventilation (HRV) units (6–8 total), DIN 1946‑6 compliant.\markdownRendererUlItemEnd 
+\markdownRendererUlItem Controls: Hard‑wired safety + dew‑point logic; Home Assistant for PV‑aware orchestration and monitoring.\markdownRendererUlItemEnd 
+\markdownRendererUlEndTight \markdownRendererInterblockSeparator
+{}
+\markdownRendererSectionEnd \markdownRendererSectionBegin
+\markdownRendererHeadingTwo{Performance Targets}\markdownRendererInterblockSeparator
+{}\markdownRendererUlBeginTight
+\markdownRendererUlItem Envelope targets (typical for EH 85):\markdownRendererUlItemEnd 
+\markdownRendererUlItem Basement ceiling U ≤ 0.25 W/(m²·K)\markdownRendererUlItemEnd 
+\markdownRendererUlItem Roof/attic U ≤ 0.14 W/(m²·K)\markdownRendererUlItemEnd 
+\markdownRendererUlItem Windows Uw ≤ 0.90 W/(m²·K)\markdownRendererUlItemEnd 
+\markdownRendererUlItem Airtightness n50 ≤ 1.5 h⁻¹ (pre/post blower‑door tests)\markdownRendererUlItemEnd 
+\markdownRendererUlItem Hydronic targets:\markdownRendererUlItemEnd 
+\markdownRendererUlItem Heating design VL ≤ 35°C; long compressor runs.\markdownRendererUlItemEnd 
+\markdownRendererUlItem Cooling VL ≥ dew point + 2 K, typically 19–21°C.\markdownRendererUlItemEnd 
+\markdownRendererUlItem UFH cooling capacity expectation: ~10–25 W/m² (≈1.1–2.8 kW total).\markdownRendererUlItemEnd 
+\markdownRendererUlEndTight \markdownRendererInterblockSeparator
+{}
+\markdownRendererSectionEnd \markdownRendererSectionBegin
+\markdownRendererHeadingTwo{Expected Impacts (order‑of‑magnitude)}\markdownRendererInterblockSeparator
+{}\markdownRendererUlBeginTight
+\markdownRendererUlItem Envelope + thermal bridge fixes: ~25–40- PV ~5.8–8 kWp: ~5.5–8.5 MWh/yr generation; with battery 10 kWh, self‑consumption 50–70- Hydronic cooling: pleasant background cooling; humidity managed by ventilation and dew‑point limit (add dehumidifier only during unusual heat/humidity spells).\markdownRendererUlItemEnd 
+\markdownRendererUlEndTight \markdownRendererInterblockSeparator
+{}
+\markdownRendererSectionEnd \markdownRendererSectionBegin
+\markdownRendererHeadingTwo{Constraints and Notes}\markdownRendererInterblockSeparator
+{}\markdownRendererUlBeginTight
+\markdownRendererUlItem Open basement staircase: add airtight glazed partition and insulate basement ceiling.\markdownRendererUlItemEnd 
+\markdownRendererUlItem Loggia (interior balcony) and open entry are thermal bridges; see 05_envelope‑airtightness.md for options (winter garden / vestibule prioritized).\markdownRendererUlItemEnd 
+\markdownRendererUlItem No central ventilation feasible; plan single‑room HRV units with proper placement and acoustics.\markdownRendererUlItemEnd 
+\markdownRendererUlEndTight 
+\markdownRendererSectionEnd 
+\markdownRendererSectionEnd \markdownRendererDocumentEnd

@@ -1,0 +1,60 @@
+\markdownRendererDocumentBegin
+Notes: - The DHW heating buffer contains closed system water (not potable). The FriWa heats potable water on demand via a plate heat exchanger. - The heating/cooling buffer acts as hydraulic separator and energy store. In summer it is chilled at night; in winter it is kept warm. - An optional plate heat exchanger (PHE) between the AWHP and indoor circuit allows glycol on the AWHP side and protects indoor water quality.\markdownRendererInterblockSeparator
+{}\markdownRendererSectionBegin
+\markdownRendererSectionBegin
+\markdownRendererHeadingTwo{Operating Modes}\markdownRendererInterblockSeparator
+{}\markdownRendererUlBegin
+\markdownRendererUlItem Winter\markdownRendererUlItemEnd 
+\markdownRendererUlItem AWHP runs weather‑compensated to charge the heating/cooling buffer (mid‑zone) for space heating; VL design ≤ 35°C.\markdownRendererUlItemEnd 
+\markdownRendererUlItem Midday PV window: AWHP prioritizes DHW heating buffer to 55–60°C for FriWa draws; thereafter returns to space heating.\markdownRendererUlItemEnd 
+\markdownRendererUlItem Wood stove charges the buffer top via return‑lift valve (≥60°C) and has thermal discharge safety and gravity emergency cooling per EN 303‑5.\markdownRendererUlItemEnd 
+\markdownRendererUlItem Home Assistant (HA) orchestrates priorities and notifications; safety/limits are hard‑wired in dedicated controllers.\markdownRendererUlItemEnd 
+\markdownRendererUlItem Summer\markdownRendererUlItemEnd 
+\markdownRendererUlItem Night: AWHP chills the heating/cooling buffer to ~16–18°C.\markdownRendererUlItemEnd 
+\markdownRendererUlItem Day: UFH supply is limited to ≥(dew point + 2 K), typically 19–21°C, to avoid condensation.\markdownRendererUlItemEnd 
+\markdownRendererUlItem DHW heating buffer remains hot year‑round; AWHP charges it around midday using PV.\markdownRendererUlItemEnd 
+\markdownRendererUlItem Shoulder Seasons\markdownRendererUlItemEnd 
+\markdownRendererUlItem Minimal buffer setpoints; DHW midday priority; occasional night‑chill during heatwaves.\markdownRendererUlItemEnd 
+\markdownRendererUlEnd \markdownRendererInterblockSeparator
+{}
+\markdownRendererSectionEnd \markdownRendererSectionBegin
+\markdownRendererHeadingTwo{Setpoints, Limits, and Sensors}\markdownRendererInterblockSeparator
+{}\markdownRendererUlBeginTight
+\markdownRendererUlItem DHW heating buffer: 55–60°C setpoint; anti‑scald mixing valves at fixtures if needed.\markdownRendererUlItemEnd 
+\markdownRendererUlItem Heating/Cooling buffer (winter): weather‑compensated targets to achieve VL ≤ 35°C at design.\markdownRendererUlItemEnd 
+\markdownRendererUlItem Heating/Cooling buffer (summer): night target 16–18°C.\markdownRendererUlItemEnd 
+\markdownRendererUlItem UFH supply in cooling: ≥(dew point + 2 K). Example: 26°C and 60- Sensors (minimum):\markdownRendererUlItemEnd 
+\markdownRendererUlItem Buffers: top/mid/bottom temperatures on both tanks.\markdownRendererUlItemEnd 
+\markdownRendererUlItem UFH: supply and return temperatures; optional surface sensor at manifold.\markdownRendererUlItemEnd 
+\markdownRendererUlItem Ambient: at least one temperature/RH sensor per floor for dew‑point calculation.\markdownRendererUlItemEnd 
+\markdownRendererUlItem Heat/cold metering: heat meters on AWHP to buffer and FriWa primary if feasible.\markdownRendererUlItemEnd 
+\markdownRendererUlEndTight \markdownRendererInterblockSeparator
+{}
+\markdownRendererSectionEnd \markdownRendererSectionBegin
+\markdownRendererHeadingTwo{Component Sizing (Guidance)}\markdownRendererInterblockSeparator
+{}\markdownRendererUlBeginTight
+\markdownRendererUlItem AWHP (reversible, R290): select by EN 12831 heat loss; typical post‑retrofit terrace house 4–6 kW at −10°C; choose 6–10 kW class with good turndown and quiet operation.\markdownRendererUlItemEnd 
+\markdownRendererUlItem Heating/Cooling buffer: 800–1000 L, stratified, 100–150 mm insulation, low Δp connections, 3 thermowells (top/mid/bottom).\markdownRendererUlItemEnd 
+\markdownRendererUlItem DHW heating buffer: 200–300 L, 3 thermowells, maintained at 55–60°C year‑round.\markdownRendererUlItemEnd 
+\markdownRendererUlItem FriWa: 25–35 kW plate HX module with variable‑speed primary pump, flow sensor, electronic outlet control; potable‑side filtration/anti‑scale as required by local water hardness.\markdownRendererUlItemEnd 
+\markdownRendererUlItem Valves/Pumps: ECM circulation pumps; 3‑way mixing valve for UFH with hard dew‑point input; motorized isolation valves for summer/winter decoupling; check valves and balancing valves.\markdownRendererUlItemEnd 
+\markdownRendererUlItem Optional PHE: sized for full thermal capacity with low approach ΔT; glycol on AWHP side; include air/dirt separators on both circuits.\markdownRendererUlItemEnd 
+\markdownRendererUlItem Expansion vessels: sized for total volume (buffers + pipework + emitters); verify per manufacturer; often 50–80 L combined.\markdownRendererUlItemEnd 
+\markdownRendererUlEndTight \markdownRendererInterblockSeparator
+{}
+\markdownRendererSectionEnd \markdownRendererSectionBegin
+\markdownRendererHeadingTwo{Safety and Water Quality}\markdownRendererInterblockSeparator
+{}\markdownRendererUlBeginTight
+\markdownRendererUlItem Stove loop: return‑lift (e.g., 60°C cartridge), thermal discharge safety valve to drain, gravity‑safe emergency cooling path, adequate expansion vessel (EN 303‑5 compliance).\markdownRendererUlItemEnd 
+\markdownRendererUlItem System protection: pressure relief valves (typically 3 bar), air/dirt separators, VDI 2035 water treatment (conductivity/hardness), full insulation of hot lines and diffusion‑tight insulation on all cold lines with managed condensate.\markdownRendererUlItemEnd 
+\markdownRendererUlItem Electrical: critical‑loads subpanel to maintain HP enable, pumps, controls, network, fridge, and selected lighting/outlets during outages via battery.\markdownRendererUlItemEnd 
+\markdownRendererUlEndTight \markdownRendererInterblockSeparator
+{}
+\markdownRendererSectionEnd \markdownRendererSectionBegin
+\markdownRendererHeadingTwo{Control Allocation}\markdownRendererInterblockSeparator
+{}\markdownRendererUlBeginTight
+\markdownRendererUlItem Safety/primary control: heat pump native controller; dedicated hydronic controller for mixing valves, pumps, temperature limits, dew‑point cutout; hard interlocks, not dependent on HA.\markdownRendererUlItemEnd 
+\markdownRendererUlItem Orchestration (HA): PV‑aware scheduling (e.g., DHW midday), seasonal mode toggles, notifications (wood stove use, filter service, abnormal RH/temps), data logging (buffer temps, RH, energy meters, COP proxy).\markdownRendererUlItemEnd 
+\markdownRendererUlEndTight 
+\markdownRendererSectionEnd 
+\markdownRendererSectionEnd \markdownRendererDocumentEnd

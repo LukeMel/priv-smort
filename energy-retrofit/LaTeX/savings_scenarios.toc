@@ -1,0 +1,15 @@
+\contentsline {chapter}{\numberline {1}Abbreviations}{2}{chapter.1}%
+\contentsline {chapter}{\numberline {2}Baseline and Assumptions}{3}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Baseline (2023 statements)}{3}{section.2.1}%
+\contentsline {section}{\numberline {2.2}Retrofit set-up used in scenarios}{3}{section.2.2}%
+\contentsline {section}{\numberline {2.3}Scenarios}{3}{section.2.3}%
+\contentsline {chapter}{\numberline {3}Year-1 Results}{4}{chapter.3}%
+\contentsline {chapter}{\numberline {4}10-Year and 20-Year Cumulative Savings}{5}{chapter.4}%
+\contentsline {chapter}{\numberline {5}Self-Sufficiency Ladder (9 Scenarios)}{6}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Definitions}{6}{section.5.1}%
+\contentsline {section}{\numberline {5.2}Year‑1 Results (common efficiency assumptions)}{6}{section.5.2}%
+\contentsline {section}{\numberline {5.3}Cumulative Savings (10y / 20y)}{7}{section.5.3}%
+\contentsline {paragraph}{Note on surplus production}{7}{section*.2}%
+\contentsline {section}{\numberline {5.4}Viability and Likelihood}{7}{section.5.4}%
+\contentsline {section}{\numberline {5.5}Wood‑Fire Oven (water jacket) Assist}{7}{section.5.5}%
+\contentsline {chapter}{\numberline {6}Takeaways}{9}{chapter.6}%

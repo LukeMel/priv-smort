@@ -1,0 +1,169 @@
+% Savings Thesis: Dual-buffer retrofit scenarios, economics, and viability
+\documentclass[12pt,oneside]{report}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{geometry}
+\geometry{a4paper,margin=1in}
+\usepackage[hidelinks]{hyperref}
+\usepackage{booktabs}
+\usepackage{siunitx}
+\sisetup{detect-all,group-separator=\,,group-minimum-digits=3}
+\usepackage{tabularx}
+\usepackage{longtable}
+\usepackage{enumitem}
+\usepackage{textcomp}
+\usepackage{newunicodechar}
+\newunicodechar{≥}{$\ge$}
+\newunicodechar{≤}{$\le$}
+\newunicodechar{°}{$^\circ$}
+\newunicodechar{·}{\ensuremath{\cdot}}
+\newunicodechar{−}{-}
+\newunicodechar{–}{--}
+\newunicodechar{—}{---}
+\newunicodechar{Δ}{$\Delta$}
+
+\title{Towards Self-Sufficient Heating: A Thesis on Dual-Buffer HP Scenarios, Viability, and Savings}
+\author{Project: 1972 Mid-Terrace House (Dual-Buffer Retrofit)}
+\date{\today}
+
+\begin{document}
+\maketitle
+\tableofcontents
+\clearpage
+
+\chapter*{Abstract}
+This thesis analyzes the economic and technical viability of a dual-buffer, reversible air-to-water heat pump (AWHP) retrofit with underfloor heating (UFH), a domestic hot water (DHW) fresh-water station (FriWa), decentralized heat recovery ventilation (HRV), and optional wood-fire oven assist. Using measured 2023 district-heat costs and consumption as baseline, we quantify Year-1, 10-year, and 20-year savings under multiple self-sufficiency (PV) scenarios and price-growth assumptions. We explain which scenarios are plausible, which are edge cases, and why. The conclusion provides a staged, risk-aware plan balancing comfort, complexity, and return.
+
+\chapter{Abbreviations}
+\begin{longtable}{@{}ll@{}}
+\toprule
+AWHP & air-to-water heat pump \\
+UFH & underfloor heating \\
+DHW & domestic hot water \\
+FriWa & fresh-water station (instantaneous DHW via plate heat exchanger) \\
+HRV & heat recovery ventilation \\
+PV & photovoltaics \\
+SCOP & seasonal coefficient of performance (space heating) \\
+COP & coefficient of performance (DHW heating) \\
+\bottomrule
+\end{longtable}
+
+\chapter{Background and Baseline}
+\section{House and System Concept}
+The home is a \emph{1972 mid-terrace house} planned for a dual-buffer retrofit: a \emph{heating/cooling buffer} serving UFH and a dedicated \emph{DHW heating buffer} feeding a \emph{FriWa}. The primary source is a \emph{reversible AWHP}; optional \emph{wood-fire oven with water jacket} charges the top of the heating buffer in winter. Ventilation is via \emph{decentralized HRV}. Controls prioritize PV self-consumption while enforcing dew-point safety for UFH cooling.
+
+\section{Measured Baseline (2023)}
+\begin{tabularx}{\textwidth}{@{}l>{\raggedleft\arraybackslash}X@{}}
+\toprule
+Space heat delivered (district heat) & \num{9824} kWh$_\mathrm{th}$/yr \\
+DHW volume & \num{16.86} m$^3$/yr (\(\approx\) \num{883} kWh$_\mathrm{th}$/yr) \\
+District heat + DHW cost & \euro\,\num{3642.84}/yr \\
+Effective heat tariff & \euro\,\num{0.340}/kWh$_\mathrm{th}$ (\(\num{3642.84}/\num{10707}\,\mathrm{kWh}_{th}\)) \\
+\bottomrule
+\end{tabularx}
+
+\chapter{Methodology}
+\section{Assumptions}
+Unless stated otherwise, we use \emph{Year-1 tariffs} of \euro\,\num{0.30}/kWh for electricity and the measured district-heat cost above. Envelope reduction is \num{30}\,\% for space heating (post-retrofit). We assume \emph{SCOP} \num{3.3} for space heating and \emph{COP} \num{2.4} for DHW. Price growth defaults: district heat +\num{5}\,\%/yr, electricity +\num{3}\,\%/yr. Self-sufficiency levels are modeled via the \emph{grid share} of HP electricity; PV supplies the remainder.
+
+\section{Energy and Cost Model}
+Space-heating thermal energy after envelope is \(Q_\mathrm{heat}=\num{9824}\,(1-0.30)=\num{6876.8}\,\mathrm{kWh}_{th}\). DHW thermal energy is \(Q_\mathrm{dhw}=\num{883}\,\mathrm{kWh}_{th}\). Year-1 HP electricity is \(E_\mathrm{HP}=Q_\mathrm{heat}/\mathrm{SCOP}+Q_\mathrm{dhw}/\mathrm{COP}=\num{2451.8}\,\mathrm{kWh}\). HP grid cost equals \(E_\mathrm{HP}\times\mathrm{grid\ share}\times p_\mathrm{elec}\). Avoided district-heat cost equals \euro\,\num{3642.84} in Year-1.
+
+\chapter{Scenario Family: Self-Sufficiency Ladder}
+We define nine core scenarios by \emph{self-sufficiency} (PV share of HP electricity) plus two \emph{surplus} cases:
+
+\begin{tabularx}{\textwidth}{@{}l>{\raggedleft\arraybackslash}X>{\raggedleft\arraybackslash}X@{}}
+\toprule
+Scenario name & Self-sufficiency [\%] & Grid share (HP elec.) \\
+\midrule
+Surplus 110 & 110 & 0.00 \\
+Surplus 105 & 105 & 0.00 \\
+Island 100 & 100 & 0.00 \\
+Resilient 90 & 90 & 0.10 \\
+Resilient 80 & 80 & 0.20 \\
+Balanced 70 & 70 & 0.30 \\
+Balanced 60 & 60 & 0.40 \\
+Grid-Lean 50 & 50 & 0.50 \\
+Grid-Tilt 40 & 40 & 0.60 \\
+Grid-Tilt 30 & 30 & 0.70 \\
+Grid-Heavy 20 & 20 & 0.80 \\
+\bottomrule
+\end{tabularx}
+
+\section{Year-1 Results (common efficiency)}
+\begin{tabularx}{\textwidth}{@{}l>{\raggedleft\arraybackslash}X>{\raggedleft\arraybackslash}X@{}}
+\toprule
+Scenario & HP grid cost [EUR] & Year-1 savings [EUR] \\
+\midrule
+Surplus 110 & \num{0.00}   & \num{3642.84} \\
+Surplus 105 & \num{0.00}   & \num{3642.84} \\
+Island 100  & \num{0.00}   & \num{3642.84} \\
+Resilient 90 & \num{73.56}  & \num{3569.28} \\
+Resilient 80 & \num{147.11} & \num{3495.73} \\
+Balanced 70  & \num{220.66} & \num{3422.18} \\
+Balanced 60  & \num{294.22} & \num{3348.62} \\
+Grid-Lean 50 & \num{367.77} & \num{3275.07} \\
+Grid-Tilt 40 & \num{441.32} & \num{3201.52} \\
+Grid-Tilt 30 & \num{514.88} & \num{3127.96} \\
+Grid-Heavy 20& \num{588.43} & \num{3054.41} \\
+\bottomrule
+\end{tabularx}
+
+\paragraph{Surplus note} Surplus cases assume HP grid cost is zero; export revenue from PV (feed-in) is \emph{not} included here.
+
+\chapter{Why Scenarios Are Likely or Not}
+\section{PV and Storage Constraints}
+Self-sufficiency above \num{90}\,\% (\emph{Resilient 90} and \emph{Island 100/Surplus}) requires large PV (\(\gtrsim\)\,8–10 kWp), generous battery, and strict load shifting. Winter irradiance and high heat load limit feasibility. \emph{Likelihood}: Island 100 \textbf{1/5}, Resilient 90 \textbf{2/5}.
+
+\section{Balanced Operation (60–70\%)}
+With 6–8 kWp PV, a smart midday DHW boost, and night charging disabled during low PV days, \emph{Balanced 60/70} are common outcomes. Grid covers deep-winter nights; PV serves shoulder months. \emph{Likelihood}: \textbf{4/5}.
+
+\section{Grid-Lean to Grid-Heavy (20–50\%)}
+These reflect limited PV, shaded roofs, or occupant behavior that does not shift loads. Still strongly cost-positive because heat-pump unit cost per kWh$_\mathrm{th}$ remains far below district-heat. \emph{Likelihood}: \textbf{5/5}.
+
+\section{Wood-Fire Oven Assist}
+If a wood-fire oven (water jacket) offsets \num{10}\,\% of post-envelope space-heat, HP electricity drops by roughly \(Q_\mathrm{heat}\times 0.10/\mathrm{SCOP}\), a modest but reliable saving. Larger coverage increases savings but adds operational effort. Overheating risk is contained with return-lift and thermal discharge safety.
+
+\section{What Makes Sense vs. Not}
+\begin{itemize}[leftmargin=1.2em]
+  \item \textbf{Makes sense}: Balanced 60–70 with reversible AWHP, dual buffers, FriWa, UFH, and decentralized HRV; PV 6–8 kWp; battery sized for resilience not full self-sufficiency; dew-point controls; envelope first.
+  \item \textbf{Edge case but OK}: Resilient 80–90 if roof allows large PV and behavior supports load shifting; higher cost/complexity for marginal gains in winter.
+  \item \textbf{Typically not worth it}: Designing for 100–110\% year-round self-sufficiency—oversized PV/battery yields diminishing returns; feed-in remuneration often lower than on-site displacement value.
+\end{itemize}
+
+\chapter{Cumulative Savings}
+Using district-heat +\num{5}\,\%/yr and electricity +\num{3}\,\%/yr growth, cumulative savings (examples):
+\begin{tabularx}{\textwidth}{@{}l>{\raggedleft\arraybackslash}X>{\raggedleft\arraybackslash}X@{}}
+\toprule
+Scenario & 10-year [EUR] & 20-year [EUR] \\
+\midrule
+Island 100 / Surplus 105/110 & \num{45819} & \num{120454} \\
+Balanced 60  & \num{42446} & \num{112545} \\
+Grid-Heavy 20 & \num{39073} & \num{104636} \\
+\bottomrule
+\end{tabularx}
+
+\chapter{Risks and Uncertainties}
+\begin{itemize}[leftmargin=1.2em]
+  \item \textbf{Tariffs and policy}: Electricity price spikes erode savings but remain favorable vs. district-heat at SCOP \(\ge\)\,\num{3}. Feed-in rules affect surplus scenarios.
+  \item \textbf{Weather variability}: Cold winters reduce SCOP; warm winters help. Balanced 60–70 stay robust across typical variance.
+  \item \textbf{Commissioning quality}: Poor hydraulic balance or dew-point control can degrade performance. Safety interlocks must be hard-wired.
+  \item \textbf{Occupant behavior}: Daytime DHW charging and comfort setpoints influence PV utilization and COP.
+\end{itemize}
+
+\chapter{Conclusions and Recommendations}
+\section{Most Viable Path}
+Aim for \textbf{Balanced 60–70}: envelope first, reversible AWHP + dual buffers + FriWa + UFH, decentralized HRV, 6–8 kWp PV, modest battery, and PV-aware DHW boosts. Expect Year-1 savings \num{3.2}–\num{3.4} kEUR, 10-year \num{42}–\num{46} kEUR, 20-year \num{110}–\num{120} kEUR ranges (with growth).
+
+\section{Role of the Wood-Fire Oven}
+Treat wood as \textbf{comfort plus resilience}. A 10–20\% winter coverage reduces HP electricity and adds flexibility during grid outages, with small economic upside and operational overhead.
+
+\section{What to Avoid}
+Over-optimizing for 100–110\% self-sufficiency (year-round) typically does not pay back relative to the extra PV/battery required. Favor reliability, commissioning quality, and safety over maximal autonomy.
+
+\section{Next Steps}
+Refine SCOP/COP with vendor data, confirm PV/battery sizing by roof study, and validate noise/placement. Lock in envelope details and HRV design. Update the scenario with actual tariffs; add feed-in remuneration if you plan export.
+
+\end{document}
+

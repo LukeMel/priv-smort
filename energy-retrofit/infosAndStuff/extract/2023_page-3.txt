@@ -1,0 +1,50 @@
+Stadtwerke
+Nurtingen
+Ihre Abrechnung fiir Heizung und
+Warmwasser 2023
+Entnahmestellennummer 818349
+Melhus, Ole Kundennummer 1000027695
+Am Reitplatz 39 Rechnungsnummer 3446200-0224-27052024
+72622 Niirtingen
+Liegenschaft Am Reitplatz 39
+72622 Niirtingen
+‘Stadtwerke Niirtingen GmbH
+Porschestr. 5
+72622 Nirtingen
+Liegenschaftsnummer 344.620-0
+Ihre Nutzernummer 224
+Ihr Nutzungszeitraum 01.01.2023 - 31.12.2023
+erstellt am 27.05.2024
+Ihr Verbrauch
+Heizung
+Geraétenummer Erlauterung Datum Anfangsstand MaBeinheit — Erlauterung Datum Endstand Verbrauch
+30016888 01.01.2023 14.557,00 kWh 31.12.2023 24.381,00 9.824,00
+Summe Verbrauch 9.824,00
+Summe Verbrauch Vorjahr 10898,00
+Warmwasser
+Geraétenummer Erlduterung Datum Anfangsstand MaBeinheit — Erlauterung Datum Endstand Verbrauch
+4966 01.01.2023 91,00 m3 31.12.2023 107,86 16,86
+Summe Verbrauch 16,86
+‘Summe Verbrauch Vorjahr 23,00
+Ihre Kosten Netto 7% Must, Brutto
+Kosten fiir Heizung
+Arbeitspreis 01.01.2023 9824,00 kWh x 0,2111000 € je kWh = 2.073,85 €
+Grundpreis 01.01.2023 13,00 kW Anschl.wert x 68,2857140 € je kW Anschl.wert = 887,71 €
+Messpreis 01.01.2023 1,00 Nutzer x 26,6900000 € je Nutzer = 26,69 €
+‘Summe Kosten fiir Heizung 2.988,25 € 209,18€ — 3.197,43€
+Kosten fiir Warmwasser
+Arbeitspreis 01.01.2023 16,86 m3 x 24,6900000 € je m3 = 416,27 €
+Summe Kosten fiir Warmwasser 416,27 € 29,14 € 445,41 €
+abziiglich Ihrer Vorauszahlungen (7% MwSt.) 2.682,13 € 187,75€ 2.869,88€
+Entlastungsbetrag gem. Erdgas-Warme-Preisbremsengesetzes (EWPBG) 1.986,36 €
+Thr Guthaben (nach Entlastung gem. EWPBG) 1.213,40 €
+Nach dem drastischen Anstieg der vergangenen Jahre sind nun wieder riicklaufige Energiepreise zu beobachten. Aufgrund der
+Wa4rmepreisbildung wirken sich die zuletzt gesunkenen Erdgas-Bérsenpreise in Ganze im Jahr 2025 auf den Warmearbeitspreis aus. Daher
+bedauern wir das verfriihte Ende der Erdgas-Warme-Preis-Bremse sowie den Wegfall der reduzierten MwSt. sehr und haben daher die, fiir
+das Jahr 2024 befristete, SWN-Preisbremse eingefiihrt
+Die neue Vorauszahlung (vor SWN-Preisbremse 2024) ab 01.07.2024 betragt 304,00 €
+Bitte beachten Sie, dass sich Ihre geleisteten Abschlage auf den o.g. Nutzungszeitraum beziehen.
+Bei Fragen zu Ihrer Abrechnung wenden Sie sich bitte an unser Kundenzentrum unter der Telefonnummer 07022/406-245.
+GemaB Kohlendioxidkostenaufteilungsgesetz (CO2KostAufG) sind die CO2-Kosten nicht mehr komplett durch den Mieter zu tragen, sondern zwischen Mieter und
+g Vermieter aufzuteilen. Der Endbetrag dieser Abrechnung enthalt die ungekiirzten CO2-Kosten fiir die Nutzeinheit. Folgend sind informativ die Angaben nach
+= CO2KostAufG aufgefiihrt.
